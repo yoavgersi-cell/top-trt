@@ -87,8 +87,8 @@ export const trtConfig: SiteConfig = {
       name: "TMates",
       tagline:
         "A TRT-focused telehealth membership built around lab testing, clinician visits and ongoing monitoring",
-      logo: "/provider-placeholder.svg",
-      smallLogo: "/provider-placeholder.svg",
+      logo: "/logos/tmateslogo.svg",
+      smallLogo: "/logos/tmateslogo.svg",
       highlights: [
         "Dedicated TRT-first program",
         "Includes lab work and clinician review",
@@ -103,8 +103,8 @@ export const trtConfig: SiteConfig = {
       name: "Taurus Meds",
       tagline:
         "A men's-health telehealth service offering TRT and related treatments online after a clinician review",
-      logo: "/provider-placeholder.svg",
-      smallLogo: "/provider-placeholder.svg",
+      logo: "/logos/tauruslogo.svg",
+      smallLogo: "/logos/tauruslogo.svg",
       highlights: [
         "Men's-health focus beyond TRT",
         "Online consultation and lab-based diagnosis",
@@ -135,8 +135,8 @@ export const trtConfig: SiteConfig = {
       name: "Fridays",
       tagline:
         "A men's-health telehealth brand offering testosterone therapy online after lab testing and a licensed-clinician review",
-      logo: "/provider-placeholder.svg",
-      smallLogo: "/provider-placeholder.svg",
+      logo: "/logos/fridayslogo.png",
+      smallLogo: "/logos/fridayslogo.png",
       highlights: [
         "Fully online men's-health platform",
         "Lab-based diagnosis before treatment",
