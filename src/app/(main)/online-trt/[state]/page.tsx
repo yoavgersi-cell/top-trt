@@ -152,8 +152,8 @@ export default async function StatePage({
       />
 
       {(author || reviewer) && (
-        <section className="mx-auto max-w-[1200px] px-4 pt-5">
-          <div className="flex flex-wrap items-center gap-x-3 gap-y-2">
+        <section className="mx-auto max-w-[1200px] px-4 pt-3.5">
+          <div className="flex flex-wrap items-center gap-x-5 gap-y-1.5">
             {author && <ExpertByline expert={author} label="Written by" />}
             {reviewer && <ExpertByline expert={reviewer} label="Reviewed by" />}
           </div>

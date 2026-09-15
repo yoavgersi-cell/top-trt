@@ -29,13 +29,11 @@ export function ExpertByline({
   return (
     <Link
       href={href}
-      className={`group inline-flex items-center rounded-full border border-gray-200 bg-white transition-colors hover:border-[#111111]/30 ${
-        compact ? "gap-2.5 py-1 pl-1 pr-3.5" : "gap-3 py-1.5 pl-1.5 pr-4"
-      }`}
+      className={`group inline-flex items-center ${compact ? "gap-1.5" : "gap-2"}`}
     >
       <span
-        className={`flex shrink-0 items-center justify-center overflow-hidden rounded-full bg-[#111111]/10 text-[12px] font-bold text-[#111111] ${
-          compact ? "h-7 w-7" : "h-9 w-9"
+        className={`flex shrink-0 items-center justify-center overflow-hidden rounded-full bg-[#111111]/[0.07] text-[10px] font-bold text-[#111111] ${
+          compact ? "h-5 w-5" : "h-6 w-6"
         }`}
       >
         {expert.avatar ? (
@@ -45,14 +43,10 @@ export function ExpertByline({
           initials(expert.name)
         )}
       </span>
-      <span className="leading-tight">
-        <span className="block text-[11px] font-semibold uppercase tracking-[0.05em] text-gray-400">
-          {label}
-        </span>
-        <span className="block text-[13px] font-bold text-[#191919] group-hover:text-[#111111]">
-          {credit}
-          {showRole && <span className="ml-1 font-medium text-gray-400">· {expert.role}</span>}
-        </span>
+      <span className="text-[12px] leading-tight text-gray-500">
+        <span className="text-gray-400">{label} </span>
+        <span className="font-semibold text-[#191919] group-hover:text-[#111111]">{credit}</span>
+        {showRole && <span className="hidden text-gray-400 sm:inline"> · {expert.role}</span>}
       </span>
     </Link>
   );
