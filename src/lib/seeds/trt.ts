@@ -51,7 +51,7 @@ export const trtConfig: SiteConfig = {
 
   cardSocialProof: {
     number: "11,300+",
-    text: "men compared TRT clinics this month",
+    text: "men compared TRT this month",
   },
 
   ranking: {

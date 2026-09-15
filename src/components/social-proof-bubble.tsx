@@ -36,8 +36,8 @@ export function SocialProofBand({ number, text }: { number: string; text: string
       className="overflow-hidden sm:hidden"
       style={{ animation: "socialProofReveal 0.5s ease-out 2.6s both" }}
     >
-      <div className="mx-auto w-3/4 rounded-b-xl border border-t-0 border-gray-200 bg-white px-3 pb-2 pt-2.5 text-center shadow-[0_2px_5px_rgba(16,24,40,0.05)]">
-        <p className="text-[12.5px] font-semibold text-gray-600">
+      <div className="mx-auto w-fit max-w-full rounded-b-xl border border-t-0 border-gray-200 bg-white px-4 pb-2 pt-2.5 text-center shadow-[0_2px_5px_rgba(16,24,40,0.05)]">
+        <p className="whitespace-nowrap font-semibold text-gray-600" style={{ fontSize: "clamp(10.5px, 3.3vw, 12.5px)" }}>
           <span className="font-extrabold text-[#191919]">{number}</span> {text}
         </p>
       </div>
