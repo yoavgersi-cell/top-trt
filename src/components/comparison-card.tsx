@@ -77,7 +77,7 @@ export function ComparisonCard({ product, hideRank, pageType = "listing", source
               </li>
             ))}
             {product.highlights[3] && (
-              <li className="mt-1.5 inline-flex items-center gap-1.5 rounded-md bg-[#111111] px-2 py-1 text-[11.5px] font-semibold leading-[1.3] text-white">
+              <li className="mt-1.5 inline-flex items-center gap-1.5 whitespace-nowrap rounded-md bg-[#FEF3D0] px-2.5 py-1 text-[11.5px] font-semibold leading-[1.3] text-[#8A6413] ring-1 ring-inset ring-[#F3DFA6]">
                 <Star className="h-3.5 w-3.5 shrink-0 fill-[#EBA51E] text-[#EBA51E]" strokeWidth={2} />
                 {product.highlights[3]}
               </li>
@@ -97,7 +97,7 @@ export function ComparisonCard({ product, hideRank, pageType = "listing", source
               position={product.rank}
               pageType={pageType}
               sourceFlow={sourceFlow}
-              className="flex h-[42px] w-full items-center justify-center gap-2 rounded-lg bg-[#111111] text-[15px] font-bold text-white transition-colors hover:bg-[#000000]"
+              className="flex h-[42px] w-full items-center justify-center gap-2 rounded-lg bg-[#262626] text-[15px] font-bold text-white transition-colors hover:bg-[#333333]"
             >
               Visit Site
               {arrowSvg}
@@ -138,7 +138,7 @@ export function ComparisonCard({ product, hideRank, pageType = "listing", source
             </li>
           ))}
           {product.highlights[3] && (
-            <li className="mt-2 inline-flex items-center gap-1.5 self-start rounded-md bg-[#111111] px-2.5 py-1.5 text-[13px] font-semibold leading-[1.3] text-white">
+            <li className="mt-2 inline-flex items-center gap-1.5 self-start whitespace-nowrap rounded-md bg-[#FEF3D0] px-2.5 py-1.5 text-[13px] font-semibold leading-[1.3] text-[#8A6413] ring-1 ring-inset ring-[#F3DFA6]">
               <Star className="h-4 w-4 shrink-0 fill-[#EBA51E] text-[#EBA51E]" strokeWidth={2} />
               {product.highlights[3]}
             </li>
@@ -157,7 +157,7 @@ export function ComparisonCard({ product, hideRank, pageType = "listing", source
           position={product.rank}
           pageType={pageType}
           sourceFlow={sourceFlow}
-          className="mt-5 flex h-[48px] w-full items-center justify-center gap-2 rounded-lg bg-[#111111] text-[16px] font-bold text-white transition-colors hover:bg-[#000000]"
+          className="mt-5 flex h-[48px] w-full items-center justify-center gap-2 rounded-lg bg-[#262626] text-[16px] font-bold text-white transition-colors hover:bg-[#333333]"
         >
           Visit Site
           {arrowSvg}

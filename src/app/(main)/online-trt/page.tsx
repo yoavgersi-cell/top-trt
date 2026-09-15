@@ -9,7 +9,7 @@ const SITE_URL = "https://www.toptrt.io";
 export const metadata: Metadata = {
   title: { absolute: "Online TRT by State (2026) | Top TRT" },
   description:
-    "Get TRT online in your state. Compare licensed telehealth clinics with at-home lab testing, a clinician's review and discreet, statewide delivery — pick your state to see options.",
+    "Get TRT online in your state. Compare licensed telehealth clinics with at-home lab testing, a clinician's review and discreet, statewide delivery - pick your state to see options.",
   alternates: { canonical: `${SITE_URL}/online-trt` },
   openGraph: {
     title: "Online TRT by State (2026)",
@@ -25,7 +25,7 @@ export default function OnlineTrtIndex() {
       <h1 className="mb-4 text-3xl font-bold text-[#191919]">Online TRT by State</h1>
       <p className="mb-4 max-w-2xl text-[16px] leading-[1.7] text-gray-700">
         Testosterone replacement therapy is available online in all 50 states through licensed telehealth
-        clinics — starting with lab testing to confirm your levels, a licensed clinician&apos;s review, and, if
+        clinics - starting with lab testing to confirm your levels, a licensed clinician&apos;s review, and, if
         appropriate, treatment with ongoing monitoring. Because telehealth is licensed state by state, choose
         your state below to see the providers that serve your area.
       </p>

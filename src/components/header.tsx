@@ -18,7 +18,7 @@ export function Header() {
     <header className="border-b-2 border-[#D5D5D5] bg-white">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-4">
         <Link href="/" className="flex items-baseline gap-1.5" aria-label="Top TRT home">
-          <span className="text-[20px] font-extrabold tracking-tight text-[#111111]">Top TRT</span>
+          <span className="text-[20px] font-bold tracking-tight text-[#262626]">Top TRT</span>
           <span className="hidden sm:inline text-[11px] font-semibold uppercase tracking-wider text-[#8A8A8A]">
             .io
           </span>

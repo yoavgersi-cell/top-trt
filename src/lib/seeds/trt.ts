@@ -2,7 +2,7 @@ import type { SiteConfig } from "@/lib/config";
 import { trtArticles } from "./trt-articles";
 
 // ─────────────────────────────────────────────────────────────────────────────
-// Testosterone Replacement Therapy (TRT) vertical content — toptrt.io
+// Testosterone Replacement Therapy (TRT) vertical content - toptrt.io
 //
 // Launch content for the single-vertical TRT review site. Four providers:
 // Hone Health (the anchor at-home-testing + physician-guided TRT offer),
@@ -13,7 +13,7 @@ import { trtArticles } from "./trt-articles";
 // results, and no fabricated statistics.
 //
 // PLACEHOLDERS / OPERATOR TO VERIFY:
-//  - Trustpilot ratings/reviews are not set — operator supplies later.
+//  - Trustpilot ratings/reviews are not set - operator supplies later.
 //  - All pricing is written as APPROXIMATE and clearly flagged; the operator
 //    should confirm current figures against each provider's own checkout.
 //  - TMates and Taurus Meds use the neutral provider-placeholder logo until
@@ -34,7 +34,7 @@ export const trtConfig: SiteConfig = {
     h1: "Best TRT Clinics of 2026",
     h2: "The top online testosterone replacement therapy providers, ranked and reviewed",
     description:
-      "Compare licensed online TRT clinics by testing, treatment options, price and ongoing support — from at-home hormone testing to physician-guided testosterone therapy.",
+      "Compare licensed online TRT clinics by testing, treatment options, price and ongoing support - from at-home hormone testing to physician-guided testosterone therapy.",
   },
 
   sidebar: {
@@ -44,7 +44,7 @@ export const trtConfig: SiteConfig = {
     secureText:
       "Every provider we feature uses secure, discreet systems to protect your privacy.",
     featuredImageUrl: "/sidebar-featured.webp",
-    featuredImageAlt: "Hone Health — at-home testosterone testing and TRT",
+    featuredImageAlt: "Hone Health - at-home testosterone testing and TRT",
     featuredImageLink: "#",
     blockOrder: ["socialProof", "secureBadge", "editorialReviews", "rankingMethodology", "disclosure"],
   },
@@ -77,7 +77,7 @@ export const trtConfig: SiteConfig = {
         "Starts with real lab testing, not guesswork",
         "Physician-reviewed, prescription treatment",
         "Ongoing monitoring and dose adjustments",
-        "Testing and treatment in one connected program",
+        "All-in-one testing & treatment",
       ],
       affiliateUrl: "https://track.revoffers.com/aff_c?offer_id=1291&aff_id=12904&url_id=12019",
       ctaText: "Visit Site",
@@ -93,7 +93,7 @@ export const trtConfig: SiteConfig = {
         "Dedicated TRT-first program",
         "Includes lab work and clinician review",
         "Ongoing check-ins and dose management",
-        "Membership model with support built in",
+        "Support & monitoring included",
       ],
       affiliateUrl: "https://track.revoffers.com/aff_c?offer_id=1471&aff_id=12904&url_id=11713",
       ctaText: "Visit Site",
@@ -109,7 +109,7 @@ export const trtConfig: SiteConfig = {
         "Men's-health focus beyond TRT",
         "Online consultation and lab-based diagnosis",
         "Licensed clinicians review your results",
-        "Discreet, direct-to-door delivery",
+        "Discreet home delivery",
       ],
       affiliateUrl: "https://track.revoffers.com/aff_c?offer_id=1453&aff_id=12904&url_id=11487",
       ctaText: "Visit Site",
@@ -141,7 +141,7 @@ export const trtConfig: SiteConfig = {
         "Fully online men's-health platform",
         "Lab-based diagnosis before treatment",
         "Licensed clinicians review your results",
-        "Discreet, direct-to-door delivery",
+        "Discreet home delivery",
       ],
       affiliateUrl: "https://track.revoffers.com/aff_c?offer_id=1284&aff_id=12904&url_id=11752",
       ctaText: "Visit Site",
@@ -153,9 +153,9 @@ export const trtConfig: SiteConfig = {
       slug: "hone",
       providerId: "hone",
       shortSummary:
-        "An end-to-end TRT program that starts with real hormone testing and moves to physician-guided treatment and monitoring — our top pick for men who want testing and therapy handled in one connected place.",
+        "An end-to-end TRT program that starts with real hormone testing and moves to physician-guided treatment and monitoring - our top pick for men who want testing and therapy handled in one connected place.",
       reviewIntro:
-        "Hone Health is a telehealth service built around the full arc of testosterone care: it starts with lab testing to see whether your testosterone is actually low, then — if a clinician confirms it's clinically warranted — moves into prescription testosterone therapy with ongoing monitoring and dose adjustments. That testing-first approach is the reason it's our top pick: TRT is only appropriate for men with genuinely low testosterone, and Hone builds the diagnosis into the program rather than skipping to a prescription. This review covers what it offers and who it fits.",
+        "Hone Health is a telehealth service built around the full arc of testosterone care: it starts with lab testing to see whether your testosterone is actually low, then - if a clinician confirms it's clinically warranted - moves into prescription testosterone therapy with ongoing monitoring and dose adjustments. That testing-first approach is the reason it's our top pick: TRT is only appropriate for men with genuinely low testosterone, and Hone builds the diagnosis into the program rather than skipping to a prescription. This review covers what it offers and who it fits.",
       keyFeatures: [
         "Begins with lab testing to confirm whether testosterone is clinically low",
         "Prescription testosterone therapy after a licensed-clinician review",
@@ -165,7 +165,7 @@ export const trtConfig: SiteConfig = {
         "Support for men managing therapy long-term",
       ],
       pricingSummary:
-        "Approximate only — confirm at checkout. TRT programs like Hone typically bundle an initial testing/diagnostic step with an ongoing monthly or membership fee that covers clinician oversight, follow-up labs and the medication. Exact costs depend on the treatment format and how often you're monitored, and promotions change, so treat any figure you see as a starting point and confirm the current price on Hone Health's own site before enrolling.",
+        "Approximate only - confirm at checkout. TRT programs like Hone typically bundle an initial testing/diagnostic step with an ongoing monthly or membership fee that covers clinician oversight, follow-up labs and the medication. Exact costs depend on the treatment format and how often you're monitored, and promotions change, so treat any figure you see as a starting point and confirm the current price on Hone Health's own site before enrolling.",
       treatmentOptions: [
         "Baseline and follow-up hormone lab testing",
         "Prescription testosterone therapy (clinician-directed format)",
@@ -180,7 +180,7 @@ export const trtConfig: SiteConfig = {
       cons: [
         "A comprehensive program usually costs more than a bare-bones prescription service",
         "Still requires the commitment of ongoing bloodwork and check-ins (as any responsible TRT should)",
-        "TRT is long-term — worth understanding the fertility and monitoring trade-offs first",
+        "TRT is long-term - worth understanding the fertility and monitoring trade-offs first",
       ],
       bestFor: [
         "Men who want testing and treatment handled in one place",
@@ -188,19 +188,19 @@ export const trtConfig: SiteConfig = {
         "Men who value a diagnosis-led, clinician-guided approach",
       ],
       finalVerdict:
-        "Hone Health is our top pick because it treats TRT the way it should be treated — a diagnosis backed by lab testing, a clinician's decision, and ongoing monitoring — rather than a shortcut to a prescription. It suits men who want the whole process, from the first blood test to long-term dose management, handled in one connected program. The honest caveats are that a comprehensive program costs more than a minimal one, and that TRT is a long-term commitment with real trade-offs to weigh first. Confirm current pricing before you enroll. This review is general information, not medical advice.",
+        "Hone Health is our top pick because it treats TRT the way it should be treated - a diagnosis backed by lab testing, a clinician's decision, and ongoing monitoring - rather than a shortcut to a prescription. It suits men who want the whole process, from the first blood test to long-term dose management, handled in one connected program. The honest caveats are that a comprehensive program costs more than a minimal one, and that TRT is a long-term commitment with real trade-offs to weigh first. Confirm current pricing before you enroll. This review is general information, not medical advice.",
       howItWorks: [
         {
           timing: "Step 1",
           title: "Test your levels",
           detail:
-            "You complete hormone lab testing so there's real data on whether your testosterone is clinically low — the starting point for any legitimate TRT decision.",
+            "You complete hormone lab testing so there's real data on whether your testosterone is clinically low - the starting point for any legitimate TRT decision.",
         },
         {
           timing: "Step 2",
           title: "Licensed clinician review",
           detail:
-            "A licensed clinician reviews your results and symptoms and decides whether testosterone therapy is appropriate — and, if so, which approach fits.",
+            "A licensed clinician reviews your results and symptoms and decides whether testosterone therapy is appropriate - and, if so, which approach fits.",
         },
         {
           timing: "Step 3",
@@ -227,7 +227,7 @@ export const trtConfig: SiteConfig = {
         "Fully online and discreet",
       ],
       pricingSummary:
-        "Approximate only — confirm at checkout. As a membership-style TRT program, TMates typically charges an ongoing monthly fee that bundles clinician oversight, monitoring and, depending on the plan, testing and medication. Exact figures depend on the plan and are subject to change, so confirm the current price on the TMates site before enrolling.",
+        "Approximate only - confirm at checkout. As a membership-style TRT program, TMates typically charges an ongoing monthly fee that bundles clinician oversight, monitoring and, depending on the plan, testing and medication. Exact figures depend on the plan and are subject to change, so confirm the current price on the TMates site before enrolling.",
       treatmentOptions: [
         "Hormone lab testing and diagnosis",
         "Prescription testosterone therapy (clinician-directed)",
@@ -286,7 +286,7 @@ export const trtConfig: SiteConfig = {
         "Discreet, direct-to-door delivery",
       ],
       pricingSummary:
-        "Approximate only — confirm at checkout. Taurus Meds prices TRT through a combination of testing and an ongoing treatment plan; the exact cost depends on the plan, the treatment format and monitoring included. Because promotions and plans change, confirm the current price on the Taurus Meds site before signing up.",
+        "Approximate only - confirm at checkout. Taurus Meds prices TRT through a combination of testing and an ongoing treatment plan; the exact cost depends on the plan, the treatment format and monitoring included. Because promotions and plans change, confirm the current price on the Taurus Meds site before signing up.",
       treatmentOptions: [
         "Hormone lab testing and diagnosis",
         "Prescription testosterone therapy (clinician-directed)",
@@ -300,7 +300,7 @@ export const trtConfig: SiteConfig = {
       ],
       cons: [
         "Less exclusively TRT-focused than a dedicated program",
-        "Monitoring depth depends on the specific plan — confirm what's included",
+        "Monitoring depth depends on the specific plan - confirm what's included",
         "Requires an online medical review and lab work (as it should)",
       ],
       bestFor: [
@@ -345,7 +345,7 @@ export const trtConfig: SiteConfig = {
         "Fully online process",
       ],
       pricingSummary:
-        "Approximate only — confirm at checkout. Dude Meds positions itself as a value option, so its TRT pricing tends to sit toward the affordable end, typically as a simple monthly plan after the required testing. Exact costs depend on the plan and are subject to change, so verify the current price on the Dude Meds site before ordering.",
+        "Approximate only - confirm at checkout. Dude Meds positions itself as a value option, so its TRT pricing tends to sit toward the affordable end, typically as a simple monthly plan after the required testing. Exact costs depend on the plan and are subject to change, so verify the current price on the Dude Meds site before ordering.",
       treatmentOptions: [
         "Required hormone lab testing",
         "Prescription testosterone therapy (clinician-directed)",
@@ -368,7 +368,7 @@ export const trtConfig: SiteConfig = {
         "Budget-focused shoppers",
       ],
       finalVerdict:
-        "Dude Meds is a reasonable pick for men who want testosterone therapy without paying for extra program depth — a simple, value-minded, fully online option that still runs the required testing and clinician review. If you want deep ongoing monitoring and a testing-first program, compare it against our top pick. Confirm current pricing and what's included on the Dude Meds site. This review is general information, not medical advice.",
+        "Dude Meds is a reasonable pick for men who want testosterone therapy without paying for extra program depth - a simple, value-minded, fully online option that still runs the required testing and clinician review. If you want deep ongoing monitoring and a testing-first program, compare it against our top pick. Confirm current pricing and what's included on the Dude Meds site. This review is general information, not medical advice.",
       howItWorks: [
         {
           timing: "Step 1",
@@ -395,7 +395,7 @@ export const trtConfig: SiteConfig = {
       shortSummary:
         "A men's-health telehealth brand that offers testosterone therapy online through lab-based diagnosis and a licensed-clinician review, with discreet delivery.",
       reviewIntro:
-        "Fridays is a men's-health telehealth brand that includes testosterone therapy among the treatments it offers online. The model is the familiar one for this space: you complete an intake and the required lab testing, a licensed clinician reviews whether your testosterone is genuinely low and whether TRT is appropriate, and — if it is — treatment is arranged with follow-up. This review focuses on the model and how it fits into the field; confirm the current lineup, monitoring and pricing on the Fridays site.",
+        "Fridays is a men's-health telehealth brand that includes testosterone therapy among the treatments it offers online. The model is the familiar one for this space: you complete an intake and the required lab testing, a licensed clinician reviews whether your testosterone is genuinely low and whether TRT is appropriate, and - if it is - treatment is arranged with follow-up. This review focuses on the model and how it fits into the field; confirm the current lineup, monitoring and pricing on the Fridays site.",
       keyFeatures: [
         "TRT offered within a men's-health service",
         "Lab-based diagnosis before any prescription",
@@ -404,7 +404,7 @@ export const trtConfig: SiteConfig = {
         "Discreet, direct-to-door delivery",
       ],
       pricingSummary:
-        "Approximate only — confirm at checkout. Fridays prices TRT through a combination of testing and an ongoing treatment plan; the exact cost depends on the plan, the treatment format and the monitoring included. Because promotions and plans change, confirm the current price on the Fridays site before signing up.",
+        "Approximate only - confirm at checkout. Fridays prices TRT through a combination of testing and an ongoing treatment plan; the exact cost depends on the plan, the treatment format and the monitoring included. Because promotions and plans change, confirm the current price on the Fridays site before signing up.",
       treatmentOptions: [
         "Hormone lab testing and diagnosis",
         "Prescription testosterone therapy (clinician-directed)",
@@ -418,7 +418,7 @@ export const trtConfig: SiteConfig = {
       ],
       cons: [
         "Less exclusively TRT-focused than a dedicated program",
-        "Monitoring depth depends on the specific plan — confirm what's included",
+        "Monitoring depth depends on the specific plan - confirm what's included",
         "We recommend confirming its current TRT lineup and pricing on the provider's own site",
       ],
       bestFor: [
@@ -459,7 +459,7 @@ export const trtConfig: SiteConfig = {
       matchupLabel: "Hone Health vs TMates",
       subtitle: "An end-to-end testing-and-treatment program vs a dedicated TRT membership",
       description:
-        "Compare Hone Health and TMates for online TRT — testing, clinician oversight, monitoring and which fits you best.",
+        "Compare Hone Health and TMates for online TRT - testing, clinician oversight, monitoring and which fits you best.",
       intro:
         "Hone Health and TMates both take testosterone therapy seriously: each starts with lab testing, involves a licensed clinician, and monitors treatment over time. Hone is a broad, testing-first program that connects diagnosis and treatment; TMates is a membership built specifically around TRT. Here's how they compare.",
       verdict:
@@ -518,7 +518,7 @@ export const trtConfig: SiteConfig = {
       matchupLabel: "Hone Health vs Taurus Meds",
       subtitle: "A testing-first TRT program vs a broader men's-health platform",
       description:
-        "Compare Hone Health and Taurus Meds for online TRT — testing, monitoring, breadth and which fits your priorities.",
+        "Compare Hone Health and Taurus Meds for online TRT - testing, monitoring, breadth and which fits your priorities.",
       intro:
         "Hone Health and Taurus Meds both prescribe TRT online after lab testing and a clinician review, but they're built differently. Hone is a testing-first program centered on hormone care; Taurus Meds offers TRT within a broader men's-health lineup. Here's how they compare.",
       verdict:
@@ -576,11 +576,11 @@ export const trtConfig: SiteConfig = {
       matchupLabel: "Hone Health vs Dude Meds",
       subtitle: "A comprehensive, testing-first program vs a value-minded simple option",
       description:
-        "Compare Hone Health and Dude Meds for online TRT — program depth, monitoring, price and which fits your priorities.",
+        "Compare Hone Health and Dude Meds for online TRT - program depth, monitoring, price and which fits your priorities.",
       intro:
         "Hone Health and Dude Meds sit at different ends of the same market. Hone is a comprehensive, testing-first program with ongoing monitoring; Dude Meds is a simple, value-minded service that offers TRT after the required testing and review. Here's how they compare.",
       verdict:
-        "Both are legitimate online options. Hone wins for men who want depth — testing, treatment and monitoring in one program — while Dude Meds wins on simple, budget-friendly access. Confirm current pricing on each provider's site.",
+        "Both are legitimate online options. Hone wins for men who want depth - testing, treatment and monitoring in one program - while Dude Meds wins on simple, budget-friendly access. Confirm current pricing on each provider's site.",
       verdictWinnerPoints: [
         "Comprehensive, testing-first program",
         "Ongoing monitoring and dose management",
@@ -634,7 +634,7 @@ export const trtConfig: SiteConfig = {
       matchupLabel: "TMates vs Taurus Meds",
       subtitle: "A dedicated TRT membership vs a broader men's-health platform",
       description:
-        "Compare TMates and Taurus Meds for online TRT — focus, monitoring, breadth and which fits you best.",
+        "Compare TMates and Taurus Meds for online TRT - focus, monitoring, breadth and which fits you best.",
       intro:
         "TMates and Taurus Meds both prescribe TRT online after testing and a clinician review, but they compete on different things. TMates is a membership built exclusively around testosterone therapy; Taurus Meds offers TRT within a broader men's-health service. Here's how they compare.",
       verdict:
@@ -692,7 +692,7 @@ export const trtConfig: SiteConfig = {
       matchupLabel: "TMates vs Dude Meds",
       subtitle: "A monitoring-focused TRT membership vs a value-minded simple option",
       description:
-        "Compare TMates and Dude Meds for online TRT — program depth, monitoring, price and which fits you best.",
+        "Compare TMates and Dude Meds for online TRT - program depth, monitoring, price and which fits you best.",
       intro:
         "TMates and Dude Meds both offer TRT online, but they compete on different priorities. TMates is a membership built around ongoing monitoring; Dude Meds keeps it simple and budget-friendly. Here's how they compare.",
       verdict:
@@ -750,7 +750,7 @@ export const trtConfig: SiteConfig = {
       matchupLabel: "Taurus Meds vs Dude Meds",
       subtitle: "A broader men's-health platform vs a value-minded simple option",
       description:
-        "Compare Taurus Meds and Dude Meds for online TRT — breadth, price and which fits your priorities.",
+        "Compare Taurus Meds and Dude Meds for online TRT - breadth, price and which fits your priorities.",
       intro:
         "Taurus Meds and Dude Meds are both straightforward men's telehealth services offering TRT online after the required testing and a clinician review. Taurus Meds leans on a broader men's-health lineup; Dude Meds leans on simple, value-minded pricing. Here's how they compare.",
       verdict:
@@ -808,7 +808,7 @@ export const trtConfig: SiteConfig = {
       matchupLabel: "Hone Health vs Fridays",
       subtitle: "A testing-first TRT program vs a broader men's-health platform",
       description:
-        "Compare Hone Health and Fridays for online TRT — testing, monitoring, breadth and which fits your priorities.",
+        "Compare Hone Health and Fridays for online TRT - testing, monitoring, breadth and which fits your priorities.",
       intro:
         "Hone Health and Fridays both prescribe TRT online after lab testing and a clinician review, but they're built differently. Hone is a testing-first program centered on hormone care; Fridays offers TRT within a broader men's-health service. Here's how they compare.",
       verdict:
@@ -866,7 +866,7 @@ export const trtConfig: SiteConfig = {
       matchupLabel: "TMates vs Fridays",
       subtitle: "A dedicated TRT membership vs a broader men's-health platform",
       description:
-        "Compare TMates and Fridays for online TRT — focus, monitoring, breadth and which fits you best.",
+        "Compare TMates and Fridays for online TRT - focus, monitoring, breadth and which fits you best.",
       intro:
         "TMates and Fridays both prescribe TRT online after testing and a clinician review, but they compete on different things. TMates is a membership built exclusively around testosterone therapy; Fridays offers TRT within a broader men's-health service. Here's how they compare.",
       verdict:
@@ -924,11 +924,11 @@ export const trtConfig: SiteConfig = {
       matchupLabel: "Taurus Meds vs Fridays",
       subtitle: "Two men's-health platforms that both offer TRT online",
       description:
-        "Compare Taurus Meds and Fridays for online TRT — approach, monitoring and which fits your priorities.",
+        "Compare Taurus Meds and Fridays for online TRT - approach, monitoring and which fits your priorities.",
       intro:
         "Taurus Meds and Fridays are both men's-health telehealth brands that offer testosterone therapy within a broader lineup, each after the required lab testing and a clinician review. They're close comparisons, so the differences come down to the specifics of each plan. Here's how they compare.",
       verdict:
-        "Both offer a convenient, lab-based online path to TRT within a broader men's-health service. Taurus Meds edges it here for its clearer TRT framing, but the two are close — confirm the exact testing, monitoring and pricing on each provider's own site before deciding.",
+        "Both offer a convenient, lab-based online path to TRT within a broader men's-health service. Taurus Meds edges it here for its clearer TRT framing, but the two are close - confirm the exact testing, monitoring and pricing on each provider's own site before deciding.",
       verdictWinnerPoints: [
         "Men's-health platform with TRT",
         "Lab-based diagnosis and clinician review",
@@ -982,7 +982,7 @@ export const trtConfig: SiteConfig = {
       matchupLabel: "Dude Meds vs Fridays",
       subtitle: "A value-minded TRT option vs a broader men's-health platform",
       description:
-        "Compare Dude Meds and Fridays for online TRT — value, breadth and which fits your priorities.",
+        "Compare Dude Meds and Fridays for online TRT - value, breadth and which fits your priorities.",
       intro:
         "Dude Meds and Fridays are both straightforward men's telehealth services offering TRT online after the required testing and a clinician review. Dude Meds leans on simple, value-minded pricing; Fridays leans on a broader men's-health lineup. Here's how they compare.",
       verdict:
@@ -1040,22 +1040,22 @@ export const trtConfig: SiteConfig = {
     {
       question: "What is TRT?",
       answer:
-        "TRT (testosterone replacement therapy) is a prescription treatment that restores testosterone in men whose levels are clinically low. It's diagnosed with blood tests — usually two morning total-testosterone measurements — plus a symptom evaluation, and it's prescribed and monitored by a licensed clinician. It's a treatment for diagnosed low testosterone (hypogonadism), not a performance booster for men with normal levels.",
+        "TRT (testosterone replacement therapy) is a prescription treatment that restores testosterone in men whose levels are clinically low. It's diagnosed with blood tests - usually two morning total-testosterone measurements - plus a symptom evaluation, and it's prescribed and monitored by a licensed clinician. It's a treatment for diagnosed low testosterone (hypogonadism), not a performance booster for men with normal levels.",
     },
     {
       question: "How do online TRT clinics work?",
       answer:
-        "You complete an intake and lab testing to measure your testosterone, a licensed clinician reviews your results and symptoms to decide whether therapy is appropriate, and — if it is — treatment is arranged with ongoing monitoring. Legitimate services always include lab testing and a clinician's review; a site that prescribes testosterone with no bloodwork or clinician is a red flag.",
+        "You complete an intake and lab testing to measure your testosterone, a licensed clinician reviews your results and symptoms to decide whether therapy is appropriate, and - if it is - treatment is arranged with ongoing monitoring. Legitimate services always include lab testing and a clinician's review; a site that prescribes testosterone with no bloodwork or clinician is a red flag.",
     },
     {
       question: "Do I need blood tests before starting TRT?",
       answer:
-        "Yes. Confirming clinically low testosterone with blood work is a required, non-negotiable step — testosterone is typically measured in the morning and often more than once. Ongoing bloodwork also continues during treatment to monitor your testosterone, red blood cell count (hematocrit) and prostate (PSA), among other markers, so a clinician can keep therapy safe.",
+        "Yes. Confirming clinically low testosterone with blood work is a required, non-negotiable step - testosterone is typically measured in the morning and often more than once. Ongoing bloodwork also continues during treatment to monitor your testosterone, red blood cell count (hematocrit) and prostate (PSA), among other markers, so a clinician can keep therapy safe.",
     },
     {
       question: "Does TRT affect fertility?",
       answer:
-        "It can. TRT commonly suppresses the body's own testosterone production and can reduce sperm production, which may impair fertility — sometimes significantly. Men who want to have children should raise this with a clinician before starting; alternatives that support fertility exist and should be discussed. This is one of the most important trade-offs to understand up front.",
+        "It can. TRT commonly suppresses the body's own testosterone production and can reduce sperm production, which may impair fertility - sometimes significantly. Men who want to have children should raise this with a clinician before starting; alternatives that support fertility exist and should be discussed. This is one of the most important trade-offs to understand up front.",
     },
     {
       question: "What are the common side effects of TRT?",
@@ -1070,7 +1070,7 @@ export const trtConfig: SiteConfig = {
     {
       question: "Is TRT a lifelong commitment?",
       answer:
-        "For many men it's long-term. TRT manages low testosterone rather than curing it, so if you stop, your levels — and symptoms — typically return to where they were (and it can take time for your body's own production to recover). Whether and how long to stay on therapy is a decision to make with your clinician based on your goals, response and monitoring.",
+        "For many men it's long-term. TRT manages low testosterone rather than curing it, so if you stop, your levels - and symptoms - typically return to where they were (and it can take time for your body's own production to recover). Whether and how long to stay on therapy is a decision to make with your clinician based on your goals, response and monitoring.",
     },
     {
       question: "Can I get TRT if my testosterone is normal?",
@@ -1089,7 +1089,7 @@ export const trtConfig: SiteConfig = {
       "Completely free and confidential",
     ],
     welcomeCta: "Find My Match",
-    midFlowMessage: "Great — we're narrowing down the best options for you.",
+    midFlowMessage: "Great - we're narrowing down the best options for you.",
     pageTitle: "Find Your TRT Clinic Match",
     pageSubtitle:
       "Answer a few quick questions to help us compare providers based on your treatment preferences, budget and availability.",
@@ -1119,12 +1119,12 @@ export const trtConfig: SiteConfig = {
       state: "TX",
     },
     {
-      text: "What I appreciated most was the honesty about the trade-offs — the fertility part especially. I went in informed and picked a provider that took the testing and follow-up seriously.",
+      text: "What I appreciated most was the honesty about the trade-offs - the fertility part especially. I went in informed and picked a provider that took the testing and follow-up seriously.",
       name: "David R.",
       state: "FL",
     },
     {
-      text: "Comparing the providers side by side saved me a ton of time. The whole thing was online — testing, a real clinician review, then treatment with check-ins.",
+      text: "Comparing the providers side by side saved me a ton of time. The whole thing was online - testing, a real clinician review, then treatment with check-ins.",
       name: "James P.",
       state: "OH",
     },
@@ -1135,7 +1135,7 @@ export const trtConfig: SiteConfig = {
       id: "editorial",
       name: "Top TRT Editorial Team",
       role: "Editorial & Research",
-      bio: "Our editorial team researches and compares online TRT providers, reads the clinical evidence behind testosterone therapy, and writes plain-English, compliance-minded guides. We prioritize accuracy and honesty over hype — including being clear about what TRT can and cannot do, and the trade-offs that come with it.",
+      bio: "Our editorial team researches and compares online TRT providers, reads the clinical evidence behind testosterone therapy, and writes plain-English, compliance-minded guides. We prioritize accuracy and honesty over hype - including being clear about what TRT can and cannot do, and the trade-offs that come with it.",
       specialties: [
         "Provider comparison and research",
         "Telehealth and online prescribing",
@@ -1147,7 +1147,7 @@ export const trtConfig: SiteConfig = {
       id: "medical-review",
       name: "Clinical Review Team",
       role: "Medical Review",
-      bio: "Our clinical review process checks health content for accuracy and safety, with an emphasis on avoiding overstated claims and flagging important safety considerations — such as the need for blood testing, ongoing monitoring, and the fertility trade-offs of testosterone therapy. This site provides general information, not medical advice.",
+      bio: "Our clinical review process checks health content for accuracy and safety, with an emphasis on avoiding overstated claims and flagging important safety considerations - such as the need for blood testing, ongoing monitoring, and the fertility trade-offs of testosterone therapy. This site provides general information, not medical advice.",
     },
   ],
 

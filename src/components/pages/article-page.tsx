@@ -567,7 +567,7 @@ export async function ArticlePageView({ slug, ctx }: { slug: string; ctx: SiteCo
             <div className="mt-5 flex flex-col gap-3 sm:flex-row sm:justify-center">
               <Link
                 href={hubLink(ctx, "/")}
-                className="inline-flex h-[44px] items-center justify-center rounded-lg bg-[#111111] px-6 text-[14px] font-bold text-white transition-colors hover:bg-[#000000]"
+                className="inline-flex h-[44px] items-center justify-center rounded-lg bg-[#262626] px-6 text-[14px] font-bold text-white transition-colors hover:bg-[#333333]"
               >
                 Compare Providers
               </Link>

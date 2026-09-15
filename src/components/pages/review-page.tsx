@@ -259,7 +259,7 @@ export async function ReviewPageView({ slug, ctx }: { slug: string; ctx: SiteCon
               providerSlug={provider.id}
               pageType="review"
               sourceFlow="provider_review"
-              className="flex h-[44px] items-center justify-center gap-2 rounded-lg bg-[#111111] px-6 text-[14px] font-bold text-white transition-colors hover:bg-[#000000] sm:shrink-0"
+              className="flex h-[44px] items-center justify-center gap-2 rounded-lg bg-[#262626] px-6 text-[14px] font-bold text-white transition-colors hover:bg-[#333333] sm:shrink-0"
             >
               Visit {provider.name}
               <ArrowRight className="h-4 w-4" strokeWidth={2.5} />
@@ -520,7 +520,7 @@ export async function ReviewPageView({ slug, ctx }: { slug: string; ctx: SiteCon
             providerSlug={provider.id}
             pageType="review"
             sourceFlow="provider_review"
-            className="inline-flex h-[44px] items-center justify-center gap-2 rounded-lg bg-[#111111] px-8 text-[14px] font-bold text-white transition-colors hover:bg-[#000000]"
+            className="inline-flex h-[44px] items-center justify-center gap-2 rounded-lg bg-[#262626] px-8 text-[14px] font-bold text-white transition-colors hover:bg-[#333333]"
           >
             Visit {provider.name}
             <ArrowRight className="h-4 w-4" strokeWidth={2.5} />
@@ -675,7 +675,7 @@ export async function ReviewPageView({ slug, ctx }: { slug: string; ctx: SiteCon
               providerSlug={provider.id}
               pageType="review"
               sourceFlow="provider_review"
-              className="mt-5 flex h-[48px] w-full items-center justify-center gap-2 rounded-lg bg-[#111111] text-[15px] font-bold text-white transition-colors hover:bg-[#000000] sm:w-auto sm:px-8"
+              className="mt-5 flex h-[48px] w-full items-center justify-center gap-2 rounded-lg bg-[#262626] text-[15px] font-bold text-white transition-colors hover:bg-[#333333] sm:w-auto sm:px-8"
             >
               Visit {provider.name}
               <ArrowRight className="h-4 w-4" strokeWidth={2.5} />

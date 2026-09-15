@@ -28,7 +28,7 @@ export async function generateMetadata({
   const url = `${SITE_URL}/online-trt/${s.slug}`;
   const title = `Online TRT in ${s.name} (2026)`;
   const description =
-    `Compare licensed online TRT clinics serving ${s.name}. At-home lab testing, a clinician's review and ongoing monitoring — with discreet delivery to every ${s.abbr} ZIP code.`;
+    `Compare licensed online TRT clinics serving ${s.name}. At-home lab testing, a clinician's review and ongoing monitoring - with discreet delivery to every ${s.abbr} ZIP code.`;
   return {
     title: { absolute: `${title} | Top TRT` },
     description,
@@ -82,19 +82,19 @@ export default async function StatePage({
   const faqs = [
     {
       question: `Is online TRT available in ${s.name}?`,
-      answer: `Yes. Licensed telehealth clinics can test, evaluate and, when clinically appropriate, prescribe testosterone therapy for residents across ${s.name} — from ${citiesPhrase} to smaller towns and rural ZIP codes. A licensed clinician reviews your bloodwork and symptoms before anything is prescribed.`,
+      answer: `Yes. Licensed telehealth clinics can test, evaluate and, when clinically appropriate, prescribe testosterone therapy for residents across ${s.name} - from ${citiesPhrase} to smaller towns and rural ZIP codes. A licensed clinician reviews your bloodwork and symptoms before anything is prescribed.`,
     },
     {
       question: `Do I need blood tests to start TRT in ${s.name}?`,
-      answer: `Yes. Confirming clinically low testosterone with lab work is a required step everywhere, including ${s.name}. Many providers offer at-home test kits or partner with local labs, so most men can complete testing without a traditional office visit — then a licensed clinician reviews the results.`,
+      answer: `Yes. Confirming clinically low testosterone with lab work is a required step everywhere, including ${s.name}. Many providers offer at-home test kits or partner with local labs, so most men can complete testing without a traditional office visit - then a licensed clinician reviews the results.`,
     },
     {
       question: `Do I need to visit a clinic in ${s.name} in person?`,
-      answer: `Usually not. Most men in ${s.name} can complete the entire process online — lab testing, a licensed clinician's review, and treatment with ongoing monitoring — without an in-person visit. Some complex cases may still be referred for in-person care.`,
+      answer: `Usually not. Most men in ${s.name} can complete the entire process online - lab testing, a licensed clinician's review, and treatment with ongoing monitoring - without an in-person visit. Some complex cases may still be referred for in-person care.`,
     },
     {
       question: `How much does online TRT cost in ${s.name}?`,
-      answer: `Pricing depends on the provider and plan — typically an initial testing cost plus an ongoing monthly or membership fee for clinician oversight, monitoring and medication — not on where you live in ${s.name}. Compare current pricing on each provider's own site before you decide.`,
+      answer: `Pricing depends on the provider and plan - typically an initial testing cost plus an ongoing monthly or membership fee for clinician oversight, monitoring and medication - not on where you live in ${s.name}. Compare current pricing on each provider's own site before you decide.`,
     },
   ];
 
@@ -148,7 +148,7 @@ export default async function StatePage({
         updatedLabel="Last Updated: September 2026"
         h1={`Online TRT in ${s.name}`}
         h2={`Compare licensed telehealth TRT clinics serving ${s.name}`}
-        description={`Doctor-reviewed testosterone therapy for men in ${s.name} — with lab testing, ongoing monitoring and discreet delivery to any ZIP code. Compare your options below.`}
+        description={`Doctor-reviewed testosterone therapy for men in ${s.name} - with lab testing, ongoing monitoring and discreet delivery to any ZIP code. Compare your options below.`}
       />
 
       {(author || reviewer) && (
@@ -188,7 +188,7 @@ export default async function StatePage({
           Getting TRT in {s.name}
         </h2>
         <p className="mb-4">
-          If you live in {s.name} — whether in {citiesPhrase}, or a smaller community across {s.region} —
+          If you live in {s.name} - whether in {citiesPhrase}, or a smaller community across {s.region} -
           you no longer have to book an in-person appointment to get evaluated for low testosterone. Licensed
           online clinics can test your levels, and where appropriate prescribe testosterone therapy, largely
           online, with treatment and monitoring managed remotely. Below is how it works, what serves {s.name},
@@ -199,12 +199,12 @@ export default async function StatePage({
           How Online TRT Works in {s.name}
         </h2>
         <ol className="mb-4 ml-5 list-decimal space-y-2">
-          <li><strong>Test your levels.</strong> You complete lab testing — often an at-home kit or a nearby lab — so there&apos;s real data on whether your testosterone is clinically low.</li>
+          <li><strong>Test your levels.</strong> You complete lab testing - often an at-home kit or a nearby lab - so there&apos;s real data on whether your testosterone is clinically low.</li>
           <li><strong>A licensed clinician reviews it.</strong> Providers work with clinicians licensed to treat patients in {s.name}; they review your bloodwork and symptoms and decide whether TRT is safe and appropriate for you.</li>
           <li><strong>Treatment and monitoring.</strong> If prescribed, your treatment is arranged discreetly to your {s.name} address, with follow-up bloodwork and dose adjustments over time.</li>
         </ol>
         <p className="mb-4">
-          Not sure where to start? {topName} is our current top pick — see the full{" "}
+          Not sure where to start? {topName} is our current top pick - see the full{" "}
           <Link href="/" className="font-semibold text-[#111111] hover:underline">comparison</Link>{" "}
           and our{" "}
           <Link href="/reviews" className="font-semibold text-[#111111] hover:underline">in-depth reviews</Link>.
@@ -214,7 +214,7 @@ export default async function StatePage({
           Testing &amp; Delivery Across {s.name}
         </h2>
         <p className="mb-4">
-          The clinics we compare serve <strong>every ZIP code in {s.name}</strong> — from busy metros like{" "}
+          The clinics we compare serve <strong>every ZIP code in {s.name}</strong> - from busy metros like{" "}
           {c0} to rural addresses far from the nearest specialist. Lab testing is handled with at-home kits or
           partner labs, and if you&apos;re prescribed treatment it arrives in plain, unmarked packaging for
           privacy. For many men in {s.name}, having testing and treatment handled remotely is the single biggest
@@ -227,7 +227,7 @@ export default async function StatePage({
         <p className="mb-4">
           Yes. Telehealth is an established, legal way to receive care in {s.name} when a licensed clinician is
           involved. Testosterone is a controlled, prescription-only medication, so a clinician licensed for{" "}
-          {s.name} must review your bloodwork and information before anything can be prescribed — that safeguard
+          {s.name} must review your bloodwork and information before anything can be prescribed - that safeguard
           is a feature, not a hurdle. Availability of a specific provider can vary by state, so the comparison
           above reflects options that serve {s.name}.
         </p>
@@ -238,7 +238,7 @@ export default async function StatePage({
         <p className="mb-4">
           Searching &quot;TRT near me&quot; in {s.name} will surface local urologists, endocrinologists and
           men&apos;s-health clinics, and those are a good fit for complex cases or if you prefer to be seen in
-          person. But for most men, online treatment is faster, more private, and often less expensive — you skip
+          person. But for most men, online treatment is faster, more private, and often less expensive - you skip
           the wait for an appointment and the trip across town. Learn what the online process looks like in our
           guide to{" "}
           <Link href="/articles/how-to-get-trt-online" className="font-semibold text-[#111111] hover:underline">
