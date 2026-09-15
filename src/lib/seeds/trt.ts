@@ -1143,12 +1143,6 @@ export const trtConfig: SiteConfig = {
         "Consumer education",
       ],
     },
-    {
-      id: "medical-review",
-      name: "Clinical Review Team",
-      role: "Medical Review",
-      bio: "Our clinical review process checks health content for accuracy and safety, with an emphasis on avoiding overstated claims and flagging important safety considerations - such as the need for blood testing, ongoing monitoring, and the fertility trade-offs of testosterone therapy. This site provides general information, not medical advice.",
-    },
   ],
 
   landingPages: [],
