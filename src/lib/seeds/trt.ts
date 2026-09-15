@@ -55,12 +55,13 @@ export const trtConfig: SiteConfig = {
   },
 
   ranking: {
-    providerOrder: ["hone", "tmates", "taurus", "dudemeds"],
+    providerOrder: ["hone", "tmates", "taurus", "dudemeds", "fridays"],
     positions: [
       { score: 9.6, starRating: 5, label: "Exceptional", badge: "Our Top Pick" },
       { score: 9.2, starRating: 5, label: "Excellent" },
       { score: 8.9, starRating: 4, label: "Very Good" },
       { score: 8.6, starRating: 4, label: "Very Good" },
+      { score: 8.4, starRating: 4, label: "Very Good" },
     ],
   },
 
@@ -127,6 +128,22 @@ export const trtConfig: SiteConfig = {
         "Discreet home delivery",
       ],
       affiliateUrl: "https://track.revoffers.com/aff_c?offer_id=1361&aff_id=12904&url_id=11182",
+      ctaText: "Visit Site",
+    },
+    {
+      id: "fridays",
+      name: "Fridays",
+      tagline:
+        "A men's-health telehealth brand offering testosterone therapy online after lab testing and a licensed-clinician review",
+      logo: "/provider-placeholder.svg",
+      smallLogo: "/provider-placeholder.svg",
+      highlights: [
+        "Fully online men's-health platform",
+        "Lab-based diagnosis before treatment",
+        "Licensed clinicians review your results",
+        "Discreet, direct-to-door delivery",
+      ],
+      affiliateUrl: "https://track.revoffers.com/aff_c?offer_id=1284&aff_id=12904&url_id=11752",
       ctaText: "Visit Site",
     },
   ],
@@ -370,6 +387,65 @@ export const trtConfig: SiteConfig = {
         },
       ],
       trustBadges: ["Value-minded", "Licensed clinicians", "Discreet shipping"],
+      updatedAt: UPDATED,
+    },
+    {
+      slug: "fridays",
+      providerId: "fridays",
+      shortSummary:
+        "A men's-health telehealth brand that offers testosterone therapy online through lab-based diagnosis and a licensed-clinician review, with discreet delivery.",
+      reviewIntro:
+        "Fridays is a men's-health telehealth brand that includes testosterone therapy among the treatments it offers online. The model is the familiar one for this space: you complete an intake and the required lab testing, a licensed clinician reviews whether your testosterone is genuinely low and whether TRT is appropriate, and — if it is — treatment is arranged with follow-up. This review focuses on the model and how it fits into the field; confirm the current lineup, monitoring and pricing on the Fridays site.",
+      keyFeatures: [
+        "TRT offered within a men's-health service",
+        "Lab-based diagnosis before any prescription",
+        "Licensed clinicians review your results",
+        "Fully online consultation",
+        "Discreet, direct-to-door delivery",
+      ],
+      pricingSummary:
+        "Approximate only — confirm at checkout. Fridays prices TRT through a combination of testing and an ongoing treatment plan; the exact cost depends on the plan, the treatment format and the monitoring included. Because promotions and plans change, confirm the current price on the Fridays site before signing up.",
+      treatmentOptions: [
+        "Hormone lab testing and diagnosis",
+        "Prescription testosterone therapy (clinician-directed)",
+        "Online follow-up",
+      ],
+      pros: [
+        "Convenient, fully online men's-health process",
+        "Lab-based diagnosis before prescribing",
+        "Licensed clinicians involved in the decision",
+        "Discreet delivery",
+      ],
+      cons: [
+        "Less exclusively TRT-focused than a dedicated program",
+        "Monitoring depth depends on the specific plan — confirm what's included",
+        "We recommend confirming its current TRT lineup and pricing on the provider's own site",
+      ],
+      bestFor: [
+        "Men who want TRT within a broader men's-health service",
+        "Those comparing several telehealth options",
+        "Anyone prioritizing a convenient online process",
+      ],
+      finalVerdict:
+        "Fridays offers the standard, convenient telehealth path to testosterone therapy: lab testing, a licensed-clinician review and discreet delivery. If you want a program built exclusively around TRT with deep ongoing monitoring, compare it against our top-ranked providers. Confirm the current lineup, monitoring and pricing on the Fridays site before deciding. This review is general information, not medical advice.",
+      howItWorks: [
+        {
+          timing: "Step 1",
+          title: "Online consultation and testing",
+          detail: "You complete an intake and lab testing so a clinician can see your testosterone levels.",
+        },
+        {
+          timing: "Step 2",
+          title: "Clinician review",
+          detail: "A licensed clinician reviews your results and decides whether TRT is appropriate.",
+        },
+        {
+          timing: "Step 3",
+          title: "Treatment and delivery",
+          detail: "If prescribed, treatment is arranged and shipped discreetly, with follow-up as your plan provides.",
+        },
+      ],
+      trustBadges: ["Men's-health focus", "Lab-based diagnosis", "Discreet shipping"],
       updatedAt: UPDATED,
     },
   ],
@@ -721,6 +797,238 @@ export const trtConfig: SiteConfig = {
         { feature: "Lab testing", provider1Value: "Yes", provider2Value: "Yes", highlight: "both" },
         { feature: "Clinician review", provider1Value: "Yes", provider2Value: "Yes", highlight: "both" },
         { feature: "Pricing", provider1Value: "See site", provider2Value: "See site (value)", highlight: "provider2" },
+      ],
+      updatedAt: UPDATED,
+    },
+    {
+      slug: "hone-vs-fridays",
+      provider1Id: "hone",
+      provider2Id: "fridays",
+      title: "Hone Health vs Fridays",
+      matchupLabel: "Hone Health vs Fridays",
+      subtitle: "A testing-first TRT program vs a broader men's-health platform",
+      description:
+        "Compare Hone Health and Fridays for online TRT — testing, monitoring, breadth and which fits your priorities.",
+      intro:
+        "Hone Health and Fridays both prescribe TRT online after lab testing and a clinician review, but they're built differently. Hone is a testing-first program centered on hormone care; Fridays offers TRT within a broader men's-health service. Here's how they compare.",
+      verdict:
+        "Both are honest online options. Hone wins for its focused, testing-first hormone program and ongoing monitoring, while Fridays wins if you want TRT alongside a broader men's-health service. Confirm current pricing on each provider's site.",
+      verdictWinnerPoints: [
+        "Testing-first hormone program",
+        "Connected diagnosis, treatment and monitoring",
+        "Established, focused approach",
+      ],
+      verdictLoserPoints: [
+        "Broader men's-health platform",
+        "TRT plus other treatments",
+        "Convenient online consultation",
+      ],
+      winnerId: "hone",
+      categories: [
+        {
+          name: "TRT program depth",
+          winner: "provider1",
+          explanation: "Hone is centered on hormone care with connected testing, treatment and monitoring.",
+          supportingPoints: ["Testing-first", "Ongoing monitoring"],
+        },
+        {
+          name: "Breadth of services",
+          winner: "provider2",
+          explanation: "Fridays offers a wider men's-health lineup beyond TRT.",
+          supportingPoints: ["Multiple treatments", "One men's-health account"],
+        },
+        {
+          name: "Diagnosis",
+          winner: "tie",
+          explanation: "Both require lab testing and a licensed-clinician review before prescribing.",
+          supportingPoints: ["Lab-based", "Clinician-confirmed"],
+        },
+        {
+          name: "Best-fit clarity",
+          winner: "provider1",
+          explanation: "Hone's hormone focus makes its value proposition specific for men who mainly want TRT done well.",
+          supportingPoints: ["Focused offering", "Monitoring built in"],
+        },
+      ],
+      features: [
+        { feature: "TRT focus", provider1Value: "High", provider2Value: "Part of a broader menu", highlight: "provider1" },
+        { feature: "Lab testing", provider1Value: "Yes", provider2Value: "Yes", highlight: "both" },
+        { feature: "Clinician review", provider1Value: "Yes", provider2Value: "Yes", highlight: "both" },
+        { feature: "Pricing", provider1Value: "See site", provider2Value: "See site", highlight: "none" },
+      ],
+      updatedAt: UPDATED,
+    },
+    {
+      slug: "tmates-vs-fridays",
+      provider1Id: "tmates",
+      provider2Id: "fridays",
+      title: "TMates vs Fridays",
+      matchupLabel: "TMates vs Fridays",
+      subtitle: "A dedicated TRT membership vs a broader men's-health platform",
+      description:
+        "Compare TMates and Fridays for online TRT — focus, monitoring, breadth and which fits you best.",
+      intro:
+        "TMates and Fridays both prescribe TRT online after testing and a clinician review, but they compete on different things. TMates is a membership built exclusively around testosterone therapy; Fridays offers TRT within a broader men's-health service. Here's how they compare.",
+      verdict:
+        "Both are solid, honest options. TMates wins for its dedicated TRT focus and built-in monitoring, while Fridays wins if you want TRT alongside a broader men's-health platform. Confirm current pricing on each provider's site.",
+      verdictWinnerPoints: [
+        "TRT-first membership",
+        "Testing and monitoring bundled",
+        "Focused support for men on therapy",
+      ],
+      verdictLoserPoints: [
+        "Broader men's-health platform",
+        "TRT plus other treatments",
+        "Convenient online consultation",
+      ],
+      winnerId: "tmates",
+      categories: [
+        {
+          name: "TRT focus",
+          winner: "provider1",
+          explanation: "TMates is built exclusively around testosterone therapy.",
+          supportingPoints: ["TRT-first membership", "Focused support"],
+        },
+        {
+          name: "Breadth of services",
+          winner: "provider2",
+          explanation: "Fridays offers a wider men's-health lineup beyond TRT.",
+          supportingPoints: ["Multiple treatments", "One men's-health account"],
+        },
+        {
+          name: "Diagnosis",
+          winner: "tie",
+          explanation: "Both require lab testing and a licensed-clinician review before prescribing.",
+          supportingPoints: ["Lab-based", "Clinician-confirmed"],
+        },
+        {
+          name: "Ongoing monitoring",
+          winner: "provider1",
+          explanation: "TMates centers its membership on ongoing monitoring and dose management.",
+          supportingPoints: ["Regular check-ins", "Dose management"],
+        },
+      ],
+      features: [
+        { feature: "TRT focus", provider1Value: "Exclusive", provider2Value: "Part of a broader menu", highlight: "provider1" },
+        { feature: "Lab testing", provider1Value: "Yes", provider2Value: "Yes", highlight: "both" },
+        { feature: "Clinician review", provider1Value: "Yes", provider2Value: "Yes", highlight: "both" },
+        { feature: "Pricing", provider1Value: "See site", provider2Value: "See site", highlight: "none" },
+      ],
+      updatedAt: UPDATED,
+    },
+    {
+      slug: "taurus-vs-fridays",
+      provider1Id: "taurus",
+      provider2Id: "fridays",
+      title: "Taurus Meds vs Fridays",
+      matchupLabel: "Taurus Meds vs Fridays",
+      subtitle: "Two men's-health platforms that both offer TRT online",
+      description:
+        "Compare Taurus Meds and Fridays for online TRT — approach, monitoring and which fits your priorities.",
+      intro:
+        "Taurus Meds and Fridays are both men's-health telehealth brands that offer testosterone therapy within a broader lineup, each after the required lab testing and a clinician review. They're close comparisons, so the differences come down to the specifics of each plan. Here's how they compare.",
+      verdict:
+        "Both offer a convenient, lab-based online path to TRT within a broader men's-health service. Taurus Meds edges it here for its clearer TRT framing, but the two are close — confirm the exact testing, monitoring and pricing on each provider's own site before deciding.",
+      verdictWinnerPoints: [
+        "Men's-health platform with TRT",
+        "Lab-based diagnosis and clinician review",
+        "Discreet delivery",
+      ],
+      verdictLoserPoints: [
+        "Men's-health platform with TRT",
+        "Lab-based diagnosis and clinician review",
+        "Discreet delivery",
+      ],
+      winnerId: "taurus",
+      categories: [
+        {
+          name: "TRT framing",
+          winner: "provider1",
+          explanation: "Taurus Meds presents its TRT offering clearly within its men's-health lineup.",
+          supportingPoints: ["Clear TRT offering", "Men's-health focus"],
+        },
+        {
+          name: "Breadth of services",
+          winner: "tie",
+          explanation: "Both are broader men's-health platforms rather than TRT-only programs.",
+          supportingPoints: ["Multiple treatments", "One men's-health account"],
+        },
+        {
+          name: "Diagnosis",
+          winner: "tie",
+          explanation: "Both require lab testing and a licensed-clinician review before prescribing.",
+          supportingPoints: ["Lab-based", "Clinician-confirmed"],
+        },
+        {
+          name: "Discreet delivery",
+          winner: "tie",
+          explanation: "Both arrange treatment discreetly.",
+          supportingPoints: ["Plain packaging", "Direct-to-door"],
+        },
+      ],
+      features: [
+        { feature: "Service type", provider1Value: "Men's health + TRT", provider2Value: "Men's health + TRT", highlight: "both" },
+        { feature: "Lab testing", provider1Value: "Yes", provider2Value: "Yes", highlight: "both" },
+        { feature: "Clinician review", provider1Value: "Yes", provider2Value: "Yes", highlight: "both" },
+        { feature: "Pricing", provider1Value: "See site", provider2Value: "See site", highlight: "none" },
+      ],
+      updatedAt: UPDATED,
+    },
+    {
+      slug: "dudemeds-vs-fridays",
+      provider1Id: "dudemeds",
+      provider2Id: "fridays",
+      title: "Dude Meds vs Fridays",
+      matchupLabel: "Dude Meds vs Fridays",
+      subtitle: "A value-minded TRT option vs a broader men's-health platform",
+      description:
+        "Compare Dude Meds and Fridays for online TRT — value, breadth and which fits your priorities.",
+      intro:
+        "Dude Meds and Fridays are both straightforward men's telehealth services offering TRT online after the required testing and a clinician review. Dude Meds leans on simple, value-minded pricing; Fridays leans on a broader men's-health lineup. Here's how they compare.",
+      verdict:
+        "Both offer a convenient online path to TRT. Dude Meds edges it for men who want simple, budget-friendly access, while Fridays appeals if you want TRT alongside a broader men's-health service. Confirm current pricing on each provider's site.",
+      verdictWinnerPoints: [
+        "Value-minded, budget-friendly pricing",
+        "Simple, fast sign-up",
+        "Straightforward TRT access",
+      ],
+      verdictLoserPoints: [
+        "Broader men's-health platform",
+        "TRT plus other treatments",
+        "Convenient online consultation",
+      ],
+      winnerId: "dudemeds",
+      categories: [
+        {
+          name: "Value",
+          winner: "provider1",
+          explanation: "Dude Meds is explicitly built around low, simple pricing.",
+          supportingPoints: ["Budget-friendly", "No-frills sign-up"],
+        },
+        {
+          name: "Breadth of services",
+          winner: "provider2",
+          explanation: "Fridays offers a wider men's-health lineup beyond TRT.",
+          supportingPoints: ["Multiple treatments", "One men's-health account"],
+        },
+        {
+          name: "Diagnosis",
+          winner: "tie",
+          explanation: "Both require lab testing and a licensed-clinician review before prescribing.",
+          supportingPoints: ["Lab-based", "Clinician-confirmed"],
+        },
+        {
+          name: "Discreet delivery",
+          winner: "tie",
+          explanation: "Both arrange treatment discreetly.",
+          supportingPoints: ["Plain packaging", "Direct-to-door"],
+        },
+      ],
+      features: [
+        { feature: "Positioning", provider1Value: "Value-focused", provider2Value: "Broader men's health", highlight: "provider1" },
+        { feature: "Lab testing", provider1Value: "Yes", provider2Value: "Yes", highlight: "both" },
+        { feature: "Clinician review", provider1Value: "Yes", provider2Value: "Yes", highlight: "both" },
+        { feature: "Pricing", provider1Value: "See site (value)", provider2Value: "See site", highlight: "provider1" },
       ],
       updatedAt: UPDATED,
     },
