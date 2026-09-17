@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { Clock, ArrowLeft, ArrowRight, ArrowUpRight, Check } from "lucide-react";
+import { Clock, ArrowLeft, ArrowRight, Check } from "lucide-react";
 import { getConfig } from "@/lib/config-store";
 import { NOINDEX_ARTICLE_SLUGS, latestUpdate, AFFILIATE_PROVIDER_IDS } from "@/lib/config";
 import { PRODUCT_CATALOG } from "@/lib/product-catalog";
@@ -12,6 +12,7 @@ import { MedicalSources } from "@/components/medical-sources";
 import { ProductCarousel } from "@/components/product-carousel";
 import { TrustpilotCarousel } from "@/components/trustpilot-carousel";
 import { TopProvidersBlock } from "@/components/top-providers-block";
+import { ComparisonCard } from "@/components/comparison-card";
 import { RedditThreadCarousel, REDDIT_COMMUNITY_FEEDBACK } from "@/components/reddit-community";
 import { notFound, permanentRedirect } from "next/navigation";
 
@@ -142,16 +143,34 @@ export async function ArticlePageView({ slug, ctx }: { slug: string; ctx: SiteCo
   // Byline author: match the article's author to a team member, else the lead
   const author = experts.find((e) => e.name === article.author) ?? experts[0];
 
-  // Top providers for inline CTA
+  // Top 3 providers, rendered with the SAME ComparisonCard used on the homepage.
   const { providerOrder, positions } = config.ranking;
-  const topProviders = providerOrder
+  const topThreeCards = providerOrder
+    .slice(0, 3)
     .map((id, index) => {
       const provider = config.providers.find((p) => p.id === id);
       if (!provider) return null;
       const position = positions[index] || positions[positions.length - 1];
-      return { ...provider, rating: position.score, tagline: provider.tagline };
+      return {
+        id: provider.id,
+        name: provider.name,
+        tagline: provider.tagline,
+        logo: provider.logo,
+        highlights: provider.highlights,
+        affiliateUrl: provider.affiliateUrl,
+        ctaText: provider.ctaText,
+        rank: index + 1,
+        rating: position.score,
+        ratingLabel: position.label,
+        starRating: position.starRating,
+        badge: position.badge,
+      };
     })
-    .filter(Boolean) as Array<{ id: string; name: string; logo: string; tagline: string; affiliateUrl: string; rating: number }>;
+    .filter(Boolean) as Array<{
+      id: string; name: string; tagline: string; logo: string; highlights: string[];
+      affiliateUrl: string; ctaText: string; rank: number; rating: number;
+      ratingLabel: string; starRating?: number; badge?: string;
+    }>;
 
   // Related articles: same category first, then others, exclude self, max 3
   const relatedArticles = [
@@ -525,29 +544,26 @@ export async function ArticlePageView({ slug, ctx }: { slug: string; ctx: SiteCo
                     "is X legit" articles: a trust-check page advertising the
                     reviewed provider's competitors undermines the article's
                     credibility and cannibalizes its own conversion. */}
-                {i === 1 && !/^is-.+-legit$/.test(slug) && topProviders.length > 0 && (
-                  <div className="my-8 rounded-lg border border-gray-200 bg-white px-5 py-4">
-                    <p className="mb-3 text-[13px] font-bold uppercase tracking-wider text-gray-400">Top-Rated Providers</p>
-                    <div className="space-y-2.5">
-                      {topProviders.slice(0, 3).map((tp) => (
-                        <a
-                          key={tp.id}
-                          href={tp.affiliateUrl}
-                          className="flex items-center justify-between rounded-lg border border-gray-100 bg-[#fafbfc] px-4 py-3 transition-colors hover:border-[#111111]/20 hover:bg-[#111111]/[0.02]"
-                        >
-                          <div className="flex items-center gap-3">
-                            {/* eslint-disable-next-line @next/next/no-img-element */}
-                            <img src={tp.logo} alt={tp.name} className="h-[24px] w-[80px] object-contain object-left" />
-                            <span className="text-[13px] text-gray-500">{tp.tagline}</span>
-                          </div>
-                          <ArrowUpRight className="h-4 w-4 shrink-0 text-[#111111]" strokeWidth={1.5} />
-                        </a>
+                {i === 1 && !/^is-.+-legit$/.test(slug) && topThreeCards.length > 0 && (
+                  <section className="not-prose my-10">
+                    <div className="mb-5">
+                      <h2 className="text-[20px] font-bold text-[#191919] sm:text-[22px]">Our top-rated TRT clinics</h2>
+                      <p className="mt-1.5 text-[14px] leading-relaxed text-gray-500">
+                        The same ranked cards from our full comparison - our top 3 picks.
+                      </p>
+                    </div>
+                    <div className="space-y-4">
+                      {topThreeCards.map((product) => (
+                        <ComparisonCard
+                          key={product.id}
+                          product={product}
+                          pageType="listing"
+                          sourceFlow="main_comparison"
+                          linkPrefix={ctx.prefix}
+                        />
                       ))}
                     </div>
-                    <Link href={hubLink(ctx, "/find-your-match")} className="mt-3 block text-center text-[13px] font-semibold text-[#111111] hover:underline">
-                      Not sure? Take our free matching quiz →
-                    </Link>
-                  </div>
+                  </section>
                 )}
               </div>
             ))}
