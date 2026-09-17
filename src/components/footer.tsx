@@ -28,6 +28,15 @@ const COLUMNS: { title: string; links: { label: string; href: string }[] }[] = [
     ],
   },
   {
+    title: "Best TRT For",
+    links: [
+      { label: "Beginners", href: "/best-trt-for-beginners" },
+      { label: "Best Value", href: "/cheapest-online-trt" },
+      { label: "Fertility-Conscious", href: "/best-trt-for-fertility" },
+      { label: "At-Home TRT", href: "/best-at-home-trt" },
+    ],
+  },
+  {
     title: "Company",
     links: [
       { label: "About", href: "/about" },

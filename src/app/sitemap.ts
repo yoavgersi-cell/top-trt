@@ -52,6 +52,16 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     });
   }
 
+  // Segment / "best TRT for X" landing pages (served at the root)
+  for (const lp of cfg.landingPages ?? []) {
+    entries.push({
+      url: `${SITE_URL}/${lp.slug}`,
+      lastModified: flooredLastModified(lp.updatedAt),
+      changeFrequency: "weekly",
+      priority: 0.8,
+    });
+  }
+
   // Programmatic per-state pages
   for (const s of STATES) {
     entries.push({

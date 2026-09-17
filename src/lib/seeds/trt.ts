@@ -1145,6 +1145,212 @@ export const trtConfig: SiteConfig = {
     },
   ],
 
-  landingPages: [],
+  landingPages: [
+    {
+      slug: "best-trt-for-beginners",
+      seoTitle: "Best TRT for Beginners: How to Start Safely (2026)",
+      seoDescription:
+        "The best online TRT clinics for beginners in 2026, ranked. Start with real lab testing, a licensed clinician's review and ongoing monitoring - here's how to begin safely.",
+      h1: "Best TRT for Beginners",
+      h2: "Where to start with testosterone therapy - safely, and without the guesswork",
+      heroDescription:
+        "New to TRT? These licensed online clinics start with real bloodwork and a clinician's review before any treatment - compare the best places to begin.",
+      providerOrder: ["hone", "tmates", "taurus", "dudemeds"],
+      editorialSections: [
+        {
+          heading: "What is the best TRT clinic for beginners?",
+          body: `<p><strong><a href="/reviews/hone">Hone Health</a> is our top pick for beginners</strong> because it does the one thing a first-timer needs most: it starts with real lab testing to confirm whether your testosterone is actually low, then moves to a physician's review and ongoing monitoring - rather than skipping straight to a prescription. For a beginner, that testing-first, guided path is exactly what separates responsible TRT from a shortcut. <a href="/reviews/tmates">TMates</a> is a close second for its dedicated, monitoring-heavy TRT membership, while <a href="/reviews/dudemeds">Dude Meds</a> is the simplest, most budget-friendly way in.</p>`,
+        },
+        {
+          heading: "How does starting TRT actually work?",
+          body: `<p>Legitimate online TRT follows the same four-step path everywhere, and understanding it is the best way to avoid a bad provider. It always begins with data and a licensed clinician - never a checkout button.</p>`,
+          bullets: [
+            "Test: you complete bloodwork (often an at-home kit or a partner lab) to measure your testosterone.",
+            "Review: a licensed clinician reviews your results and symptoms and decides whether TRT is appropriate.",
+            "Treat: if it is, treatment is prescribed and arranged discreetly.",
+            "Monitor: follow-up bloodwork tracks your levels, red blood cell count and prostate markers over time.",
+          ],
+        },
+        {
+          heading: "How do I know if I actually need TRT?",
+          body: `<p>You don't decide that yourself - a clinician does, based on bloodwork plus symptoms. TRT is a treatment for clinically low testosterone (hypogonadism), not a booster for men with normal levels. Common signs worth getting tested for include low energy, low libido, loss of muscle, brain fog and low mood, but these overlap with many other causes, which is why testing matters. Our guide to the <a href="/articles/signs-of-low-testosterone">signs of low testosterone</a> covers what to look for, and <a href="/articles/what-is-trt">what TRT is</a> explains the basics.</p>`,
+        },
+        {
+          heading: "What should a beginner look for in a TRT clinic?",
+          body: `<p>The best beginner clinic removes friction without removing the safeguards. Weigh these five things when you compare the options above:</p>`,
+          bullets: [
+            "Real lab testing before any prescription - not a form-only 'diagnosis'.",
+            "Licensed clinicians who actually review your results.",
+            "Ongoing monitoring with follow-up bloodwork, not a one-and-done script.",
+            "Transparent, all-in pricing with no surprise fees.",
+            "Responsive support for dose questions and side effects.",
+          ],
+        },
+        {
+          heading: "How much does TRT cost when you're starting out?",
+          body: `<p>Expect an initial testing/diagnostic cost plus an ongoing monthly or membership fee that bundles clinician oversight, monitoring and medication. Beginner-friendly value picks like <a href="/reviews/dudemeds">Dude Meds</a> keep the entry price low, while comprehensive programs like <a href="/reviews/hone">Hone Health</a> cost more but fold testing and monitoring into one place. Prices and promotions change often, so confirm the current total on each provider's own site - our <a href="/articles/trt-cost">TRT cost guide</a> breaks down what drives the price.</p>`,
+        },
+        {
+          heading: "What trade-offs should I understand before starting TRT?",
+          body: `<p>TRT is effective for the right man, but it's a long-term commitment with real trade-offs - go in informed. The two biggest: it commonly reduces fertility (see our guide to <a href="/articles/trt-and-fertility">TRT and fertility</a>), and it usually needs to be continued long-term with ongoing bloodwork to stay safe. It can also raise red blood cell count and cause acne or oily skin, which is exactly what monitoring is for. Read the full picture in <a href="/articles/trt-side-effects">TRT side effects</a> before you begin.</p>`,
+        },
+        {
+          heading: "How we chose the best TRT for beginners",
+          body: `<p>We ranked clinics on how well they support a first-timer: testing-led diagnosis, licensed-clinician oversight, depth of ongoing monitoring, transparent pricing and quality of support. We prioritize a responsible on-ramp over the cheapest possible entry. See the full field on our <a href="/">TRT clinic comparison</a> and read the individual <a href="/reviews">provider reviews</a>.</p><p><em>This page is general information, not medical advice. A licensed clinician should evaluate your symptoms and testosterone levels and decide whether TRT is appropriate for you.</em></p>`,
+        },
+      ],
+      updatedAt: UPDATED,
+    },
+    {
+      slug: "cheapest-online-trt",
+      seoTitle: "Cheapest Online TRT: Best Value Clinics (2026)",
+      seoDescription:
+        "Looking for affordable TRT? Compare the cheapest online testosterone therapy clinics of 2026 by all-in cost - without cutting the lab testing and clinician review that keep it safe.",
+      h1: "Cheapest Online TRT Clinics",
+      h2: "The best-value ways to start testosterone therapy - without skipping the safeguards",
+      heroDescription:
+        "Want TRT without overpaying? These are the best-value online clinics, ranked by all-in cost - each still includes real lab testing and a licensed clinician's review.",
+      providerOrder: ["dudemeds", "taurus", "tmates", "hone"],
+      editorialSections: [
+        {
+          heading: "What is the cheapest online TRT clinic?",
+          body: `<p><strong>For keeping costs down, <a href="/reviews/dudemeds">Dude Meds</a> is our top value pick.</strong> It strips the process back to the essentials - a simple sign-up, the required lab testing and a licensed-clinician review - and prices TRT toward the affordable end. <a href="/reviews/taurus">Taurus Meds</a> is another budget-friendly men's-health option, while <a href="/reviews/tmates">TMates</a> and <a href="/reviews/hone">Hone Health</a> cost more but bundle in deeper monitoring. The key: cheaper should mean fewer frills, never skipping the bloodwork or the clinician.</p>`,
+        },
+        {
+          heading: "How much does online TRT actually cost?",
+          body: `<p>TRT pricing has two parts: an initial testing/diagnostic cost, and an ongoing monthly or membership fee that covers the clinician, monitoring and medication. Because providers bundle these differently, a low headline price isn't always the cheapest once you add labs, follow-ups and shipping. Compare the <strong>all-in monthly cost</strong>, not the teaser number - our <a href="/articles/trt-cost">TRT cost guide</a> shows exactly what to add up.</p>`,
+        },
+        {
+          heading: "How do I compare TRT prices fairly?",
+          body: `<p>Line the clinics up on total cost for the same thing. A fair comparison looks at:</p>`,
+          bullets: [
+            "The ongoing monthly fee and exactly what it includes.",
+            "Whether lab testing and follow-up bloodwork are included or billed separately.",
+            "Medication and shipping costs.",
+            "Any membership or consultation fees.",
+            "How easy it is to pause or cancel.",
+          ],
+        },
+        {
+          heading: "Is cheaper TRT safe?",
+          body: `<p>It can be - as long as 'cheap' means fewer frills, not fewer safeguards. A legitimate low-cost clinic still runs bloodwork to confirm low testosterone, still has a licensed clinician approve treatment, and still monitors you over time. What you should never pay less for is oversight: any site that sells testosterone with no lab work or no clinician is a red flag, not a bargain. Learn what a proper process looks like in <a href="/articles/how-to-get-trt-online">how to get TRT online</a>.</p>`,
+        },
+        {
+          heading: "How can I lower my TRT costs over time?",
+          body: `<p>A few honest levers keep the ongoing cost down without cutting corners:</p>`,
+          bullets: [
+            "Choose a value-focused clinic like Dude Meds if you don't need premium extras.",
+            "Pick the plan that matches how often you're actually monitored.",
+            "Watch for bundle pricing that folds labs and medication into one fee.",
+            "Confirm the current promotion on the provider's own site before you subscribe.",
+          ],
+        },
+        {
+          heading: "How we ranked the cheapest TRT clinics",
+          body: `<p>We ranked these clinics by best value - the lowest all-in cost that still includes real lab testing and a licensed-clinician review - rather than the lowest headline price alone. Pricing changes often, so treat figures as approximate and confirm them on each provider's site. See the full field on our <a href="/">TRT clinic comparison</a> and browse every <a href="/reviews">provider review</a>.</p><p><em>This page is general information, not medical advice, and not financial advice. Confirm current pricing directly with each provider, and let a licensed clinician decide whether TRT is right for you.</em></p>`,
+        },
+      ],
+      updatedAt: UPDATED,
+    },
+    {
+      slug: "best-trt-for-fertility",
+      seoTitle: "Best TRT Options if You Want to Protect Fertility",
+      seoDescription:
+        "TRT can lower fertility. Compare online clinics that take it seriously - discussing sperm production, monitoring and fertility-preserving alternatives like enclomiphene and hCG.",
+      h1: "Best TRT Options for Men Concerned About Fertility",
+      h2: "Testosterone therapy and fertility - the clinics that take the trade-off seriously",
+      heroDescription:
+        "TRT can reduce fertility. These online clinics start with proper testing and a clinician who can discuss the fertility trade-off and alternatives before you commit.",
+      providerOrder: ["hone", "tmates", "taurus", "dudemeds"],
+      editorialSections: [
+        {
+          heading: "Does TRT affect fertility?",
+          body: `<p><strong>Yes - this is the single most important thing to understand before starting.</strong> TRT commonly suppresses the body's own testosterone production and can significantly reduce sperm production, which may impair fertility, sometimes for as long as you're on it (and recovery afterward isn't guaranteed or immediate). If having children now or later matters to you, this belongs at the very top of your conversation with a clinician. Our guide to <a href="/articles/trt-and-fertility">TRT and fertility</a> goes deeper.</p>`,
+        },
+        {
+          heading: "Which TRT clinic is best if I care about fertility?",
+          body: `<p><a href="/reviews/hone">Hone Health</a> and <a href="/reviews/tmates">TMates</a> lead here because both are testing-led and monitoring-heavy, with licensed clinicians who can actually discuss the fertility trade-off and alternatives rather than just mailing a prescription. The 'best' clinic for a fertility-conscious man isn't the fastest or cheapest - it's the one that surfaces the trade-off early and can point you toward the right path.</p>`,
+        },
+        {
+          heading: "What are the fertility-friendly alternatives to TRT?",
+          body: `<p>For some men with low testosterone who want to preserve fertility, clinicians consider medications that raise the body's <em>own</em> testosterone instead of replacing it - which can spare sperm production. These are prescription-only and clinician-directed, and whether they fit depends on your bloodwork and goals. Options a clinician may raise include:</p>`,
+          bullets: [
+            "Enclomiphene or clomiphene - stimulate the body's own testosterone production.",
+            "hCG - sometimes used alongside or instead of TRT to help maintain fertility.",
+            "Addressing reversible causes of low testosterone first (sleep, weight, medications).",
+          ],
+        },
+        {
+          heading: "Can I protect fertility while on TRT?",
+          body: `<p>Sometimes, but only under a clinician's care - this is not a DIY area. Some men use fertility-supporting medication alongside TRT, and others bank sperm before starting as a safeguard. Because approaches and results vary, the practical takeaway is simple: raise fertility explicitly, before your first dose, with a clinician who monitors you. We deliberately don't give protocols or dosing here - that's a medical decision.</p>`,
+        },
+        {
+          heading: "What should I ask a clinic about fertility before starting?",
+          body: `<p>Bring these questions to your intake or consultation:</p>`,
+          bullets: [
+            "How will this treatment affect my sperm production and fertility?",
+            "Do you offer or coordinate fertility-preserving alternatives like enclomiphene or hCG?",
+            "Should I bank sperm before starting?",
+            "How will you monitor me, and can I pause treatment if plans change?",
+          ],
+        },
+        {
+          heading: "How we chose the best TRT for fertility-conscious men",
+          body: `<p>We prioritized clinics that are testing-led, that provide genuine clinician access (so fertility can actually be discussed), and that monitor treatment over time - because a fertility-aware decision needs a real clinician, not a checkout flow. Compare the full field on our <a href="/">TRT clinic comparison</a> and read the <a href="/reviews">provider reviews</a>.</p><p><em>This page is general information, not medical advice. Fertility and TRT decisions are highly individual - a licensed clinician should evaluate your situation and discuss options with you.</em></p>`,
+        },
+      ],
+      updatedAt: UPDATED,
+    },
+    {
+      slug: "best-at-home-trt",
+      seoTitle: "Best At-Home TRT: Test & Treat From Home (2026)",
+      seoDescription:
+        "Compare the best at-home online TRT clinics of 2026 - from at-home hormone testing to doctor-reviewed treatment and monitoring delivered to your door, no clinic visit needed.",
+      h1: "Best At-Home TRT Clinics",
+      h2: "Test, treat and monitor your testosterone from home - with a licensed clinician in the loop",
+      heroDescription:
+        "Handle testosterone therapy from home - at-home lab testing, a licensed clinician's review and treatment delivered discreetly. Compare the best fully-remote TRT clinics.",
+      providerOrder: ["hone", "tmates", "taurus", "dudemeds"],
+      editorialSections: [
+        {
+          heading: "What is the best at-home TRT clinic?",
+          body: `<p><strong><a href="/reviews/hone">Hone Health</a> is our top pick for at-home TRT</strong> because the entire arc - hormone testing, a physician's review, treatment and ongoing monitoring - is built to happen remotely, without a traditional office visit. <a href="/reviews/tmates">TMates</a> is a strong dedicated-membership alternative, and <a href="/reviews/taurus">Taurus Meds</a> and <a href="/reviews/dudemeds">Dude Meds</a> round out the field as convenient men's-health options. All of them keep the essential safeguard - a licensed clinician - fully intact online.</p>`,
+        },
+        {
+          heading: "How does at-home TRT work?",
+          body: `<p>At-home TRT keeps every step remote while keeping a clinician in charge. In practice that means:</p>`,
+          bullets: [
+            "At-home or nearby-lab bloodwork to measure your testosterone.",
+            "A licensed clinician reviews your results and symptoms.",
+            "If appropriate, treatment ships discreetly to your door.",
+            "Follow-up bloodwork and check-ins happen online over time.",
+          ],
+        },
+        {
+          heading: "Is at-home TRT as safe as visiting a clinic?",
+          body: `<p>For most men with straightforward low testosterone, yes - because the medical safeguards are the same. A legitimate at-home service still confirms low testosterone with lab work, still has a licensed clinician approve and direct treatment, and still monitors you with follow-up bloodwork. What changes is the convenience, not the oversight. Some complex cases are still better seen in person, and a good clinician will say so. See <a href="/articles/how-to-get-trt-online">how to get TRT online</a> for the full process.</p>`,
+        },
+        {
+          heading: "Do I still need blood tests for at-home TRT?",
+          body: `<p>Always. Confirming clinically low testosterone with bloodwork is required no matter how remote the service is - it's what makes treatment appropriate and safe. Good at-home clinics make this painless with at-home test kits or partner labs, and they keep testing you during treatment to track your testosterone, red blood cell count and prostate markers. A service that offers testosterone with <em>no</em> testing isn't 'convenient' - it's a red flag.</p>`,
+        },
+        {
+          heading: "What are the pros and cons of at-home TRT?",
+          body: `<p>The convenience is real, and so are the limits. Weigh both:</p>`,
+          bullets: [
+            "Pro: no waiting room, no time off work, discreet delivery.",
+            "Pro: testing, treatment and monitoring managed in one online flow.",
+            "Con: complex cases may still need an in-person exam.",
+            "Con: you'll need to keep up with at-home bloodwork and check-ins.",
+          ],
+        },
+        {
+          heading: "How we ranked the best at-home TRT clinics",
+          body: `<p>We ranked clinics on how completely and responsibly they handle TRT remotely: at-home or lab-based testing, licensed-clinician oversight, depth of ongoing monitoring, discreet delivery and transparent pricing. Compare the full field on our <a href="/">TRT clinic comparison</a>, check availability in your state on <a href="/online-trt">Online TRT by State</a>, and read the <a href="/reviews">provider reviews</a>.</p><p><em>This page is general information, not medical advice. A licensed clinician should evaluate your bloodwork and symptoms and decide whether TRT is appropriate for you.</em></p>`,
+        },
+      ],
+      updatedAt: UPDATED,
+    },
+  ],
   sidebars: [],
 };
