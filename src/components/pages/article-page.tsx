@@ -287,11 +287,9 @@ export async function ArticlePageView({ slug, ctx }: { slug: string; ctx: SiteCo
       )}
 
       <div className="min-h-screen bg-gray-50">
-        {/* Hero band */}
-        <div
-          className="w-full"
-          style={{ backgroundColor: article.heroColor }}
-        >
+        {/* Hero band - light, so the dark masthead title/text stay readable
+            (article.heroColor is intentionally not used as the header bg). */}
+        <div className="w-full border-b border-gray-200 bg-[#f5f5f7]">
           <div className="mx-auto max-w-[1100px] px-4 py-7 sm:px-6 sm:py-12">
             <Breadcrumbs
               items={[
