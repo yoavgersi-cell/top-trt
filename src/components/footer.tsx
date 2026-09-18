@@ -10,6 +10,7 @@ const COLUMNS: { title: string; links: { label: string; href: string }[] }[] = [
     links: [
       { label: "Hone Health", href: "/reviews/hone" },
       { label: "TMates", href: "/reviews/tmates" },
+      { label: "Male Excel", href: "/reviews/maleexcel" },
       { label: "Taurus Meds", href: "/reviews/taurus" },
       { label: "Dude Meds", href: "/reviews/dudemeds" },
       { label: "Fridays", href: "/reviews/fridays" },

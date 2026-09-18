@@ -362,6 +362,7 @@ export const isHiddenVertical = (id: string): boolean => HIDDEN_VERTICALS.includ
 export const AFFILIATE_PROVIDER_IDS = [
   "hone",
   "tmates",
+  "maleexcel",
   "taurus",
   "dudemeds",
   "fridays",

@@ -55,13 +55,14 @@ export const trtConfig: SiteConfig = {
   },
 
   ranking: {
-    providerOrder: ["hone", "tmates", "taurus", "dudemeds", "fridays"],
+    providerOrder: ["hone", "tmates", "maleexcel", "taurus", "dudemeds", "fridays"],
     positions: [
       { score: 9.6, starRating: 5, label: "Exceptional", badge: "Our Top Pick" },
       { score: 9.2, starRating: 5, label: "Excellent" },
-      { score: 8.9, starRating: 4, label: "Very Good" },
-      { score: 8.6, starRating: 4, label: "Very Good" },
-      { score: 8.4, starRating: 4, label: "Very Good" },
+      { score: 9.0, starRating: 5, label: "Excellent" },
+      { score: 8.7, starRating: 4, label: "Very Good" },
+      { score: 8.5, starRating: 4, label: "Very Good" },
+      { score: 8.3, starRating: 4, label: "Very Good" },
     ],
   },
 
@@ -97,6 +98,24 @@ export const trtConfig: SiteConfig = {
       ],
       affiliateUrl: "https://track.revoffers.com/aff_c?offer_id=1471&aff_id=12904&url_id=11713",
       ctaText: "Visit Site",
+    },
+    {
+      id: "maleexcel",
+      name: "Male Excel",
+      tagline:
+        "An established men's-health telehealth brand offering TRT with comprehensive at-home lab testing, prescribed treatment (injections or cream) and unlimited provider follow-ups",
+      logo: "/logo-maleexcel.svg",
+      smallLogo: "/logo-maleexcel.svg",
+      highlights: [
+        "Comprehensive at-home lab testing",
+        "Access to TRT medication if prescribed",
+        "Unlimited provider follow-ups",
+        "Rated 4.5 on Trustpilot",
+      ],
+      affiliateUrl: "https://track.revoffers.com/aff_c?offer_id=1420&aff_id=13453",
+      ctaText: "Visit Site",
+      trustpilotRating: "4.5",
+      trustpilotReviewCount: "6,495",
     },
     {
       id: "taurus",
@@ -269,6 +288,65 @@ export const trtConfig: SiteConfig = {
         },
       ],
       trustBadges: ["TRT-focused", "Licensed clinicians", "Ongoing monitoring"],
+      updatedAt: UPDATED,
+    },
+    {
+      slug: "maleexcel",
+      providerId: "maleexcel",
+      shortSummary:
+        "An established men's-health telehealth brand with a strong track record - rated 4.5 on Trustpilot across thousands of reviews. It runs comprehensive at-home labs, prescribes TRT as injections or cream when appropriate, and includes unlimited provider follow-ups.",
+      reviewIntro:
+        "Male Excel is one of the more established names in men's-health telehealth, and testosterone therapy is a core part of what it offers. The model follows the responsible path: comprehensive at-home lab testing to establish your levels, a licensed clinician who reviews your results and symptoms, and - if TRT is appropriate - access to treatment (commonly testosterone injections or a testosterone cream) with unlimited provider follow-ups. Its long track record and strong review standing (4.5 on Trustpilot from thousands of reviews) are a big part of the appeal for men who want an established provider. This review covers the model and how it fits; confirm the current formats and pricing on the Male Excel site.",
+      keyFeatures: [
+        "Comprehensive at-home lab testing",
+        "Licensed clinicians review your results",
+        "Access to TRT medication if prescribed - injections or cream",
+        "Unlimited provider follow-ups",
+        "Established brand rated 4.5 on Trustpilot",
+      ],
+      pricingSummary:
+        "Approximate only - confirm at checkout. Male Excel typically starts with a discounted at-home labs + provider consultation to get you evaluated (around $49 at the time of writing, from a regular $99), then an ongoing treatment plan if TRT is prescribed. Exact costs depend on the plan and treatment format, and promotions change, so confirm the current price on the Male Excel site before signing up.",
+      treatmentOptions: [
+        "Comprehensive at-home hormone lab testing and diagnosis",
+        "Prescription testosterone therapy - commonly injections (testosterone cypionate) or a testosterone cream (clinician-directed)",
+        "Unlimited provider follow-ups and ongoing monitoring",
+      ],
+      pros: [
+        "Established, recognizable brand with a long track record",
+        "Strong, verified review standing (4.5 on Trustpilot from thousands of reviews)",
+        "Comprehensive at-home testing before any prescription",
+        "A choice of formats (injection or cream) plus unlimited provider follow-ups",
+      ],
+      cons: [
+        "Confirm exactly what testing and monitoring each plan includes",
+        "Treatment formats and pricing should be verified on the provider's own site",
+        "As with any TRT, expect an ongoing commitment with regular bloodwork",
+      ],
+      bestFor: [
+        "Men who want an established, well-known TRT provider",
+        "Those who value a choice of treatment formats",
+        "Anyone comparing the bigger names in men's-health telehealth",
+      ],
+      finalVerdict:
+        "Male Excel is a strong option for men who want testosterone therapy from an established, recognizable men's-health brand, with at-home testing and licensed-clinician oversight built in. It's a credible alternative to our top-ranked picks - compare it against them on the depth of ongoing monitoring and on price, and confirm the current treatment formats on the Male Excel site. This review is general information, not medical advice.",
+      howItWorks: [
+        {
+          timing: "Step 1",
+          title: "At-home testing",
+          detail: "You complete testing so a clinician has real data on your testosterone levels.",
+        },
+        {
+          timing: "Step 2",
+          title: "Clinician review",
+          detail: "A licensed clinician reviews your results and symptoms and decides whether TRT is appropriate.",
+        },
+        {
+          timing: "Step 3",
+          title: "Treatment and follow-up",
+          detail: "If prescribed, treatment is arranged discreetly, with ongoing monitoring and follow-up over time.",
+        },
+      ],
+      trustBadges: ["Established brand", "At-home testing", "Licensed clinicians"],
       updatedAt: UPDATED,
     },
     {
@@ -1029,6 +1107,296 @@ export const trtConfig: SiteConfig = {
         { feature: "Lab testing", provider1Value: "Yes", provider2Value: "Yes", highlight: "both" },
         { feature: "Clinician review", provider1Value: "Yes", provider2Value: "Yes", highlight: "both" },
         { feature: "Pricing", provider1Value: "See site (value)", provider2Value: "See site", highlight: "provider1" },
+      ],
+      updatedAt: UPDATED,
+    },
+    {
+      slug: "hone-vs-maleexcel",
+      provider1Id: "hone",
+      provider2Id: "maleexcel",
+      title: "Hone Health vs Male Excel",
+      matchupLabel: "Hone Health vs Male Excel",
+      subtitle: "A testing-first hormone program vs an established men's-health brand",
+      description:
+        "Compare Hone Health and Male Excel for online TRT - testing, monitoring, treatment formats and which fits you best.",
+      intro:
+        "Hone Health and Male Excel are two of the stronger names in online TRT, and both start with testing and a licensed clinician. Hone is a testing-first program centered on hormone care with deep ongoing monitoring; Male Excel is an established men's-health brand with a choice of treatment formats. Here's how they compare.",
+      verdict:
+        "Both are credible, established options. Hone is our pick for its testing-first program and depth of ongoing monitoring, while Male Excel is an excellent choice if brand track record and format flexibility matter most. Confirm current pricing on each provider's site.",
+      verdictWinnerPoints: [
+        "Testing-first hormone program",
+        "Connected diagnosis, treatment and monitoring",
+        "Deep ongoing follow-up",
+      ],
+      verdictLoserPoints: [
+        "Established, recognizable brand",
+        "A choice of treatment formats",
+        "At-home testing and clinician oversight",
+      ],
+      winnerId: "hone",
+      categories: [
+        {
+          name: "Program depth",
+          winner: "provider1",
+          explanation: "Hone connects testing, treatment and ongoing monitoring in one focused hormone program.",
+          supportingPoints: ["Testing-first", "Ongoing monitoring"],
+        },
+        {
+          name: "Brand & track record",
+          winner: "provider2",
+          explanation: "Male Excel is an established, recognizable men's-health brand.",
+          supportingPoints: ["Well-known brand", "Established track record"],
+        },
+        {
+          name: "Diagnosis",
+          winner: "tie",
+          explanation: "Both require testing and a licensed-clinician review before prescribing.",
+          supportingPoints: ["Lab-based", "Clinician-confirmed"],
+        },
+        {
+          name: "Format options",
+          winner: "provider2",
+          explanation: "Male Excel offers a choice of testosterone treatment formats to discuss with a clinician.",
+          supportingPoints: ["Multiple formats", "Clinician-directed"],
+        },
+      ],
+      features: [
+        { feature: "Program depth", provider1Value: "Comprehensive", provider2Value: "Established brand", highlight: "provider1" },
+        { feature: "Lab testing", provider1Value: "Yes", provider2Value: "Yes", highlight: "both" },
+        { feature: "Clinician review", provider1Value: "Yes", provider2Value: "Yes", highlight: "both" },
+        { feature: "Pricing", provider1Value: "See site", provider2Value: "See site", highlight: "none" },
+      ],
+      updatedAt: UPDATED,
+    },
+    {
+      slug: "tmates-vs-maleexcel",
+      provider1Id: "tmates",
+      provider2Id: "maleexcel",
+      title: "TMates vs Male Excel",
+      matchupLabel: "TMates vs Male Excel",
+      subtitle: "A dedicated TRT membership vs an established men's-health brand",
+      description:
+        "Compare TMates and Male Excel for online TRT - focus, monitoring, brand and which fits you best.",
+      intro:
+        "TMates and Male Excel both offer TRT online after testing and a clinician review, but they compete on different strengths. TMates is a membership built exclusively around testosterone therapy with ongoing monitoring; Male Excel is an established men's-health brand with a choice of treatment formats. Here's how they compare.",
+      verdict:
+        "Both are strong, honest options. TMates wins for its dedicated TRT focus and built-in monitoring, while Male Excel wins on brand track record and format flexibility. Confirm current pricing on each provider's site.",
+      verdictWinnerPoints: [
+        "TRT-first membership",
+        "Ongoing monitoring built in",
+        "Focused support for men on therapy",
+      ],
+      verdictLoserPoints: [
+        "Established, recognizable brand",
+        "A choice of treatment formats",
+        "At-home testing and clinician oversight",
+      ],
+      winnerId: "tmates",
+      categories: [
+        {
+          name: "TRT focus",
+          winner: "provider1",
+          explanation: "TMates is built exclusively around testosterone therapy.",
+          supportingPoints: ["TRT-first membership", "Focused support"],
+        },
+        {
+          name: "Brand & track record",
+          winner: "provider2",
+          explanation: "Male Excel is an established, recognizable men's-health brand.",
+          supportingPoints: ["Well-known brand", "Established track record"],
+        },
+        {
+          name: "Diagnosis",
+          winner: "tie",
+          explanation: "Both require testing and a licensed-clinician review before prescribing.",
+          supportingPoints: ["Lab-based", "Clinician-confirmed"],
+        },
+        {
+          name: "Ongoing monitoring",
+          winner: "provider1",
+          explanation: "TMates centers its membership on ongoing monitoring and dose management.",
+          supportingPoints: ["Regular check-ins", "Dose management"],
+        },
+      ],
+      features: [
+        { feature: "TRT focus", provider1Value: "Exclusive", provider2Value: "Part of a broad brand", highlight: "provider1" },
+        { feature: "Lab testing", provider1Value: "Yes", provider2Value: "Yes", highlight: "both" },
+        { feature: "Clinician review", provider1Value: "Yes", provider2Value: "Yes", highlight: "both" },
+        { feature: "Pricing", provider1Value: "See site", provider2Value: "See site", highlight: "none" },
+      ],
+      updatedAt: UPDATED,
+    },
+    {
+      slug: "maleexcel-vs-taurus",
+      provider1Id: "maleexcel",
+      provider2Id: "taurus",
+      title: "Male Excel vs Taurus Meds",
+      matchupLabel: "Male Excel vs Taurus Meds",
+      subtitle: "An established men's-health brand vs a broader men's-health platform",
+      description:
+        "Compare Male Excel and Taurus Meds for online TRT - brand, breadth and which fits your priorities.",
+      intro:
+        "Male Excel and Taurus Meds both offer TRT within a men's-health service after testing and a clinician review. Male Excel is the more established, recognizable brand with a choice of treatment formats; Taurus Meds offers TRT alongside a broader men's-health lineup. Here's how they compare.",
+      verdict:
+        "Both are convenient online options. Male Excel edges it for its established track record and format choice, while Taurus Meds appeals if you want TRT within a broader men's-health platform. Confirm current pricing on each provider's site.",
+      verdictWinnerPoints: [
+        "Established, recognizable brand",
+        "A choice of treatment formats",
+        "At-home testing and clinician oversight",
+      ],
+      verdictLoserPoints: [
+        "Broader men's-health platform",
+        "TRT plus other treatments",
+        "Convenient online consultation",
+      ],
+      winnerId: "maleexcel",
+      categories: [
+        {
+          name: "Brand & track record",
+          winner: "provider1",
+          explanation: "Male Excel is a more established, recognizable men's-health brand.",
+          supportingPoints: ["Well-known brand", "Established track record"],
+        },
+        {
+          name: "Breadth of services",
+          winner: "provider2",
+          explanation: "Taurus Meds offers a wider men's-health lineup beyond TRT.",
+          supportingPoints: ["Multiple treatments", "One men's-health account"],
+        },
+        {
+          name: "Diagnosis",
+          winner: "tie",
+          explanation: "Both require testing and a licensed-clinician review before prescribing.",
+          supportingPoints: ["Lab-based", "Clinician-confirmed"],
+        },
+        {
+          name: "Format options",
+          winner: "provider1",
+          explanation: "Male Excel offers a choice of testosterone treatment formats.",
+          supportingPoints: ["Multiple formats", "Clinician-directed"],
+        },
+      ],
+      features: [
+        { feature: "Brand", provider1Value: "Established", provider2Value: "Newer", highlight: "provider1" },
+        { feature: "Lab testing", provider1Value: "Yes", provider2Value: "Yes", highlight: "both" },
+        { feature: "Clinician review", provider1Value: "Yes", provider2Value: "Yes", highlight: "both" },
+        { feature: "Pricing", provider1Value: "See site", provider2Value: "See site", highlight: "none" },
+      ],
+      updatedAt: UPDATED,
+    },
+    {
+      slug: "maleexcel-vs-dudemeds",
+      provider1Id: "maleexcel",
+      provider2Id: "dudemeds",
+      title: "Male Excel vs Dude Meds",
+      matchupLabel: "Male Excel vs Dude Meds",
+      subtitle: "An established brand with format choice vs a value-minded option",
+      description:
+        "Compare Male Excel and Dude Meds for online TRT - brand, format choice, price and which fits your priorities.",
+      intro:
+        "Male Excel and Dude Meds sit at different ends of the market. Male Excel is an established men's-health brand with a choice of treatment formats and a track record; Dude Meds is a simple, value-minded service. Both start with testing and a clinician review. Here's how they compare.",
+      verdict:
+        "Both are legitimate online options. Male Excel wins for brand track record and format flexibility, while Dude Meds wins on simple, budget-friendly access. Choose Male Excel if an established provider matters; choose Dude Meds if price does. Confirm current pricing on each provider's site.",
+      verdictWinnerPoints: [
+        "Established, recognizable brand",
+        "A choice of treatment formats",
+        "At-home testing and clinician oversight",
+      ],
+      verdictLoserPoints: [
+        "Value-minded, budget-friendly pricing",
+        "Simple, fast sign-up",
+        "Straightforward TRT access",
+      ],
+      winnerId: "maleexcel",
+      categories: [
+        {
+          name: "Brand & track record",
+          winner: "provider1",
+          explanation: "Male Excel is an established, recognizable men's-health brand.",
+          supportingPoints: ["Well-known brand", "Established track record"],
+        },
+        {
+          name: "Value",
+          winner: "provider2",
+          explanation: "Dude Meds is built around low, simple pricing.",
+          supportingPoints: ["Budget-friendly", "No-frills sign-up"],
+        },
+        {
+          name: "Diagnosis",
+          winner: "tie",
+          explanation: "Both require testing and a licensed-clinician review before prescribing.",
+          supportingPoints: ["Lab-based", "Clinician-confirmed"],
+        },
+        {
+          name: "Format options",
+          winner: "provider1",
+          explanation: "Male Excel offers a choice of testosterone treatment formats.",
+          supportingPoints: ["Multiple formats", "Clinician-directed"],
+        },
+      ],
+      features: [
+        { feature: "Brand", provider1Value: "Established", provider2Value: "Value-focused", highlight: "provider1" },
+        { feature: "Lab testing", provider1Value: "Yes", provider2Value: "Yes", highlight: "both" },
+        { feature: "Clinician review", provider1Value: "Yes", provider2Value: "Yes", highlight: "both" },
+        { feature: "Pricing", provider1Value: "See site", provider2Value: "See site (value)", highlight: "provider2" },
+      ],
+      updatedAt: UPDATED,
+    },
+    {
+      slug: "maleexcel-vs-fridays",
+      provider1Id: "maleexcel",
+      provider2Id: "fridays",
+      title: "Male Excel vs Fridays",
+      matchupLabel: "Male Excel vs Fridays",
+      subtitle: "An established men's-health brand vs a broader men's-health platform",
+      description:
+        "Compare Male Excel and Fridays for online TRT - brand, breadth and which fits you best.",
+      intro:
+        "Male Excel and Fridays both offer TRT within a men's-health service after testing and a clinician review. Male Excel is the more established brand with a choice of treatment formats; Fridays offers TRT within a broader men's-health lineup. Here's how they compare.",
+      verdict:
+        "Both offer a convenient online path to TRT. Male Excel edges it for its established track record and format choice, while Fridays appeals if you want TRT within a broader men's-health platform. Confirm current pricing on each provider's site.",
+      verdictWinnerPoints: [
+        "Established, recognizable brand",
+        "A choice of treatment formats",
+        "At-home testing and clinician oversight",
+      ],
+      verdictLoserPoints: [
+        "Broader men's-health platform",
+        "TRT plus other treatments",
+        "Convenient online consultation",
+      ],
+      winnerId: "maleexcel",
+      categories: [
+        {
+          name: "Brand & track record",
+          winner: "provider1",
+          explanation: "Male Excel is a more established, recognizable men's-health brand.",
+          supportingPoints: ["Well-known brand", "Established track record"],
+        },
+        {
+          name: "Breadth of services",
+          winner: "provider2",
+          explanation: "Fridays offers a wider men's-health lineup beyond TRT.",
+          supportingPoints: ["Multiple treatments", "One men's-health account"],
+        },
+        {
+          name: "Diagnosis",
+          winner: "tie",
+          explanation: "Both require testing and a licensed-clinician review before prescribing.",
+          supportingPoints: ["Lab-based", "Clinician-confirmed"],
+        },
+        {
+          name: "Format options",
+          winner: "provider1",
+          explanation: "Male Excel offers a choice of testosterone treatment formats.",
+          supportingPoints: ["Multiple formats", "Clinician-directed"],
+        },
+      ],
+      features: [
+        { feature: "Brand", provider1Value: "Established", provider2Value: "Newer", highlight: "provider1" },
+        { feature: "Lab testing", provider1Value: "Yes", provider2Value: "Yes", highlight: "both" },
+        { feature: "Clinician review", provider1Value: "Yes", provider2Value: "Yes", highlight: "both" },
+        { feature: "Pricing", provider1Value: "See site", provider2Value: "See site", highlight: "none" },
       ],
       updatedAt: UPDATED,
     },
