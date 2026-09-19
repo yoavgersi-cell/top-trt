@@ -59,7 +59,7 @@ export const trtConfig: SiteConfig = {
     positions: [
       { score: 9.6, starRating: 5, label: "Exceptional", badge: "Our Top Pick" },
       { score: 9.2, starRating: 5, label: "Excellent" },
-      { score: 9.0, starRating: 5, label: "Excellent" },
+      { score: 9.1, starRating: 5, label: "Excellent" },
       { score: 8.7, starRating: 4, label: "Very Good" },
       { score: 8.5, starRating: 4, label: "Very Good" },
       { score: 8.3, starRating: 4, label: "Very Good" },
