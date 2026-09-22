@@ -31,7 +31,7 @@ export const trtConfig: SiteConfig = {
     backgroundImageUrl: "",
     imageAlt: "Testosterone replacement therapy options",
     updatedLabel: "Last Updated: September 2026",
-    h1: "Best TRT Clinics of 2026",
+    h1: "Best Online TRT Clinics of 2026",
     h2: "The top online testosterone replacement therapy providers, ranked and reviewed",
     description:
       "Compare licensed online TRT clinics by testing, treatment options, price and ongoing support - from at-home hormone testing to physician-guided testosterone therapy.",

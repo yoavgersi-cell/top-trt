@@ -4,9 +4,9 @@ import type { ArticleData } from "@/lib/config";
 export const trtArticles: ArticleData[] = [
   {
     slug: "what-is-trt",
-    title: "What Is TRT? Testosterone Replacement Therapy Explained",
+    title: "What Is TRT? Meaning, How It Works & Who It's For",
     description:
-      "A plain-English guide to testosterone replacement therapy: what TRT is, who it is for, how diagnosis works, and what to realistically expect from treatment.",
+      "TRT stands for testosterone replacement therapy. A plain-English guide to the meaning of TRT, who it is for, how diagnosis works, and what to realistically expect from treatment.",
     category: "Guides",
     readTime: "8 min read",
     publishedAt: "2026-09-14",
@@ -355,9 +355,9 @@ export const trtArticles: ArticleData[] = [
   },
   {
     slug: "natural-ways-to-boost-testosterone",
-    title: "Natural Ways to Boost Testosterone",
+    title: "Natural Testosterone Treatment: Natural Ways to Boost Low T",
     description:
-      "Evidence-based lifestyle steps that support healthy testosterone - sleep, weight, exercise, nutrition and stress - and when to see a clinician instead.",
+      "Natural treatment for low testosterone: the evidence-based lifestyle steps that support healthy testosterone - sleep, weight, exercise, nutrition and stress - and when to see a clinician instead.",
     category: "Guides",
     readTime: "7 min read",
     publishedAt: "2026-09-14",

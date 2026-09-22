@@ -15,15 +15,15 @@ const SITE_URL = "https://www.toptrt.io";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Best TRT Clinics of 2026 - Compare Top Online Providers",
+    absolute: "Best Online TRT Clinics of 2026 - Compare & Save",
   },
   description:
-    "Compare the best online TRT clinics of 2026. Top testosterone replacement therapy providers ranked by testing, treatment options, pricing, support and value - find your best fit.",
+    "Compare the best online TRT clinics of 2026. Top testosterone replacement therapy clinics ranked by testing, treatment options, pricing, support and value - find your best fit.",
   alternates: { canonical: SITE_URL },
   openGraph: {
-    title: "Best TRT Clinics of 2026 - Compare Top Online Providers",
+    title: "Best Online TRT Clinics of 2026 - Compare & Save",
     description:
-      "Compare the best online TRT clinics of 2026 - top providers ranked by testing, treatment, price, support and value.",
+      "Compare the best online TRT clinics of 2026 - top clinics ranked by testing, treatment, price, support and value.",
     url: SITE_URL,
     type: "website",
   },
@@ -90,7 +90,7 @@ export default async function HomePage() {
   const webPageSchema = {
     "@context": "https://schema.org",
     "@type": "WebPage",
-    name: "Best TRT Clinics of 2026 - Compare Top Online Providers",
+    name: "Best Online TRT Clinics of 2026 - Compare & Save",
     description:
       "Compare testing, treatment options, pricing, medical support and overall value across the top online TRT clinics of 2026.",
     url: SITE_URL,
