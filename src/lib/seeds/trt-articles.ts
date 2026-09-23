@@ -199,17 +199,17 @@ export const trtArticles: ArticleData[] = [
   },
   {
     slug: "types-of-trt",
-    title: "Types of TRT: Injections, Gels, Creams and Pellets",
+    title: "Types of TRT: Injections, Gels, Creams, Pellets & Patches",
     description:
-      "Compare the main types of testosterone replacement therapy - injections, gels, creams and pellets - including the trade-offs in convenience, cost and monitoring.",
+      "Compare the main types of testosterone replacement therapy - injections, gels, creams, patches and pellets - plus how to take testosterone without injections, and the trade-offs in convenience, cost and monitoring.",
     category: "Treatments",
     readTime: "8 min read",
     publishedAt: "2026-09-14",
-    updatedAt: "2026-09-14",
+    updatedAt: "2026-09-23",
     heroColor: "#0d3b3b",
     author: "Top TRT Editorial Team",
     keyTakeaways: [
-      "The main TRT formats are injections, topical gels, creams and long-acting pellets, each with distinct trade-offs.",
+      "The main TRT formats are injections, topical gels, creams, skin patches and long-acting pellets, each with distinct trade-offs.",
       "No single format is best for everyone; the right choice depends on lifestyle, cost, and how your body responds.",
       "All formats are prescription-only and require ongoing monitoring, regardless of how convenient they seem.",
     ],
@@ -229,6 +229,14 @@ export const trtArticles: ArticleData[] = [
       {
         heading: "Pellets",
         body: "<p>Testosterone pellets are small implants placed under the skin during a brief in-office procedure. They release testosterone slowly over a period of months.</p><ul><li><strong>Pros:</strong> long-acting and low-maintenance between placements; nothing to do daily</li><li><strong>Cons:</strong> requires a minor procedure; the dose cannot be easily adjusted once placed; possible site issues such as infection or extrusion</li></ul><p>Because pellets are not easily reversible mid-cycle, clinicians often reserve them for men who have already responded well and tolerated testosterone in another format.</p>",
+      },
+      {
+        heading: "Patches",
+        body: "<p>Testosterone skin patches are a transdermal option worn on the skin and replaced daily. They're less common than gels or injections today, but they're another needle-free route some men and clinicians consider.</p><ul><li><strong>Pros:</strong> needle-free; delivers testosterone steadily through the day</li><li><strong>Cons:</strong> can cause skin irritation at the patch site; must be replaced daily; not every clinic offers them</li></ul>",
+      },
+      {
+        heading: "Can you take testosterone without injections?",
+        body: "<p><strong>Yes.</strong> If needles are a dealbreaker, there are several non-injectable ways to take testosterone: <strong>gels and creams</strong> applied to the skin daily, <strong>patches</strong> worn on the skin, and long-acting <strong>pellets</strong> implanted under the skin. Each is prescription-only and clinician-directed, and each has its own trade-offs in convenience, cost, steadiness of levels and monitoring. If avoiding injections matters to you, say so up front - a clinician can match you to a needle-free format that fits. Compare which clinics offer which formats on our <a href=\"/\">TRT clinic comparison</a>.</p>",
       },
       {
         heading: "Choosing with your clinician",
