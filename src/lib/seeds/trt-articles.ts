@@ -470,4 +470,121 @@ export const trtArticles: ArticleData[] = [
       },
     ],
   },
+  {
+    slug: "online-doctors-that-prescribe-testosterone",
+    title: "Online Doctors That Prescribe Testosterone (2026)",
+    description:
+      "Yes, licensed online doctors can prescribe testosterone in the US - after bloodwork confirms low testosterone. How it works, what's legal, and the best telehealth clinics to use.",
+    category: "How It Works",
+    readTime: "7 min read",
+    publishedAt: "2026-09-23",
+    updatedAt: "2026-09-23",
+    heroColor: "#12333a",
+    author: "Top TRT Editorial Team",
+    keyTakeaways: [
+      "Licensed telehealth clinicians can prescribe testosterone online in the US - but only after blood tests confirm clinically low testosterone.",
+      "Testosterone is a controlled medication, so a clinician licensed in your state must review your labs and symptoms first.",
+      "A legitimate online testosterone doctor always requires bloodwork; any site that skips it is a red flag.",
+    ],
+    sections: [
+      {
+        heading: "Can an online doctor prescribe testosterone?",
+        body: "<p><strong>Yes.</strong> Licensed telehealth clinicians can evaluate you and, when it's medically appropriate, prescribe testosterone entirely online. The catch is what has to happen first: your testosterone must be measured with blood work and come back clinically low, and a clinician has to review those results alongside your symptoms. Online doctors prescribe <a href=\"/articles/what-is-trt\">TRT</a> the same way an in-person doctor would - they just do the intake, review and follow-up remotely.</p>",
+      },
+      {
+        heading: "Is it legal to get testosterone prescribed online in the US?",
+        body: "<p>Yes - telehealth is an established, legal way to receive care in the US. Because testosterone is a controlled medication, a clinician <strong>licensed in your state</strong> must review your bloodwork and information before anything is prescribed. That's a safeguard, not a loophole. Availability can vary by state, which is why the clinics we compare confirm they can serve your location - see <a href=\"/online-trt\">Online TRT by State</a>.</p>",
+      },
+      {
+        heading: "How do online doctors decide whether to prescribe testosterone?",
+        body: "<p>A responsible online doctor looks at more than one number. Expect them to:</p><ul><li>Order <strong>blood testing</strong> - testosterone is typically measured in the morning, often more than once.</li><li>Review your <strong>symptoms</strong> and medical history for a match with low testosterone.</li><li>Screen for <strong>reversible causes</strong> (sleep, weight, medications) that might be lowering your levels.</li><li>Decline to prescribe if your levels are normal - TRT is for diagnosed low testosterone, not a booster.</li></ul><p>Our guide to the <a href=\"/articles/signs-of-low-testosterone\">signs of low testosterone</a> covers what they're evaluating.</p>",
+      },
+      {
+        heading: "Which online clinics have doctors that prescribe testosterone?",
+        body: "<p>Several licensed telehealth clinics do exactly this. Our top-ranked options are <a href=\"/reviews/hone\">Hone Health</a> (testing-first and physician-guided), <a href=\"/reviews/tmates\">TMates</a> (a dedicated TRT membership) and <a href=\"/reviews/maleexcel\">Male Excel</a> (an established brand with at-home labs and unlimited provider follow-ups). Compare them all on our <a href=\"/\">TRT clinic comparison</a>, or browse every <a href=\"/reviews\">provider review</a>.</p>",
+      },
+      {
+        heading: "What to look for in an online testosterone doctor",
+        body: "<p>Before you sign up, make sure the service checks these boxes:</p><ul><li>Uses clinicians <strong>licensed in your state</strong>.</li><li>Requires <strong>lab testing</strong> before prescribing - always.</li><li>Provides <strong>ongoing monitoring</strong> with follow-up bloodwork.</li><li>Is <strong>transparent about pricing</strong> and what each plan includes.</li></ul><p>See the full process in <a href=\"/articles/how-to-get-trt-online\">how to get TRT online</a>.</p><p><em>This article is general information, not medical advice. A licensed clinician should evaluate your symptoms and testosterone levels and decide whether TRT is appropriate for you.</em></p>",
+      },
+    ],
+  },
+  {
+    slug: "easiest-way-to-get-trt-online",
+    title: "The Easiest Way to Get TRT Online (2026)",
+    description:
+      "The easiest way to get TRT online, step by step: at-home labs, a licensed clinician's review and treatment to your door - plus the common hold-ups and how to avoid them.",
+    category: "How It Works",
+    readTime: "6 min read",
+    publishedAt: "2026-09-23",
+    updatedAt: "2026-09-23",
+    heroColor: "#111111",
+    author: "Top TRT Editorial Team",
+    keyTakeaways: [
+      "The easiest path is a telehealth clinic that bundles at-home labs, a licensed clinician's review and home delivery into one flow.",
+      "You can get TRT online, but only if bloodwork confirms clinically low testosterone - there's no legitimate way to skip the labs.",
+      "Most delays come from incomplete intake forms, non-morning lab draws, or state licensing - all easy to avoid.",
+    ],
+    sections: [
+      {
+        heading: "What's the easiest way to get TRT online?",
+        body: "<p><strong>The easiest way is to choose a telehealth clinic that handles everything in one place</strong> - at-home lab testing, a licensed clinician's review, and treatment shipped to your door. A testing-first program like <a href=\"/reviews/hone\">Hone Health</a> is built exactly this way, so you're not juggling a separate lab, doctor and pharmacy. Compare the smoothest options on our <a href=\"/\">TRT clinic comparison</a>.</p>",
+      },
+      {
+        heading: "Can you actually get TRT online?",
+        body: "<p>Yes - for men whose testosterone is genuinely low. TRT is prescription-only, so an online clinic can't (and shouldn't) hand it over without <strong>blood work confirming low testosterone</strong> and a <strong>licensed clinician's review</strong>. If your levels come back normal, a good clinic won't prescribe it - and that's a sign they're doing it right, not a hurdle.</p>",
+      },
+      {
+        heading: "What's the fastest path from start to treatment?",
+        body: "<p>Broken down, the easy path is four steps:</p><ul><li><strong>Pick a clinic</strong> that bundles labs, clinician review and delivery.</li><li><strong>Complete your labs</strong> - an at-home kit or a quick partner-lab visit.</li><li><strong>Review</strong> - a licensed clinician reads your results and symptoms.</li><li><strong>Treatment</strong> - if appropriate, it ships to your door, with follow-ups online.</li></ul><p>See the full walkthrough in <a href=\"/articles/how-to-get-trt-online\">how to get TRT online</a>.</p>",
+      },
+      {
+        heading: "What slows people down - and how to avoid it?",
+        body: "<p>Most hold-ups are avoidable:</p><ul><li><strong>Incomplete intake</strong> - answer every health question fully so the clinician isn't stuck waiting.</li><li><strong>Lab timing</strong> - testosterone is usually measured in the morning; a wrong-time draw may need repeating.</li><li><strong>State licensing</strong> - confirm the clinic serves your state (see <a href=\"/online-trt\">Online TRT by State</a>).</li><li><strong>Chasing 'no-lab' shortcuts</strong> - they're a red flag, not a fast lane.</li></ul>",
+      },
+      {
+        heading: "The easiest clinics to start with",
+        body: "<p>For a low-friction start, look at <a href=\"/reviews/hone\">Hone Health</a> and <a href=\"/reviews/maleexcel\">Male Excel</a> (both handle at-home labs and treatment in one flow), or <a href=\"/reviews/dudemeds\">Dude Meds</a> if you want the simplest, most budget-friendly route. Compare them side by side on our <a href=\"/\">clinic comparison</a>.</p><p><em>This article is general information, not medical advice. A licensed clinician should evaluate your symptoms and testosterone levels and decide whether TRT is appropriate for you.</em></p>",
+      },
+    ],
+  },
+  {
+    slug: "trt-for-bodybuilding",
+    title: "TRT for Bodybuilding: What's Legit and What Isn't",
+    description:
+      "TRT is a medical treatment for low testosterone, not a bodybuilding shortcut. The honest difference between TRT and steroids, what legitimate clinics will and won't do, and the risks.",
+    category: "Safety",
+    readTime: "7 min read",
+    publishedAt: "2026-09-23",
+    updatedAt: "2026-09-23",
+    heroColor: "#3a1a1a",
+    author: "Top TRT Editorial Team",
+    keyTakeaways: [
+      "TRT restores a deficient hormone to a normal range; using testosterone for bodybuilding means supraphysiologic doses in men with normal levels - that's anabolic steroid use, not TRT.",
+      "Legitimate online clinics will not prescribe TRT to men with normal testosterone for muscle gain - a diagnosis of clinically low testosterone is required.",
+      "Using testosterone without medical oversight carries real risks, including fertility loss, raised red blood cell counts and cardiovascular strain.",
+    ],
+    sections: [
+      {
+        heading: "Is TRT the same as taking steroids for bodybuilding?",
+        body: "<p><strong>No - they're fundamentally different.</strong> TRT restores testosterone to a normal, healthy range in men who are clinically deficient. Using testosterone (or other anabolic steroids) for bodybuilding means taking <strong>supraphysiologic doses</strong> - well above normal - typically in men whose levels are already fine. Same molecule, completely different purpose, dose and risk profile. TRT is a medical treatment; steroid use for physique is not what TRT is or what a clinic provides.</p>",
+      },
+      {
+        heading: "Will an online TRT clinic prescribe testosterone for bodybuilding?",
+        body: "<p>No. A legitimate clinic prescribes TRT only when <strong>blood work confirms clinically low testosterone</strong> and symptoms fit. If your levels are normal, a responsible clinician won't prescribe testosterone for muscle gain - doing so would expose you to the risks of treatment without a medical reason. Any service willing to hand out testosterone to men with normal levels for bodybuilding is a red flag, not a shortcut.</p>",
+      },
+      {
+        heading: "Does TRT build muscle?",
+        body: "<p>For men who are genuinely low, restoring testosterone to a normal range can improve body composition, strength and energy over time - but it works alongside training and nutrition, not instead of them, and results vary from person to person. It is not a fast track to a bodybuilder's physique, and there are no guaranteed outcomes. If your testosterone is already normal, adding more doesn't safely 'boost' you further - it just adds risk. See the realistic picture in <a href=\"/articles/trt-benefits\">the benefits of TRT</a>.</p>",
+      },
+      {
+        heading: "What are the risks of using testosterone for bodybuilding?",
+        body: "<p>Taking testosterone at high doses, or without medical oversight, carries real risks:</p><ul><li><strong>Fertility loss</strong> - testosterone suppresses the body's own production and sperm count (see <a href=\"/articles/trt-and-fertility\">TRT and fertility</a>).</li><li><strong>Raised red blood cell count</strong> (hematocrit), which is why monitoring exists.</li><li><strong>Cardiovascular strain</strong> and other effects that are more likely at higher-than-normal doses.</li><li><strong>Unregulated product</strong> - testosterone bought without a prescription can be unsafe, mislabeled and illegal.</li></ul><p>More on monitored side effects in <a href=\"/articles/trt-side-effects\">TRT side effects</a>.</p>",
+      },
+      {
+        heading: "The legitimate path if you think your testosterone is low",
+        body: "<p>If you have real symptoms - low energy, low libido, loss of muscle, poor recovery - the right move isn't to self-source testosterone; it's to <strong>get tested</strong>. If a clinician confirms your levels are low, TRT may be appropriate and can be managed safely with monitoring. Start by understanding <a href=\"/articles/signs-of-low-testosterone\">the signs of low testosterone</a>, then compare licensed clinics on our <a href=\"/\">TRT clinic comparison</a>.</p><p><em>This article is general information, not medical advice. It does not endorse using testosterone for bodybuilding or without a prescription. A licensed clinician should evaluate your symptoms and testosterone levels and decide whether TRT is appropriate for you.</em></p>",
+      },
+    ],
+  },
 ];
