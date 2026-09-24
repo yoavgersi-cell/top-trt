@@ -38,14 +38,13 @@ export function LandingEditorial({ sections }: LandingEditorialProps) {
         >
           TRT articles
         </Link>{" "}
-        for more research and guides, or{" "}
+        for more research and guides, or see our{" "}
         <Link
-          href="/find-your-match"
+          href="/reviews"
           className="font-semibold text-[#111111] hover:underline"
         >
-          take our matching quiz
-        </Link>{" "}
-        for a personalized recommendation.
+          in-depth provider reviews
+        </Link>.
       </p>
     </div>
   );
