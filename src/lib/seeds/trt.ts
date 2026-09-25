@@ -170,12 +170,12 @@ export const trtConfig: SiteConfig = {
       id: "brightmeds",
       name: "Brightmeds",
       tagline:
-        "An online telehealth prescription service with a strong review record, offering treatment after a licensed-clinician review",
+        "A highly-rated online telehealth service offering TRT with its own testosterone formula, prescribed after a licensed-clinician review",
       logo: "/provider-placeholder.svg",
       smallLogo: "/provider-placeholder.svg",
       highlights: [
-        "Fully online prescription service",
-        "Licensed clinicians review your intake",
+        "Online TRT after a licensed-clinician review",
+        "Its own testosterone formula",
         "Discreet home delivery",
         "Rated 4.7 on Trustpilot",
       ],
@@ -549,9 +549,9 @@ export const trtConfig: SiteConfig = {
       slug: "brightmeds",
       providerId: "brightmeds",
       shortSummary:
-        "An online telehealth prescription service with a strong review record - rated 4.7 on Trustpilot across more than a thousand reviews. Treatment follows a licensed-clinician review and ships discreetly; confirm its current TRT lineup on the Brightmeds site.",
+        "A highly-rated online telehealth service that offers TRT - including its own testosterone formula - with a strong review record (4.7 on Trustpilot across more than a thousand reviews). Treatment follows a licensed-clinician review and ships discreetly.",
       reviewIntro:
-        "Brightmeds is an online telehealth prescription service that reviewers consistently rate highly - 4.7 on Trustpilot from over a thousand reviews, with common themes of fast delivery, responsive doctors and an easy process. As with any online prescription service, treatment follows an intake and a licensed clinician's review, then ships to your door. Brightmeds offers several men's-health and telehealth treatments, so if you're specifically after TRT, confirm the current testosterone lineup and requirements on its own site before signing up. This review covers the model and how it fits.",
+        "Brightmeds is an online telehealth service that offers testosterone replacement therapy - including its own testosterone formula - alongside other treatments, and reviewers consistently rate it highly (4.7 on Trustpilot from over a thousand reviews), praising fast delivery, responsive doctors and an easy process. As with any TRT service, treatment follows an intake and testing, a licensed clinician's review, and discreet delivery. This review covers the model and how it fits.",
       keyFeatures: [
         "Fully online prescription and delivery process",
         "Licensed clinicians review your intake",
@@ -562,19 +562,19 @@ export const trtConfig: SiteConfig = {
       pricingSummary:
         "Approximate only - confirm at checkout. Brightmeds prices treatment through its online plans; the exact cost depends on the treatment and plan you choose. Because promotions and plans change, confirm the current price - and that the TRT option you want is available - on the Brightmeds site before signing up.",
       treatmentOptions: [
-        "Online intake and licensed-clinician review",
-        "Prescription treatment where appropriate (confirm the TRT option on the Brightmeds site)",
+        "Online intake, testing and licensed-clinician review",
+        "Prescription testosterone therapy (TRT), including Brightmeds' own testosterone formula, where appropriate",
         "Discreet home delivery",
       ],
       pros: [
         "Excellent review record - 4.7 on Trustpilot from more than a thousand reviews",
+        "Offers TRT with its own testosterone formula",
         "Fast, straightforward online process reviewers praise",
-        "Licensed clinicians involved in the decision",
         "Discreet home delivery",
       ],
       cons: [
-        "We haven't independently verified its specific TRT lineup - confirm it on the provider's site",
-        "Known for a broader telehealth range, so make sure the testosterone option you want is offered",
+        "Newer to our rankings, so we're still building a full verified picture of its TRT plans and pricing",
+        "Offers a broad telehealth range beyond TRT",
         "As with any TRT, expect required bloodwork and ongoing monitoring",
       ],
       bestFor: [
@@ -583,7 +583,7 @@ export const trtConfig: SiteConfig = {
         "Anyone prioritizing fast, discreet delivery",
       ],
       finalVerdict:
-        "Brightmeds stands out for its strong, verified review record and a fast, easy online process. It's a credible telehealth option - just confirm on its own site that it offers the TRT treatment and monitoring you're looking for before you commit, and compare it against our top-ranked, TRT-focused picks. This review is general information, not medical advice.",
+        "Brightmeds stands out for its strong, verified review record (4.7 on Trustpilot) and a fast, easy online process, and it does offer TRT through its own testosterone formula. It's a credible, well-reviewed option - compare it against our top-ranked, TRT-focused picks on the depth of testing and ongoing monitoring, and confirm current pricing on its site. This review is general information, not medical advice.",
       howItWorks: [
         {
           timing: "Step 1",
@@ -1488,9 +1488,9 @@ export const trtConfig: SiteConfig = {
       description:
         "Compare Hone Health and Brightmeds for online TRT - testing depth, TRT focus, reviews and which fits you best.",
       intro:
-        "Hone Health and Brightmeds are both online telehealth services, but they're built for different things. Hone is a testing-first, TRT-focused program with ongoing monitoring; Brightmeds is a highly-rated general prescription service (4.7 on Trustpilot) whose specific TRT lineup you should confirm on its site. Here's how they compare.",
+        "Hone Health and Brightmeds are both online telehealth services, but they're built for different things. Hone is a testing-first, TRT-focused program with ongoing monitoring; Brightmeds is a highly-rated general prescription service (4.7 on Trustpilot) which also offers TRT alongside other treatments. Here's how they compare.",
       verdict:
-        "Hone is our pick for TRT specifically, thanks to its testing-first program and depth of monitoring. Brightmeds earns strong reviews for a fast, easy online experience - just confirm it offers the testosterone treatment you want. Confirm current pricing on each provider's site.",
+        "Hone is our pick for TRT specifically, thanks to its testing-first program and depth of monitoring. Brightmeds earns strong reviews for a fast, easy online experience. Confirm current pricing on each provider's site.",
       verdictWinnerPoints: [
         "Testing-first, TRT-focused program",
         "Ongoing monitoring and dose adjustments",
@@ -1524,12 +1524,12 @@ export const trtConfig: SiteConfig = {
         {
           name: "Best-fit clarity for TRT",
           winner: "provider1",
-          explanation: "Hone's offering is clearly TRT; confirm the TRT option on the Brightmeds site.",
-          supportingPoints: ["Clear TRT program", "Brightmeds lineup to verify"],
+          explanation: "Hone's offering is clearly TRT.",
+          supportingPoints: ["Clear TRT program", "Broader telehealth service"],
         },
       ],
       features: [
-        { feature: "TRT focus", provider1Value: "High", provider2Value: "Confirm on site", highlight: "provider1" },
+        { feature: "TRT focus", provider1Value: "High", provider2Value: "Yes", highlight: "provider1" },
         { feature: "Reviews", provider1Value: "See site", provider2Value: "4.7 on Trustpilot", highlight: "provider2" },
         { feature: "Clinician review", provider1Value: "Yes", provider2Value: "Yes", highlight: "both" },
         { feature: "Pricing", provider1Value: "See site", provider2Value: "See site", highlight: "none" },
@@ -1546,9 +1546,9 @@ export const trtConfig: SiteConfig = {
       description:
         "Compare TMates and Brightmeds for online TRT - TRT focus, monitoring, reviews and which fits you best.",
       intro:
-        "TMates is a membership built exclusively around testosterone therapy with ongoing monitoring; Brightmeds is a highly-rated general online prescription service whose TRT lineup you should confirm on its site. Here's how they compare.",
+        "TMates is a membership built exclusively around testosterone therapy with ongoing monitoring; Brightmeds is a highly-rated general online prescription service which also offers TRT alongside other treatments. Here's how they compare.",
       verdict:
-        "TMates wins for TRT specifically, thanks to its dedicated, monitoring-heavy program. Brightmeds earns excellent reviews for a fast, easy experience - just confirm it offers the testosterone treatment you want. Confirm current pricing on each provider's site.",
+        "TMates wins for TRT specifically, thanks to its dedicated, monitoring-heavy program. Brightmeds earns excellent reviews for a fast, easy experience. Confirm current pricing on each provider's site.",
       verdictWinnerPoints: [
         "Dedicated TRT-first membership",
         "Ongoing monitoring built in",
@@ -1587,7 +1587,7 @@ export const trtConfig: SiteConfig = {
         },
       ],
       features: [
-        { feature: "TRT focus", provider1Value: "Exclusive", provider2Value: "Confirm on site", highlight: "provider1" },
+        { feature: "TRT focus", provider1Value: "Exclusive", provider2Value: "Yes", highlight: "provider1" },
         { feature: "Reviews", provider1Value: "See site", provider2Value: "4.7 on Trustpilot", highlight: "provider2" },
         { feature: "Clinician review", provider1Value: "Yes", provider2Value: "Yes", highlight: "both" },
         { feature: "Pricing", provider1Value: "See site", provider2Value: "See site", highlight: "none" },
@@ -1604,9 +1604,9 @@ export const trtConfig: SiteConfig = {
       description:
         "Compare Male Excel and Brightmeds for online TRT - TRT focus, testing, reviews and which fits you best.",
       intro:
-        "Male Excel is an established men's-health brand with at-home labs and a clear TRT offering (and its own 4.5 Trustpilot record); Brightmeds is a highly-rated general prescription service whose TRT lineup you should confirm on its site. Here's how they compare.",
+        "Male Excel is an established men's-health brand with at-home labs and a clear TRT offering (and its own 4.5 Trustpilot record); Brightmeds is a highly-rated general prescription service which also offers TRT alongside other treatments. Here's how they compare.",
       verdict:
-        "Male Excel edges it for TRT thanks to its established, testing-backed testosterone program. Brightmeds earns slightly higher review scores overall - just confirm it offers the testosterone treatment you want. Confirm current pricing on each provider's site.",
+        "Male Excel edges it for TRT thanks to its established, testing-backed testosterone program. Brightmeds earns slightly higher review scores overall. Confirm current pricing on each provider's site.",
       verdictWinnerPoints: [
         "Established, TRT-focused brand",
         "Comprehensive at-home labs",
@@ -1640,12 +1640,12 @@ export const trtConfig: SiteConfig = {
         {
           name: "Best-fit clarity for TRT",
           winner: "provider1",
-          explanation: "Male Excel's TRT offering is clearly defined; confirm the TRT option on the Brightmeds site.",
-          supportingPoints: ["Defined TRT program", "Brightmeds lineup to verify"],
+          explanation: "Male Excel's TRT offering is clearly defined.",
+          supportingPoints: ["Defined TRT program", "Broader telehealth service"],
         },
       ],
       features: [
-        { feature: "TRT focus", provider1Value: "High", provider2Value: "Confirm on site", highlight: "provider1" },
+        { feature: "TRT focus", provider1Value: "High", provider2Value: "Yes", highlight: "provider1" },
         { feature: "Reviews", provider1Value: "4.5 on Trustpilot", provider2Value: "4.7 on Trustpilot", highlight: "provider2" },
         { feature: "Clinician review", provider1Value: "Yes", provider2Value: "Yes", highlight: "both" },
         { feature: "Pricing", provider1Value: "See site", provider2Value: "See site", highlight: "none" },
@@ -1662,9 +1662,9 @@ export const trtConfig: SiteConfig = {
       description:
         "Compare Taurus Meds and Brightmeds for online TRT - TRT focus, reviews and which fits your priorities.",
       intro:
-        "Taurus Meds offers TRT within a men's-health telehealth service after lab-based diagnosis; Brightmeds is a highly-rated general prescription service whose TRT lineup you should confirm on its site. Here's how they compare.",
+        "Taurus Meds offers TRT within a men's-health telehealth service after lab-based diagnosis; Brightmeds is a highly-rated general prescription service which also offers TRT alongside other treatments. Here's how they compare.",
       verdict:
-        "Taurus Meds edges it for TRT specifically, since its testosterone offering is clearer. Brightmeds earns a stronger overall review score - just confirm it offers the testosterone treatment you want. Confirm current pricing on each provider's site.",
+        "Taurus Meds edges it for TRT specifically, since its testosterone offering is clearer. Brightmeds earns a stronger overall review score. Confirm current pricing on each provider's site.",
       verdictWinnerPoints: [
         "Clear TRT offering within men's health",
         "Lab-based diagnosis",
@@ -1680,7 +1680,7 @@ export const trtConfig: SiteConfig = {
         {
           name: "TRT clarity",
           winner: "provider1",
-          explanation: "Taurus Meds presents a clearer TRT offering; confirm the TRT option on the Brightmeds site.",
+          explanation: "Taurus Meds presents a clearer TRT offering.",
           supportingPoints: ["Clear TRT offering", "Lab-based diagnosis"],
         },
         {
@@ -1703,7 +1703,7 @@ export const trtConfig: SiteConfig = {
         },
       ],
       features: [
-        { feature: "TRT focus", provider1Value: "Yes", provider2Value: "Confirm on site", highlight: "provider1" },
+        { feature: "TRT focus", provider1Value: "Yes", provider2Value: "Yes", highlight: "provider1" },
         { feature: "Reviews", provider1Value: "See site", provider2Value: "4.7 on Trustpilot", highlight: "provider2" },
         { feature: "Clinician review", provider1Value: "Yes", provider2Value: "Yes", highlight: "both" },
         { feature: "Pricing", provider1Value: "See site", provider2Value: "See site", highlight: "none" },
@@ -1720,9 +1720,9 @@ export const trtConfig: SiteConfig = {
       description:
         "Compare Dude Meds and Brightmeds for online TRT - value, TRT focus, reviews and which fits you best.",
       intro:
-        "Dude Meds is a simple, value-minded men's telehealth service that offers TRT after the required testing; Brightmeds is a highly-rated general prescription service whose TRT lineup you should confirm on its site. Here's how they compare.",
+        "Dude Meds is a simple, value-minded men's telehealth service that offers TRT after the required testing; Brightmeds is a highly-rated general prescription service which also offers TRT alongside other treatments. Here's how they compare.",
       verdict:
-        "Dude Meds edges it for TRT on clarity and value, since its testosterone offering is straightforward. Brightmeds earns a stronger overall review score - just confirm it offers the testosterone treatment you want. Confirm current pricing on each provider's site.",
+        "Dude Meds edges it for TRT on clarity and value, since its testosterone offering is straightforward. Brightmeds earns a stronger overall review score. Confirm current pricing on each provider's site.",
       verdictWinnerPoints: [
         "Straightforward TRT access",
         "Value-minded pricing",
@@ -1738,7 +1738,7 @@ export const trtConfig: SiteConfig = {
         {
           name: "TRT clarity & value",
           winner: "provider1",
-          explanation: "Dude Meds offers a clear, value-minded TRT path; confirm the TRT option on the Brightmeds site.",
+          explanation: "Dude Meds offers a clear, value-minded TRT path.",
           supportingPoints: ["Clear TRT offering", "Budget-friendly"],
         },
         {
@@ -1761,7 +1761,7 @@ export const trtConfig: SiteConfig = {
         },
       ],
       features: [
-        { feature: "TRT focus", provider1Value: "Yes", provider2Value: "Confirm on site", highlight: "provider1" },
+        { feature: "TRT focus", provider1Value: "Yes", provider2Value: "Yes", highlight: "provider1" },
         { feature: "Reviews", provider1Value: "See site", provider2Value: "4.7 on Trustpilot", highlight: "provider2" },
         { feature: "Clinician review", provider1Value: "Yes", provider2Value: "Yes", highlight: "both" },
         { feature: "Pricing", provider1Value: "See site (value)", provider2Value: "See site", highlight: "provider1" },
@@ -1778,9 +1778,9 @@ export const trtConfig: SiteConfig = {
       description:
         "Compare Fridays and Brightmeds for online TRT - TRT focus, reviews and which fits you best.",
       intro:
-        "Fridays offers TRT within a men's-health telehealth service after lab-based diagnosis; Brightmeds is a highly-rated general prescription service whose TRT lineup you should confirm on its site. Here's how they compare.",
+        "Fridays offers TRT within a men's-health telehealth service after lab-based diagnosis; Brightmeds is a highly-rated general prescription service which also offers TRT alongside other treatments. Here's how they compare.",
       verdict:
-        "Fridays edges it for TRT specifically, since its testosterone offering is clearer within a men's-health service. Brightmeds earns a stronger overall review score - just confirm it offers the testosterone treatment you want. Confirm current pricing on each provider's site.",
+        "Fridays edges it for TRT specifically, since its testosterone offering is clearer within a men's-health service. Brightmeds earns a stronger overall review score. Confirm current pricing on each provider's site.",
       verdictWinnerPoints: [
         "TRT within a men's-health service",
         "Lab-based diagnosis",
@@ -1796,7 +1796,7 @@ export const trtConfig: SiteConfig = {
         {
           name: "TRT clarity",
           winner: "provider1",
-          explanation: "Fridays presents a clearer TRT offering; confirm the TRT option on the Brightmeds site.",
+          explanation: "Fridays presents a clearer TRT offering.",
           supportingPoints: ["Clear TRT offering", "Lab-based diagnosis"],
         },
         {
@@ -1819,7 +1819,7 @@ export const trtConfig: SiteConfig = {
         },
       ],
       features: [
-        { feature: "TRT focus", provider1Value: "Yes", provider2Value: "Confirm on site", highlight: "provider1" },
+        { feature: "TRT focus", provider1Value: "Yes", provider2Value: "Yes", highlight: "provider1" },
         { feature: "Reviews", provider1Value: "See site", provider2Value: "4.7 on Trustpilot", highlight: "provider2" },
         { feature: "Clinician review", provider1Value: "Yes", provider2Value: "Yes", highlight: "both" },
         { feature: "Pricing", provider1Value: "See site", provider2Value: "See site", highlight: "none" },
