@@ -36,6 +36,7 @@ const COLUMNS: { title: string; links: { label: string; href: string }[] }[] = [
       { label: "Best Value", href: "/cheapest-online-trt" },
       { label: "Fertility-Conscious", href: "/best-trt-for-fertility" },
       { label: "At-Home TRT", href: "/best-at-home-trt" },
+      { label: "Hone Health Alternatives", href: "/hone-health-alternatives" },
     ],
   },
   {
