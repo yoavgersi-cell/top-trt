@@ -171,8 +171,8 @@ export const trtConfig: SiteConfig = {
       name: "Brightmeds",
       tagline:
         "A highly-rated online telehealth service offering TRT with its own testosterone formula, prescribed after a licensed-clinician review",
-      logo: "/provider-placeholder.svg",
-      smallLogo: "/provider-placeholder.svg",
+      logo: "/logos/brightmedslogo.png",
+      smallLogo: "/logos/brightmedslogo.png",
       highlights: [
         "Online TRT after a licensed-clinician review",
         "Its own testosterone formula",
