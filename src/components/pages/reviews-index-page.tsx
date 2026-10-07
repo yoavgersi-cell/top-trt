@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { MedicalReviewBar } from "@/components/medical-review-bar";
 import { getConfig } from "@/lib/config-store";
 import { VERTICALS } from "@/lib/config";
 import { type SiteContext, canonicalUrl, hubLink } from "@/lib/site-context";
@@ -104,6 +105,9 @@ export async function ReviewsIndexView({ ctx }: { ctx: SiteContext }) {
             Read our expert analysis of each to find the best fit for your goals,
             budget, and lifestyle.
           </p>
+          <div className="mt-5 flex justify-center">
+            <MedicalReviewBar path="/reviews" compact />
+          </div>
         </div>
 
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">

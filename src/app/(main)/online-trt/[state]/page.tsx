@@ -5,6 +5,8 @@ import { HeroSection } from "@/components/hero-section";
 import { ComparisonCard } from "@/components/comparison-card";
 import { FaqAccordion } from "@/components/faq-accordion";
 import { ExpertByline } from "@/components/expert-byline";
+import { MedicalReviewBar } from "@/components/medical-review-bar";
+import { pageReviewSchema } from "@/data/reviewers";
 import { getConfig } from "@/lib/config-store";
 import { CONTENT_LAST_UPDATED } from "@/lib/config";
 import { STATES, STATE_BY_SLUG } from "@/lib/states";
@@ -110,6 +112,7 @@ export default async function StatePage({
     url,
     inLanguage: "en-US",
     dateModified: CONTENT_LAST_UPDATED,
+    ...pageReviewSchema(`/online-trt/${s.slug}`),
     isPartOf: { "@type": "WebSite", name: "Top TRT", url: SITE_URL },
     about: { "@type": "Thing", name: `Testosterone replacement therapy in ${s.name}` },
     ...(author && { author: { "@type": "Organization", name: author.name, url: `${SITE_URL}/about` } }),
@@ -159,6 +162,10 @@ export default async function StatePage({
           </div>
         </section>
       )}
+
+      <section className="mx-auto max-w-[1200px] px-4 pt-3">
+        <MedicalReviewBar path={`/online-trt/${s.slug}`} className="max-w-[760px]" />
+      </section>
 
       {/* Breadcrumb */}
       <section className="mx-auto max-w-[1200px] px-4 pt-4">

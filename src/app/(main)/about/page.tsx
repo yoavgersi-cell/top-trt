@@ -3,6 +3,7 @@ import Link from "next/link";
 import { Shield, Users, Award, BookOpen, Search, BarChart3 } from "lucide-react";
 import { getConfig } from "@/lib/config-store";
 import { ExpertTeam } from "@/components/expert-team";
+import { REVIEWERS, reviewerDisplayName, reviewerPath, reviewerPersonSchema } from "@/data/reviewers";
 
 export const revalidate = 60;
 
@@ -19,18 +20,21 @@ export default async function AboutPage() {
   const config = await getConfig();
   const experts = config.experts ?? [];
 
-  const teamSchema = experts.length > 0 ? {
+  const teamSchema = {
     "@context": "https://schema.org",
     "@type": "Organization",
     name: "toptrt.io",
     url: "https://www.toptrt.io",
-    employee: experts.map((e) => ({
-      "@type": "Person",
-      name: e.credentials ? `${e.name}, ${e.credentials}` : e.name,
-      jobTitle: e.role,
-      description: e.bio,
-    })),
-  } : null;
+    employee: [
+      ...REVIEWERS.map(reviewerPersonSchema),
+      ...experts.map((e) => ({
+        "@type": "Person",
+        name: e.credentials ? `${e.name}, ${e.credentials}` : e.name,
+        jobTitle: e.role,
+        description: e.bio,
+      })),
+    ],
+  };
 
   return (
     <div className="min-h-screen bg-gray-50">
@@ -89,6 +93,31 @@ export default async function AboutPage() {
 
         {/* Editorial team */}
         <ExpertTeam experts={experts} />
+
+        {/* Medical review */}
+        <section className="mb-12">
+          <h2 className="mb-4 text-[22px] font-bold text-[#191919]">Medical review</h2>
+          <div className="space-y-3">
+            {REVIEWERS.map((r) => (
+              <div key={r.slug} className="flex flex-col gap-4 rounded-xl border border-[#E5E5E5] bg-white p-5 sm:flex-row sm:items-start">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img src={r.image.webp} alt={`${r.name}, ${r.jobTitle}`} width={88} height={88} className="h-[88px] w-[88px] shrink-0 rounded-xl object-cover" />
+                <div className="min-w-0">
+                  <p className="text-[16px] font-bold text-[#191919]">{reviewerDisplayName(r)}</p>
+                  <p className="text-[13px] text-gray-500">{r.jobTitle} · {r.headline}</p>
+                  <p className="mt-2 text-[14px] leading-relaxed text-gray-600">{r.shortBio}</p>
+                  <p className="mt-3 flex flex-wrap gap-x-4 text-[13.5px] font-semibold">
+                    <Link href={reviewerPath(r)} className="text-[#8A6413] hover:underline">Full profile</Link>
+                    <Link href="/medical-review-policy" className="text-[#8A6413] hover:underline">How we review</Link>
+                    {r.linkedin && (
+                      <a href={r.linkedin} target="_blank" rel="noopener noreferrer" className="text-[#8A6413] hover:underline">LinkedIn</a>
+                    )}
+                  </p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </section>
 
         {/* Methodology */}
         <section className="mb-12">

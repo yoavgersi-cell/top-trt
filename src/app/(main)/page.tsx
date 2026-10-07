@@ -6,6 +6,8 @@ import { Sidebar } from "@/components/sidebar";
 import { EditorialContent } from "@/components/editorial-content";
 import { FaqAccordion } from "@/components/faq-accordion";
 import { ExpertByline } from "@/components/expert-byline";
+import { MedicalReviewBar } from "@/components/medical-review-bar";
+import { pageReviewSchema } from "@/data/reviewers";
 import { getConfig } from "@/lib/config-store";
 import { CONTENT_LAST_UPDATED } from "@/lib/config";
 
@@ -97,6 +99,7 @@ export default async function HomePage() {
     inLanguage: "en-US",
     datePublished: "2026-06-01",
     dateModified: CONTENT_LAST_UPDATED,
+    ...pageReviewSchema("/"),
     isPartOf: { "@type": "WebSite", name: "Top TRT", url: SITE_URL },
     about: { "@type": "Thing", name: "Testosterone replacement therapy providers" },
     ...(author && {
@@ -147,6 +150,11 @@ export default async function HomePage() {
           </div>
         </section>
       )}
+
+      {/* E-E-A-T byline strip - medical review status for a YMYL topic */}
+      <section className="mx-auto max-w-[1200px] px-4 pt-3">
+        <MedicalReviewBar path="/" className="max-w-[760px]" />
+      </section>
 
       <section className="mx-auto max-w-[1200px] px-4 pt-4 pb-6">
         <div className="flex gap-6 items-start">

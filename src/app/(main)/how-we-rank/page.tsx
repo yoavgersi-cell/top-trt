@@ -5,6 +5,8 @@ import { getConfig } from "@/lib/config-store";
 import { ExpertTeam } from "@/components/expert-team";
 import { Breadcrumbs } from "@/components/breadcrumbs";
 import { LastUpdated } from "@/components/last-updated";
+import { MedicalReviewBar } from "@/components/medical-review-bar";
+import { pageReviewSchema } from "@/data/reviewers";
 import { CONTENT_LAST_UPDATED } from "@/lib/config";
 
 export const revalidate = 60;
@@ -75,6 +77,7 @@ export default async function HowWeRankPage() {
     description:
       "Our full methodology for ranking and reviewing online testosterone replacement therapy (TRT) providers: the factors we score, where our data comes from, how we verify accuracy, and how we pick winners.",
     url: CANONICAL,
+    ...pageReviewSchema("/how-we-rank"),
     publisher: { "@type": "Organization", name: "toptrt.io", url: "https://www.toptrt.io" },
   };
 
@@ -116,6 +119,7 @@ export default async function HowWeRankPage() {
             TRT provider, where our information comes from, and how we keep it accurate.
           </p>
           <LastUpdated date={CONTENT_LAST_UPDATED} className="mt-4" />
+          <MedicalReviewBar path="/how-we-rank" className="mt-4 max-w-[760px]" />
         </div>
       </div>
 

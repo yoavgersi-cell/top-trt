@@ -4,6 +4,8 @@ import Link from "next/link";
 import { getConfig } from "@/lib/config-store";
 import { CONTENT_LAST_UPDATED, latestUpdate, NOINDEX_WL_BATTLE_SLUGS } from "@/lib/config";
 import { splitSentences, BoldKeyFacts, ReadableProse } from "@/components/prose";
+import { MedicalReviewBar } from "@/components/medical-review-bar";
+import { pageReviewSchema } from "@/data/reviewers";
 import { type SiteContext, canonicalUrl, hubLink } from "@/lib/site-context";
 import { ComparisonLayout } from "@/components/comparison-layout";
 import { EditorialContent } from "@/components/editorial-content";
@@ -210,6 +212,7 @@ export async function BattlePageView({ slug, ctx }: { slug: string; ctx: SiteCon
       description: landing.seoDescription,
       url: canonicalUrl(ctx, `/${landing.slug}`),
       dateModified: landing.updatedAt || CONTENT_LAST_UPDATED,
+      ...pageReviewSchema(`/${landing.slug}`),
       publisher: { "@type": "Organization", name: ctx.brandDomain, url: ctx.origin },
     };
 
@@ -434,6 +437,7 @@ export async function BattlePageView({ slug, ctx }: { slug: string; ctx: SiteCon
     description: battle.description,
     datePublished: "2026-06-01",
     dateModified: battleUpdatedAt,
+    ...pageReviewSchema(`/${battle.slug}`),
     author: { "@type": "Organization", name: ctx.brandTeam, url: ctx.origin },
     publisher: { "@type": "Organization", name: ctx.brandDomain, url: ctx.origin },
     mainEntityOfPage: canonicalUrl(ctx, `/${battle.slug}`),
@@ -518,6 +522,7 @@ export async function BattlePageView({ slug, ctx }: { slug: string; ctx: SiteCon
               <span className="text-gray-300">·</span>
               <LastUpdated date={battleUpdatedAt} />
             </div>
+            <MedicalReviewBar path={`/${battle.slug}`} className="mt-4 max-w-[760px]" />
             <TrustDisclosure disclaimerHref={hubLink(ctx, "/disclaimer")} />
           </div>
         </section>

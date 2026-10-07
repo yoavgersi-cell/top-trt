@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { STATES } from "@/lib/states";
+import { MedicalReviewBar } from "@/components/medical-review-bar";
 
 export const revalidate = 60;
 
@@ -23,6 +24,7 @@ export default function OnlineTrtIndex() {
   return (
     <div className="mx-auto max-w-[1000px] px-4 py-12">
       <h1 className="mb-4 text-3xl font-bold text-[#191919]">Online TRT by State</h1>
+      <MedicalReviewBar path="/online-trt" className="mb-5 max-w-[760px]" compact />
       <p className="mb-4 max-w-2xl text-[16px] leading-[1.7] text-gray-700">
         Testosterone replacement therapy is available online in all 50 states through licensed telehealth
         clinics - starting with lab testing to confirm your levels, a licensed clinician&apos;s review, and, if

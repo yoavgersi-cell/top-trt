@@ -13,6 +13,7 @@ import { Breadcrumbs } from "@/components/breadcrumbs";
 import { ProviderCta } from "@/components/provider-cta";
 import { TrustpilotCarousel } from "@/components/trustpilot-carousel";
 import { ExpertByline } from "@/components/expert-byline";
+import { MedicalReviewBar } from "@/components/medical-review-bar";
 import { LastUpdated } from "@/components/last-updated";
 import { PromoPopup } from "@/components/promo-popup";
 import { resolvePromoPopup } from "@/lib/promo-popups";
@@ -392,10 +393,11 @@ export async function ReviewPageView({ slug, ctx }: { slug: string; ctx: SiteCon
             <div className="mt-5">
               <ExpertByline
                 expert={config.experts[0]}
-                label="Reviewed by"
+                label="Written by"
               />
             </div>
           )}
+          <MedicalReviewBar path={`/reviews/${slug}`} className="mt-4 max-w-[760px]" />
         </div>
 
         {/* Is [brand] legit? - trust block for the "is X legit" query cluster */}
