@@ -33,6 +33,10 @@
 ## Availability
 - [Online TRT by state](https://www.toptrt.io/online-trt): Which licensed clinics serve each US state.
 
+## Medical review & trust
+- [Medical review policy](https://www.toptrt.io/medical-review-policy): Who checks our medical statements, what they review and what they do not.
+- [Francheska Capistrano, RMT, MPH - Medical Content Reviewer](https://www.toptrt.io/reviewers/francheska-capistrano): Licensed medical laboratory scientist with a Master of Public Health who reviews our TRT content for scientific accuracy.
+
 ## About
 - [How we rank](https://www.toptrt.io/how-we-rank)
 - [About Top TRT](https://www.toptrt.io/about)

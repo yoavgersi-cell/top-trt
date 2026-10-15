@@ -89,9 +89,16 @@ export default function RootLayout({
               "@type": "Organization",
               name: "Top TRT",
               url: SITE_URL,
+              logo: `${SITE_URL}/logo-mark.png`,
               areaServed: { "@type": "Country", name: "United States" },
               description:
                 "Independent guides and provider comparisons for online testosterone replacement therapy (TRT) - expert reviews, pricing research, and side-by-side comparisons.",
+              knowsAbout: [
+                "Testosterone replacement therapy (TRT)",
+                "Online TRT clinics and telehealth",
+                "Low testosterone diagnosis and treatment",
+                "TRT cost, testing and monitoring",
+              ],
               sameAs: [],
             }),
           }}
