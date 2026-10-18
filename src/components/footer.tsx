@@ -21,6 +21,7 @@ const COLUMNS: { title: string; links: { label: string; href: string }[] }[] = [
   {
     title: "Guides",
     links: [
+      { label: "Complete TRT Guide", href: "/articles/trt-guide" },
       { label: "What Is TRT", href: "/articles/what-is-trt" },
       { label: "Signs of Low Testosterone", href: "/articles/signs-of-low-testosterone" },
       { label: "TRT Benefits", href: "/articles/trt-benefits" },
