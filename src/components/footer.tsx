@@ -27,6 +27,7 @@ const COLUMNS: { title: string; links: { label: string; href: string }[] }[] = [
       { label: "Signs of Low Testosterone", href: "/articles/signs-of-low-testosterone" },
       { label: "TRT Benefits", href: "/articles/trt-benefits" },
       { label: "TRT Side Effects", href: "/articles/trt-side-effects" },
+      { label: "Is TRT Safe?", href: "/articles/is-trt-safe" },
       { label: "TRT by State", href: "/online-trt" },
       { label: "All Guides", href: "/articles" },
     ],
