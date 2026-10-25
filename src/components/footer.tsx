@@ -25,6 +25,7 @@ const COLUMNS: { title: string; links: { label: string; href: string }[] }[] = [
       { label: "TRT Results Timeline", href: "/articles/trt-results-timeline" },
       { label: "What Is TRT", href: "/articles/what-is-trt" },
       { label: "Signs of Low Testosterone", href: "/articles/signs-of-low-testosterone" },
+      { label: "Testosterone Levels by Age", href: "/articles/testosterone-levels-by-age" },
       { label: "TRT Benefits", href: "/articles/trt-benefits" },
       { label: "TRT Side Effects", href: "/articles/trt-side-effects" },
       { label: "Is TRT Safe?", href: "/articles/is-trt-safe" },
