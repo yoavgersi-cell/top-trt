@@ -97,6 +97,10 @@ export interface ReviewData {
   pricingPlans?: ReviewPricingPlan[];
   howItWorks?: ReviewHowItWorksStep[];
   trustBadges?: string[];
+  // Optional in-depth, question-headed editorial sections (answer-first HTML
+  // bodies, like articles). Rendered as an "In-depth review" block, and any
+  // section whose heading ends in "?" also feeds the page's FAQPage schema.
+  editorialSections?: { heading: string; body: string }[];
 }
 
 export interface FaqItem {

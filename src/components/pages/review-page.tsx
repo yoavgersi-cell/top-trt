@@ -23,7 +23,7 @@ import { ProductCarousel } from "@/components/product-carousel";
 import { notFound } from "next/navigation";
 import { REDDIT_COMMUNITY_FEEDBACK as REVIEW_COMMUNITY_FEEDBACK, RedditMark } from "@/components/reddit-community";
 import { YoutubeReviewSection } from "@/components/youtube-review";
-import { ReadableProse } from "@/components/prose";
+import { ReadableProse, enhanceArticleHtml } from "@/components/prose";
 import { ProviderAudit } from "@/components/provider-audit";
 
 // Per-provider SEO overrides, "is X legit?" trust blocks, and extra FAQs were a
@@ -218,6 +218,12 @@ export async function ReviewPageView({ slug, ctx }: { slug: string; ctx: SiteCon
       ? { question: `Who is ${provider.name} best for?`, answer: `${provider.name} is best for ${review.bestFor.join("; ")}.` }
       : null,
     { question: `Is ${provider.name} worth it?`, answer: review.finalVerdict },
+    // In-depth editorial sections whose heading is a question also become
+    // FAQPage entries (answer = the section body, HTML stripped), so the deeper
+    // review content feeds rich results / PAA / AI answers too.
+    ...(review.editorialSections ?? [])
+      .filter((s) => s.heading.trim().endsWith("?"))
+      .map((s) => ({ question: s.heading, answer: s.body.replace(/<[^>]*>/g, "") })),
     // Extra FAQs are all researched against weight-loss offers, so they only
     // apply there - a provider id shared across verticals (e.g. directmeds on
     // HRT) must not inherit another vertical's prices and shipping claims.
@@ -605,6 +611,27 @@ export async function ReviewPageView({ slug, ctx }: { slug: string; ctx: SiteCon
             ))}
           </ul>
         </Section>
+
+        {/* In-depth editorial review - deeper, question-headed content. Headings
+            ending in "?" also feed the FAQPage schema (wired above). */}
+        {review.editorialSections && review.editorialSections.length > 0 && (
+          <section className="mb-8">
+            <h2 className="mb-4 text-[20px] font-bold text-[#191919]">
+              {provider.name} review: an in-depth look
+            </h2>
+            <div className="space-y-6">
+              {review.editorialSections.map((s) => (
+                <div
+                  key={s.heading}
+                  id={s.heading.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "")}
+                >
+                  <h3 className="mb-2 text-[17px] font-bold text-[#191919] sm:text-[18px]">{s.heading}</h3>
+                  <div className="article-body" dangerouslySetInnerHTML={{ __html: enhanceArticleHtml(s.body) }} />
+                </div>
+              ))}
+            </div>
+          </section>
+        )}
 
         {/* Trustpilot Reviews */}
         {(provider.trustpilotReviews?.length ?? 0) > 0 && (
