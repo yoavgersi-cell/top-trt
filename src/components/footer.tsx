@@ -23,6 +23,7 @@ const COLUMNS: { title: string; links: { label: string; href: string }[] }[] = [
     links: [
       { label: "Complete TRT Guide", href: "/articles/trt-guide" },
       { label: "TRT Results Timeline", href: "/articles/trt-results-timeline" },
+      { label: "Enclomiphene Guide", href: "/articles/enclomiphene" },
       { label: "What Is TRT", href: "/articles/what-is-trt" },
       { label: "Signs of Low Testosterone", href: "/articles/signs-of-low-testosterone" },
       { label: "Testosterone Levels by Age", href: "/articles/testosterone-levels-by-age" },
