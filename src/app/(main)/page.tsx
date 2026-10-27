@@ -4,6 +4,7 @@ import { ComparisonCard } from "@/components/comparison-card";
 import { SocialProofBand, providerVisitStat } from "@/components/social-proof-bubble";
 import { Sidebar } from "@/components/sidebar";
 import { EditorialContent } from "@/components/editorial-content";
+import { PopularGuides } from "@/components/popular-guides";
 import { FaqAccordion } from "@/components/faq-accordion";
 import { ExpertByline } from "@/components/expert-byline";
 import { MedicalReviewBar } from "@/components/medical-review-bar";
@@ -173,6 +174,7 @@ export default async function HomePage() {
       </section>
 
       <EditorialContent />
+      <PopularGuides />
       <FaqAccordion items={config.faqs} />
     </>
   );

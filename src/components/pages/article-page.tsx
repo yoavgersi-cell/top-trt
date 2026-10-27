@@ -174,7 +174,9 @@ export async function ArticlePageView({ slug, ctx }: { slug: string; ctx: SiteCo
       ratingLabel: string; starRating?: number; badge?: string;
     }>;
 
-  // Related articles: same category first, then others, exclude self, max 3
+  // Related articles: same category first, then others, exclude self, max 6.
+  // Six (two rows of three) spreads more internal links from every article -
+  // a deliberate internal-linking lever to pass equity around the cluster.
   const relatedArticles = [
     ...articles.filter(
       (a) => a.slug !== slug && a.category === article.category
@@ -182,7 +184,7 @@ export async function ArticlePageView({ slug, ctx }: { slug: string; ctx: SiteCo
     ...articles.filter(
       (a) => a.slug !== slug && a.category !== article.category
     ),
-  ].slice(0, 3);
+  ].slice(0, 6);
 
   const formattedDate = new Date(latestUpdate(article.updatedAt)).toLocaleDateString(
     "en-US",
