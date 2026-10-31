@@ -13,6 +13,7 @@ const GROUPS: { title: string; links: { label: string; href: string; blurb: stri
       { label: "TRT Results Timeline", href: "/articles/trt-results-timeline", blurb: "What to expect week by week and month by month once you start." },
       { label: "Testosterone Levels by Age", href: "/articles/testosterone-levels-by-age", blurb: "Normal ranges, how levels change with age, and what counts as low." },
       { label: "Enclomiphene: the TRT alternative", href: "/articles/enclomiphene", blurb: "The treatment that raises your own testosterone while preserving fertility." },
+      { label: "GLP-1 Drugs & Testosterone", href: "/articles/glp1-and-testosterone", blurb: "Can Ozempic, Wegovy and Mounjaro raise your T? What the 2025 research really shows." },
     ],
   },
   {
