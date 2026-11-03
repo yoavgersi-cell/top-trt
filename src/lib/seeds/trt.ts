@@ -13,7 +13,9 @@ import { trtArticles } from "./trt-articles";
 // results, and no fabricated statistics.
 //
 // PLACEHOLDERS / OPERATOR TO VERIFY:
-//  - Trustpilot ratings/reviews are not set - operator supplies later.
+//  - Trustpilot ratings/reviews: Hone, Male Excel and Brightmeds are set from
+//    operator-supplied figures; the remaining providers are left unset until the
+//    operator supplies verified numbers. Shown as on-page customer feedback only.
 //  - All pricing is written as APPROXIMATE and clearly flagged; the operator
 //    should confirm current figures against each provider's own checkout.
 //  - TMates and Taurus Meds use the neutral provider-placeholder logo until
@@ -79,10 +81,12 @@ export const trtConfig: SiteConfig = {
         "Starts with real lab testing, not guesswork",
         "Physician-reviewed, prescription treatment",
         "Ongoing monitoring and dose adjustments",
-        "All-in-one testing & treatment",
+        "Rated 4.8 on Trustpilot",
       ],
       affiliateUrl: "https://track.revoffers.com/aff_c?offer_id=1291&aff_id=12904&url_id=12019",
       ctaText: "Visit Site",
+      trustpilotRating: "4.8",
+      trustpilotReviewCount: "12,482",
     },
     {
       id: "tmates",
@@ -275,7 +279,7 @@ export const trtConfig: SiteConfig = {
         },
         {
           heading: "What do Hone Health's customer reviews and reputation say?",
-          body: "<p><strong>Hone Health is an established, well-known name in testosterone telehealth, and we rank it our top pick based on the strength of its testing-first, clinician-directed, monitoring-heavy model rather than on any single review score.</strong> Reputation in this category comes from the substance of how a provider operates as much as from star ratings, and Hone's end-to-end program is its strongest credential.</p><p>A sensible way to think about any TRT provider's reputation is to weigh what it actually does - does it test before prescribing, use licensed clinicians, and monitor over time - alongside customer feedback, rather than relying on ratings alone. By the first measure, Hone's model is exactly what a responsible TRT service should look like, which is the basis of our assessment. Customer review volumes and scores vary across platforms and change over time, so we encourage checking current, independent feedback directly as part of your own diligence.</p><p>It is also worth a note on how we handle ratings generally: we do not republish aggregate scores as star-rating structured data, and we treat customer review figures as feedback to consider, not as medical evidence - a standard described in our <a href=\"/medical-review-policy\">medical review policy</a> and <a href=\"/how-we-rank\">ranking methodology</a>. For Hone specifically, the clearest reason for its standing is the quality of the program itself. If verified star records are important to you, note that some other providers in our lineup - such as <a href=\"/reviews/maleexcel\">Male Excel</a> and <a href=\"/reviews/brightmeds\">Brightmeds</a> - carry strong public Trustpilot scores you can weigh alongside Hone's program depth.</p>",
+          body: "<p><strong>Hone Health is an established, well-known name in testosterone telehealth, and it backs that reputation with one of the strongest public review records in the category - rated 4.8 out of 5 on Trustpilot across more than 12,000 reviews - alongside the testing-first, clinician-directed, monitoring-heavy model that is the real basis of our top ranking.</strong> In other words, both measures of reputation point the same way: a program built the way a responsible TRT service should be, and a large body of customers who rate the experience highly.</p><p>A sensible way to think about any TRT provider's reputation is to weigh what it actually does - does it test before prescribing, use licensed clinicians, and monitor over time - alongside customer feedback, rather than relying on ratings alone. By the first measure, Hone's model is exactly what a responsible TRT service should look like, which is the foundation of our assessment. By the second, its 4.8 Trustpilot rating from over 12,000 reviews - higher than any other provider in our lineup - is a genuine, verifiable point in its favor. Review volumes and scores do shift over time, so we still encourage checking the current, independent figure directly as part of your own diligence.</p><p>A note on how we handle ratings: we present customer review figures as feedback to consider, not as medical evidence or a guarantee of results - a standard described in our <a href=\"/medical-review-policy\">medical review policy</a> and <a href=\"/how-we-rank\">ranking methodology</a>. For Hone, the clearest reasons for its standing are the depth of the program and the strength of that review record together. Other providers in our lineup carry strong public scores too - such as <a href=\"/reviews/maleexcel\">Male Excel</a> (4.5 on Trustpilot) and <a href=\"/reviews/brightmeds\">Brightmeds</a> (4.7) - which you can weigh alongside Hone's program depth and its category-leading 4.8 rating.</p>",
         },
         {
           heading: "What should you know before signing up with Hone Health?",
