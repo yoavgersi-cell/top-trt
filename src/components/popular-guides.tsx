@@ -33,6 +33,7 @@ const GROUPS: { title: string; links: { label: string; href: string; blurb: stri
       { label: "Best TRT for Fertility", href: "/best-trt-for-fertility", blurb: "Clinics that take the fertility trade-off seriously, plus alternatives." },
       { label: "Best At-Home TRT", href: "/best-at-home-trt", blurb: "Test, treat and monitor entirely from home with a clinician in the loop." },
       { label: "Best Hone Health Alternatives", href: "/hone-health-alternatives", blurb: "Top competing clinics if Hone isn't the right fit for you." },
+      { label: "Find Your Match", href: "/find-your-match", blurb: "Answer a few questions and get matched to the right TRT clinic for you." },
       { label: "All Provider Reviews", href: "/reviews", blurb: "In-depth reviews of every online TRT clinic we cover." },
     ],
   },

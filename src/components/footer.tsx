@@ -43,6 +43,7 @@ const COLUMNS: { title: string; links: { label: string; href: string }[] }[] = [
       { label: "Fertility-Conscious", href: "/best-trt-for-fertility" },
       { label: "At-Home TRT", href: "/best-at-home-trt" },
       { label: "Hone Health Alternatives", href: "/hone-health-alternatives" },
+      { label: "Find Your Match (Quiz)", href: "/find-your-match" },
     ],
   },
   {
