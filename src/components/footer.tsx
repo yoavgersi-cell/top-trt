@@ -30,6 +30,7 @@ const COLUMNS: { title: string; links: { label: string; href: string }[] }[] = [
       { label: "Testosterone Levels by Age", href: "/articles/testosterone-levels-by-age" },
       { label: "TRT Benefits", href: "/articles/trt-benefits" },
       { label: "TRT Side Effects", href: "/articles/trt-side-effects" },
+      { label: "Does TRT Cause Hair Loss?", href: "/articles/does-trt-cause-hair-loss" },
       { label: "Is TRT Safe?", href: "/articles/is-trt-safe" },
       { label: "TRT by State", href: "/online-trt" },
       { label: "All Guides", href: "/articles" },
