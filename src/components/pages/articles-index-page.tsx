@@ -4,7 +4,7 @@ import { Clock, ArrowRight, Trophy } from "lucide-react";
 import { MedicalReviewBar } from "@/components/medical-review-bar";
 import { pageReviewSchema } from "@/data/reviewers";
 import { getConfig } from "@/lib/config-store";
-import { VERTICALS } from "@/lib/config";
+import { VERTICALS, DEFAULT_OG_IMAGE } from "@/lib/config";
 import { type SiteContext, canonicalUrl, hubLink } from "@/lib/site-context";
 
 function verticalName(id: string): string {
@@ -30,6 +30,7 @@ export async function articlesIndexMetadata(ctx: SiteContext): Promise<Metadata>
       title,
       description,
       url,
+      images: [DEFAULT_OG_IMAGE],
     },
   };
 }

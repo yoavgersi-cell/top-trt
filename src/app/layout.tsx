@@ -40,12 +40,21 @@ export const metadata: Metadata = {
     siteName: "Top TRT",
     locale: "en_US",
     url: SITE_URL,
+    images: [
+      {
+        url: "/og-default.png",
+        width: 1200,
+        height: 630,
+        alt: "Top TRT - Compare the best online TRT clinics and prices",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "Top TRT - Compare the Best Online TRT Clinics & Prices",
     description:
       "Independent, side-by-side comparisons of top online testosterone replacement therapy (TRT) providers.",
+    images: ["/og-default.png"],
   },
   other: {
     "geo.region": "US",

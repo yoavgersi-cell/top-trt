@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { MedicalReviewBar } from "@/components/medical-review-bar";
 import { getConfig } from "@/lib/config-store";
-import { VERTICALS } from "@/lib/config";
+import { VERTICALS, DEFAULT_OG_IMAGE } from "@/lib/config";
 import { type SiteContext, canonicalUrl, hubLink } from "@/lib/site-context";
 import { RatingBadge } from "@/components/rating-badge";
 
@@ -39,6 +39,7 @@ export async function reviewsIndexMetadata(ctx: SiteContext): Promise<Metadata> 
       title,
       description,
       url,
+      images: [DEFAULT_OG_IMAGE],
     },
   };
 }

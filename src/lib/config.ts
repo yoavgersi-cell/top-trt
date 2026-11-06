@@ -291,6 +291,17 @@ export interface LandingPageData {
 // updatedAt. Avoids emitting today's date on every request (fake freshness).
 export const CONTENT_LAST_UPDATED = "2026-09-01";
 
+// Site-wide default Open Graph / Twitter image (1200x630), used for every page
+// that does not generate its own (the dynamic opengraph-image routes cover the
+// homepage, articles, reviews and comparison pages). Relative URL resolves
+// against metadataBase. Keeps social/link previews consistent across the site.
+export const DEFAULT_OG_IMAGE = {
+  url: "/og-default.png",
+  width: 1200,
+  height: 630,
+  alt: "Top TRT - Compare the best online TRT clinics and prices",
+} as const;
+
 // Floor date for battle, review and article pages: the shared page templates
 // were last reworked on this date (quick answer, fit finder, accordions,
 // Trustpilot/Reddit carousels, schema enrichment), so no page built from them

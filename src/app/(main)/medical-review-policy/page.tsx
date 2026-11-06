@@ -3,6 +3,7 @@ import Link from "next/link";
 import { ShieldCheck } from "lucide-react";
 import { Breadcrumbs } from "@/components/breadcrumbs";
 import { SITE_ORIGIN, REVIEWERS, reviewerDisplayName, reviewerPath, reviewerPersonSchema } from "@/data/reviewers";
+import { DEFAULT_OG_IMAGE } from "@/lib/config";
 
 const CANONICAL = `${SITE_ORIGIN}/medical-review-policy`;
 const TITLE = "Medical Review Policy: How Top TRT Checks Health Content";
@@ -14,7 +15,7 @@ export const metadata: Metadata = {
   title: { absolute: TITLE },
   description: DESCRIPTION,
   alternates: { canonical: CANONICAL },
-  openGraph: { title: TITLE, description: DESCRIPTION, url: CANONICAL, type: "article" },
+  openGraph: { title: TITLE, description: DESCRIPTION, url: CANONICAL, type: "article", images: [DEFAULT_OG_IMAGE] },
 };
 
 export default function MedicalReviewPolicyPage() {

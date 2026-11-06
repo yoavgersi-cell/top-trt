@@ -8,7 +8,7 @@ import { ExpertByline } from "@/components/expert-byline";
 import { MedicalReviewBar } from "@/components/medical-review-bar";
 import { pageReviewSchema } from "@/data/reviewers";
 import { getConfig } from "@/lib/config-store";
-import { CONTENT_LAST_UPDATED } from "@/lib/config";
+import { CONTENT_LAST_UPDATED, DEFAULT_OG_IMAGE } from "@/lib/config";
 import { STATES, STATE_BY_SLUG } from "@/lib/states";
 
 export const revalidate = 60;
@@ -35,7 +35,7 @@ export async function generateMetadata({
     title: { absolute: `${title} | Top TRT` },
     description,
     alternates: { canonical: url },
-    openGraph: { title, description, url, type: "website" },
+    openGraph: { title, description, url, type: "website", images: [DEFAULT_OG_IMAGE] },
   };
 }
 

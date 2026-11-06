@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { STATES } from "@/lib/states";
 import { MedicalReviewBar } from "@/components/medical-review-bar";
+import { DEFAULT_OG_IMAGE } from "@/lib/config";
 
 export const revalidate = 60;
 
@@ -17,6 +18,7 @@ export const metadata: Metadata = {
     description: "Compare licensed online testosterone replacement therapy (TRT) clinics that serve your state.",
     url: `${SITE_URL}/online-trt`,
     type: "website",
+    images: [DEFAULT_OG_IMAGE],
   },
 };
 

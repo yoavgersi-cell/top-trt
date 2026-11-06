@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { DEFAULT_OG_IMAGE } from "@/lib/config";
 
 export const metadata: Metadata = {
   title: "Find Your Best TRT Provider Match - Free Quiz",
@@ -12,6 +13,7 @@ export const metadata: Metadata = {
     description:
       "Take our free quiz and get matched with the best TRT clinic for your needs and budget.",
     url: "https://www.toptrt.io/find-your-match",
+    images: [DEFAULT_OG_IMAGE],
   },
 };
 

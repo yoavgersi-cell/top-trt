@@ -7,7 +7,7 @@ import { Breadcrumbs } from "@/components/breadcrumbs";
 import { LastUpdated } from "@/components/last-updated";
 import { MedicalReviewBar } from "@/components/medical-review-bar";
 import { pageReviewSchema } from "@/data/reviewers";
-import { CONTENT_LAST_UPDATED } from "@/lib/config";
+import { CONTENT_LAST_UPDATED, DEFAULT_OG_IMAGE } from "@/lib/config";
 
 export const revalidate = 60;
 
@@ -24,6 +24,7 @@ export const metadata: Metadata = {
       "The factors we score, where our data comes from, how we verify accuracy, and how we pick winners in our TRT provider comparisons.",
     url: CANONICAL,
     type: "article",
+    images: [DEFAULT_OG_IMAGE],
   },
 };
 
