@@ -22,6 +22,7 @@ const COLUMNS: { title: string; links: { label: string; href: string }[] }[] = [
     title: "Guides",
     links: [
       { label: "Complete TRT Guide", href: "/articles/trt-guide" },
+      { label: "How to Choose a TRT Clinic", href: "/articles/how-to-choose-an-online-trt-clinic" },
       { label: "TRT Results Timeline", href: "/articles/trt-results-timeline" },
       { label: "Enclomiphene Guide", href: "/articles/enclomiphene" },
       { label: "GLP-1 Drugs & Testosterone", href: "/articles/glp1-and-testosterone" },

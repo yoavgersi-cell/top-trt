@@ -21,6 +21,7 @@ const GROUPS: { title: string; links: { label: string; href: string; blurb: stri
     title: "Getting started & cost",
     links: [
       { label: "How to Get TRT Online", href: "/articles/how-to-get-trt-online", blurb: "The full step-by-step process, from labs to treatment at your door." },
+      { label: "How to Choose an Online TRT Clinic", href: "/articles/how-to-choose-an-online-trt-clinic", blurb: "Green flags, red flags, cost and insurance - how to pick a legit clinic." },
       { label: "The Easiest Way to Get TRT Online", href: "/articles/easiest-way-to-get-trt-online", blurb: "The lowest-friction path, and the common hold-ups to avoid." },
       { label: "How Much Does TRT Cost?", href: "/articles/trt-cost", blurb: "What to add up for a fair, all-in price comparison between clinics." },
       { label: "Cheapest Online TRT Clinics", href: "/cheapest-online-trt", blurb: "The best-value clinics, ranked - without cutting testing or oversight." },

@@ -137,6 +137,11 @@ export async function ArticlePageView({ slug, ctx }: { slug: string; ctx: SiteCo
   const TOP_PROVIDERS_CRO_SLUGS = new Set(["best-tirzepatide-online"]);
   const isWeightLoss = ctx.vertical === "weight-loss";
   const showTopProvidersCro = isWeightLoss && TOP_PROVIDERS_CRO_SLUGS.has(slug);
+  // TRT buyer guides that should surface the rich ranked cards (CTAs, Trustpilot,
+  // pricing) high on the page via TopProvidersBlock, instead of the lighter
+  // inline top-3 block further down. Gated per slug so it stays on buyer guides.
+  const TRT_TOP_PROVIDERS_SLUGS = new Set(["how-to-choose-an-online-trt-clinic"]);
+  const showTrtTopProviders = !isWeightLoss && TRT_TOP_PROVIDERS_SLUGS.has(slug);
   // Every provider-"alternatives" guide (altrx-alternatives, best-ozempic-
   // alternatives, etc.) gets a CRO block featuring our three GLP-1 partners
   // (embody, altRx, trimrx) with the same comparison-page cards.
@@ -463,6 +468,18 @@ export async function ArticlePageView({ slug, ctx }: { slug: string; ctx: SiteCo
                   />
                 )}
 
+                {/* TRT buyer-guide CRO block: the ranked comparison-page cards +
+                    CTAs right after the intro (gated via showTrtTopProviders). */}
+                {i === 0 && showTrtTopProviders && (
+                  <TopProvidersBlock
+                    config={config}
+                    linkPrefix={ctx.prefix}
+                    limit={3}
+                    title="Our top 3 online TRT clinics"
+                    subtitle="Ranked on testing, clinician oversight, monitoring, price and transparency - the same cards from our full comparison."
+                  />
+                )}
+
                 {/* Subject-provider social proof, high on the page: Trustpilot
                     carousel after the first section, Reddit carousel after the
                     second (or first, on very short articles). Verified data
@@ -550,7 +567,7 @@ export async function ArticlePageView({ slug, ctx }: { slug: string; ctx: SiteCo
                     "is X legit" articles: a trust-check page advertising the
                     reviewed provider's competitors undermines the article's
                     credibility and cannibalizes its own conversion. */}
-                {i === 1 && !/^is-.+-legit$/.test(slug) && topThreeCards.length > 0 && (
+                {i === 1 && !/^is-.+-legit$/.test(slug) && !showTrtTopProviders && topThreeCards.length > 0 && (
                   <section className="not-prose my-10">
                     <div className="mb-5">
                       <h2 className="text-[20px] font-bold text-[#191919] sm:text-[22px]">Our top-rated TRT clinics</h2>
