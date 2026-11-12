@@ -122,7 +122,7 @@ export async function battleMetadata(slug: string, ctx: SiteContext): Promise<Me
   const baseLabel = (battle.matchupLabel ?? battle.title.split(":")[0]).trim();
   const metaTitle = override?.title
     ? titleCaseOverrideTitle(override.title)
-    : `${titleCaseMatchup(baseLabel)} (2026): Cost & Plans`;
+    : `${titleCaseMatchup(baseLabel)}: Which Wins? (2026)`;
   const metaDescription = override?.description ?? battle.description;
 
   // Thin, low-demand matchups (Tier-2-brand pairs) are noindex,follow so crawl

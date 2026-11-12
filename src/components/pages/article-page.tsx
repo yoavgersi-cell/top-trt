@@ -24,65 +24,79 @@ import { notFound, permanentRedirect } from "next/navigation";
 // article pages render purely from the ED config (src/lib/seeds/ed.ts); add an
 // ED entry here only with real, verified figures if CTR tuning is ever needed.
 // SEO <title>/meta-description overrides, applied by slug regardless of vertical.
-// They shorten the SERP title/description to Google's display limits (~60 chars
-// title, ~155 desc) WITHOUT changing the visible, longer H1 (article.title) or
-// subheading (article.description), which render from the article data directly.
+// These are CTR-optimized for the SERP (curiosity hooks, power words, a clear
+// payoff, specificity) WITHIN Google's display limits (~60-char title, ~155
+// desc). They change only the <title>/meta/og - the visible, longer H1
+// (article.title) and subheading (article.description) render unchanged, so the
+// page keeps its full headline while the snippet earns the click.
 const ARTICLE_SEO_OVERRIDES: Record<string, { title?: string; description?: string }> = {
   "what-is-trt": {
-    description: "TRT means testosterone replacement therapy. A plain-English guide to what it is, who it's for, how it's diagnosed and prescribed, and what to expect.",
+    title: "What Is TRT? A No-Nonsense Plain-English Guide",
+    description: "TRT, explained without the jargon. What testosterone replacement therapy really is, who it's actually for, how you get diagnosed, and what to expect.",
   },
   "types-of-trt": {
-    title: "Types of TRT: Injections, Gels, Creams & Pellets",
-    description: "Compare the types of TRT - injections, gels, creams, patches and pellets - on effectiveness, cost, convenience and how to choose the right one.",
+    title: "TRT Types Compared: Injections vs Gels & More",
+    description: "Injections, gels, creams or pellets - which TRT is right for you? Compare cost, convenience and results, and avoid the one format most men regret.",
   },
   "testosterone-injections-vs-gel": {
-    title: "Testosterone Injections vs Gel: Which Is Better?",
-    description: "Testosterone injections vs gel compared on effectiveness, cost, steady levels, side effects and convenience - which TRT format is right for you.",
+    title: "Testosterone Injections vs Gel: Which Wins?",
+    description: "One is cheaper and stronger; the other is easier and steadier. See which testosterone format actually fits your life - and your goals - before you pick.",
   },
   "natural-ways-to-boost-testosterone": {
-    title: "Natural Ways to Boost Low Testosterone",
-    description: "Evidence-based natural ways to support healthy testosterone: sleep, strength training, weight, diet and stress - what works, and when to see a doctor.",
+    title: "Boost Testosterone Naturally: What Actually Works",
+    description: "Skip the useless supplements. The evidence-backed habits that genuinely raise low testosterone - sleep, training, weight, diet - and when to see a doctor.",
   },
   "online-doctors-that-prescribe-testosterone": {
-    description: "Yes, licensed online doctors can prescribe testosterone in the US after bloodwork confirms low T. How it works, what's legitimate, and how to start.",
+    title: "Can Online Doctors Prescribe Testosterone?",
+    description: "Yes - and it's easier than you think. How licensed online doctors prescribe testosterone after a simple lab test, what's legit, and how to start today.",
   },
   "easiest-way-to-get-trt-online": {
-    description: "The easiest way to get TRT online, step by step: at-home labs, a licensed clinician's review, and treatment delivered to your door.",
+    title: "The Fastest, Easiest Way to Get TRT Online",
+    description: "Skip the clinic waiting room. The fastest legit way to get TRT online - at-home labs, a real doctor, meds to your door - in a few simple steps. Start here.",
   },
   "trt-for-bodybuilding": {
-    description: "TRT is a medical treatment for low testosterone, not a bodybuilding shortcut. The honest difference between TRT, steroids and performance use.",
+    title: "TRT for Bodybuilding: What's Legit, What's Not",
+    description: "TRT isn't a steroid cycle - and treating it like one backfires. The honest truth about testosterone, muscle, and the line you don't want to cross.",
   },
   "trt-guide": {
-    title: "The Complete Guide to TRT (2026)",
-    description: "The complete 2026 guide to testosterone replacement therapy: what TRT is, who it's for, benefits, risks, delivery methods, cost and how to start.",
+    title: "TRT Explained: The Only Guide You'll Need (2026)",
+    description: "Everything about testosterone replacement therapy in one place: who it's for, the real benefits, the honest risks, costs, and how to start - no hype.",
   },
   "trt-results-timeline": {
-    title: "TRT Results Timeline: Week by Week (2026)",
-    description: "A realistic week-by-week and month-by-month timeline of what to expect on TRT - when libido, energy, mood, muscle and fat loss typically change.",
+    title: "TRT Results: What Changes, Week by Week (2026)",
+    description: "When will you actually feel TRT working? A realistic week-by-week timeline for libido, energy, mood, muscle and fat loss - so you know what's normal.",
   },
   "is-trt-safe": {
-    title: "Is TRT Safe? TRAVERSE Trial & FDA Label (2026)",
-    description: "An evidence-based look at whether TRT is safe: what the TRAVERSE trial found, the 2025 FDA label change, and the real risks monitoring catches.",
+    title: "Is TRT Safe? The Truth About the Real Risks",
+    description: "Worried TRT could hurt your heart? What the landmark TRAVERSE trial and the 2025 FDA label change actually found - and the risks that really matter.",
   },
   "testosterone-levels-by-age": {
-    title: "Testosterone Levels by Age: Normal Ranges (2026)",
-    description: "An evidence-based guide to testosterone levels by age: normal reference ranges for men, how levels change over time, and what counts as low.",
+    title: "Testosterone by Age: Is Your Level Normal?",
+    description: "Is your testosterone normal for your age - or quietly low? The real ranges by decade, what actually counts as low, and when your number is a red flag.",
   },
   "enclomiphene": {
-    title: "Enclomiphene: The Complete Guide (2026)",
-    description: "An evidence-based guide to enclomiphene, the treatment that raises your own testosterone while preserving fertility - how it works, vs TRT, and who it's for.",
+    title: "Enclomiphene: The Fertility-Friendly TRT Rival?",
+    description: "The treatment that raises your testosterone without wrecking your fertility. How enclomiphene works, where it beats TRT (and where it loses), and who it's for.",
   },
   "glp1-and-testosterone": {
-    title: "GLP-1 Drugs & Testosterone: Can Ozempic Raise T?",
-    description: "Do GLP-1 weight-loss drugs like Ozempic, Wegovy and Mounjaro raise testosterone? What the 2025 research shows, who benefits, and how GLP-1s and TRT fit.",
+    title: "Does Ozempic Really Raise Testosterone? (2026)",
+    description: "Can Ozempic, Wegovy or Mounjaro boost your testosterone? What the 2025 studies actually show - who it helps, who it won't, and the catch nobody mentions.",
   },
   "does-trt-cause-hair-loss": {
-    title: "Does TRT Cause Hair Loss? What the Evidence Says",
-    description: "Does TRT cause hair loss? How testosterone and DHT affect hair, what the evidence shows, whether finasteride and minoxidil help, and how to protect it.",
+    title: "Does TRT Cause Hair Loss? The Honest Answer",
+    description: "Will TRT thin your hair - or is that a myth? The real link between testosterone, DHT and baldness, who's genuinely at risk, and how to keep your hair.",
   },
   "how-to-choose-an-online-trt-clinic": {
-    title: "How to Choose an Online TRT Clinic (2026)",
-    description: "How to choose a safe, legitimate online TRT clinic: the green flags and red flags that matter, what it costs, insurance, and the questions to ask.",
+    title: "Online TRT Clinics: How to Spot a Legit One",
+    description: "Most online TRT clinics look the same - some are prescription mills. The green flags, red flags and the one question that exposes a fake. See the top 3.",
+  },
+  "trt-cost": {
+    title: "How Much Does TRT Really Cost in 2026?",
+    description: "The sticker price isn't the real price. What TRT actually costs per month - labs, meds and hidden fees - plus the trick to comparing clinics fairly.",
+  },
+  "how-to-get-trt-online": {
+    title: "How to Get TRT Online in 2026 (Step by Step)",
+    description: "Get TRT without a single clinic visit. The exact steps - at-home labs, a licensed doctor, meds to your door - and how fast you can actually start.",
   },
 };
 

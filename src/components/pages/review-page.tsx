@@ -33,27 +33,28 @@ import { ProviderAudit } from "@/components/provider-audit";
 // the "is X legit?" answer falls back to the review's own intro, and the FAQ
 // list is built entirely from the review's researched content. Add an ED entry
 // here only with real, verified figures.
-// SEO <title>/meta-description overrides by slug (any vertical). Used here to
-// keep review meta descriptions within Google's ~155-char display limit without
-// shortening the visible shortSummary (which also renders on the reviews index).
+// SEO meta-description overrides by slug (any vertical). CTR-optimized for the
+// SERP (an open question + a payoff) WITHIN Google's ~155-char display limit,
+// and kept separate from the visible shortSummary (which also renders on the
+// reviews index), so the snippet earns the click without changing on-page copy.
 const REVIEW_SEO_OVERRIDES: Record<string, { title?: string; description?: string }> = {
   hone: {
-    description: "Hone Health review: at-home testing plus physician-guided TRT, managed end to end via telehealth. Cost, treatment, monitoring and who it's best for.",
+    description: "Is Hone Health worth it? At-home testing plus doctor-guided TRT, managed end to end. The real cost, what you actually get, and who it's perfect for.",
   },
   tmates: {
-    description: "TMates review: a TRT-focused telehealth membership built around lab testing, clinician visits and ongoing monitoring. Cost, process and verdict.",
+    description: "Is TMates the TRT membership to beat? Lab testing, clinician visits and monitoring in one plan. The true cost, the pros, the cons, and the verdict.",
   },
   taurus: {
-    description: "Taurus Meds review: men's-health telehealth offering TRT online after lab testing and a clinician's review. Cost, treatment options and verdict.",
+    description: "Taurus Meds review: TRT online after real labs and a clinician's review. What it costs, how it works, and whether it's actually worth your money.",
   },
   dudemeds: {
-    description: "Dude Meds review: a value-focused online TRT clinic that keeps real testing and clinician oversight. Cost, how it works, and who it's best for.",
+    description: "Is Dude Meds too cheap to trust? A value TRT clinic that still keeps real testing and doctor oversight. The true cost, the catch, and who should pick it.",
   },
   brightmeds: {
-    description: "Brightmeds review: a highly-rated online telehealth service offering TRT, including its own testosterone formula. Cost, process and verdict.",
+    description: "Brightmeds review: a highly-rated TRT service with its own testosterone formula. What it really costs, how fast it ships, and the honest verdict.",
   },
   maleexcel: {
-    description: "Male Excel review: an established men's-health brand offering TRT via at-home labs, injections or cream, and unlimited follow-ups. Cost and verdict.",
+    description: "Is Male Excel's $99/mo worth it? An established TRT brand with at-home labs and unlimited follow-ups. The real all-in cost, the pros, cons and verdict.",
   },
 };
 
@@ -147,7 +148,7 @@ export async function reviewMetadata(slug: string, ctx: SiteContext): Promise<Me
     ? ` ${VERTICALS.find((v) => v.id === ctx.vertical)?.name ?? ""}`.trimEnd() + " "
     : " ";
   const pageTitle =
-    override?.title ?? `${provider.name}${verticalQualifier}Review 2026: Cost, Results & Verdict`;
+    override?.title ?? `${provider.name}${verticalQualifier}Review 2026: Is It Worth It?`;
   const pageDescription = override?.description ?? review.shortSummary;
 
   // Operator policy (Aug 2026): provider reviews are indexable by default - the
