@@ -33,7 +33,29 @@ import { ProviderAudit } from "@/components/provider-audit";
 // the "is X legit?" answer falls back to the review's own intro, and the FAQ
 // list is built entirely from the review's researched content. Add an ED entry
 // here only with real, verified figures.
-const REVIEW_SEO_OVERRIDES: Record<string, { title: string; description: string }> = {};
+// SEO <title>/meta-description overrides by slug (any vertical). Used here to
+// keep review meta descriptions within Google's ~155-char display limit without
+// shortening the visible shortSummary (which also renders on the reviews index).
+const REVIEW_SEO_OVERRIDES: Record<string, { title?: string; description?: string }> = {
+  hone: {
+    description: "Hone Health review: at-home testing plus physician-guided TRT, managed end to end via telehealth. Cost, treatment, monitoring and who it's best for.",
+  },
+  tmates: {
+    description: "TMates review: a TRT-focused telehealth membership built around lab testing, clinician visits and ongoing monitoring. Cost, process and verdict.",
+  },
+  taurus: {
+    description: "Taurus Meds review: men's-health telehealth offering TRT online after lab testing and a clinician's review. Cost, treatment options and verdict.",
+  },
+  dudemeds: {
+    description: "Dude Meds review: a value-focused online TRT clinic that keeps real testing and clinician oversight. Cost, how it works, and who it's best for.",
+  },
+  brightmeds: {
+    description: "Brightmeds review: a highly-rated online telehealth service offering TRT, including its own testosterone formula. Cost, process and verdict.",
+  },
+  maleexcel: {
+    description: "Male Excel review: an established men's-health brand offering TRT via at-home labs, injections or cream, and unlimited follow-ups. Cost and verdict.",
+  },
+};
 
 // "Is X legit?" trust blocks - answers the high-intent "is <brand> legit"
 // query cluster on each review page and feeds the FAQ + FAQPage schema.
@@ -116,7 +138,7 @@ export async function reviewMetadata(slug: string, ctx: SiteContext): Promise<Me
   // Overrides are written against weight-loss offers (GLP-1 pricing etc.), so
   // a shared provider id on another vertical (directmeds on HRT) falls back to
   // the generic template instead of inheriting weight-loss claims.
-  const override = ctx.vertical === "weight-loss" ? REVIEW_SEO_OVERRIDES[slug] : undefined;
+  const override = REVIEW_SEO_OVERRIDES[slug];
   // Providers reviewed in more than one vertical (Ro, Maximus, PeterMD, Hims)
   // would otherwise emit identical <title>s on two URLs - a duplicate-title
   // signal. Their titles carry the vertical name to differentiate.
@@ -125,7 +147,7 @@ export async function reviewMetadata(slug: string, ctx: SiteContext): Promise<Me
     ? ` ${VERTICALS.find((v) => v.id === ctx.vertical)?.name ?? ""}`.trimEnd() + " "
     : " ";
   const pageTitle =
-    override?.title ?? `${provider.name}${verticalQualifier}Review 2026: Cost, Results & Is It Worth It?`;
+    override?.title ?? `${provider.name}${verticalQualifier}Review 2026: Cost, Results & Verdict`;
   const pageDescription = override?.description ?? review.shortSummary;
 
   // Operator policy (Aug 2026): provider reviews are indexable by default - the

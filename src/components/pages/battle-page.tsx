@@ -40,12 +40,6 @@ const BATTLE_COST_MATH: Record<
 
 const BATTLE_SEO_OVERRIDES: Record<string, { title: string; description: string }> = {};
 
-// Category word used in the uniform battle SERP title, per vertical. Verticals
-// not listed fall back to a category-free title.
-const BATTLE_CATEGORY_BY_VERTICAL: Record<string, string> = {
-  ed: "ED",
-};
-
 // Title-case a "{a} vs {b}" matchup so no SERP title starts lowercase, while
 // preserving any internal brand capitals (altRx -> AltRx, TrimRX -> TrimRX).
 function titleCaseMatchup(label: string): string {
@@ -126,10 +120,9 @@ export async function battleMetadata(slug: string, ctx: SiteContext): Promise<Me
   // are always the bespoke override (real prices) when present.
   const override = ctx.vertical === "weight-loss" ? BATTLE_SEO_OVERRIDES[slug] : undefined;
   const baseLabel = (battle.matchupLabel ?? battle.title.split(":")[0]).trim();
-  const battleCategory = BATTLE_CATEGORY_BY_VERTICAL[ctx.vertical];
   const metaTitle = override?.title
     ? titleCaseOverrideTitle(override.title)
-    : `${titleCaseMatchup(baseLabel)} (2026): ${battleCategory ? `${battleCategory} ` : ""}Cost, Plans & Meds Compared`;
+    : `${titleCaseMatchup(baseLabel)} (2026): Cost & Plans`;
   const metaDescription = override?.description ?? battle.description;
 
   // Thin, low-demand matchups (Tier-2-brand pairs) are noindex,follow so crawl

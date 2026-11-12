@@ -8,9 +8,9 @@ import { REVIEWERS, reviewerDisplayName, reviewerPath, reviewerPersonSchema } fr
 export const revalidate = 60;
 
 export const metadata: Metadata = {
-  title: "About Top TRT - Our Mission, Team & Review Methodology",
+  title: "About Top TRT - Our Mission & Methodology",
   description:
-    "Learn how toptrt.io independently ranks and reviews online testosterone replacement therapy (TRT) providers. Our editorial methodology, review process, medical advisory approach, and commitment to unbiased comparisons.",
+    "How toptrt.io independently ranks and reviews online TRT providers - our editorial methodology, review process and commitment to unbiased comparisons.",
   alternates: {
     canonical: "https://www.toptrt.io/about",
   },

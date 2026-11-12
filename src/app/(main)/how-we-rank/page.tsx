@@ -14,9 +14,9 @@ export const revalidate = 60;
 const CANONICAL = "https://www.toptrt.io/how-we-rank";
 
 export const metadata: Metadata = {
-  title: "How We Rank & Review TRT Providers - Our Methodology",
+  title: "How We Rank TRT Providers - Our Methodology",
   description:
-    "Our full methodology for ranking and reviewing online testosterone replacement therapy (TRT) providers: the factors we score, where our data comes from, how we verify accuracy, and how we pick winners in head-to-head comparisons.",
+    "Our methodology for ranking online TRT providers: the factors we score, where our data comes from, how we verify it, and how we pick comparison winners.",
   alternates: { canonical: CANONICAL },
   openGraph: {
     title: "How We Rank & Review TRT Providers - Our Methodology",

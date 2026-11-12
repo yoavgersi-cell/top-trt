@@ -11,7 +11,7 @@ const SITE_URL = "https://www.toptrt.io";
 export const metadata: Metadata = {
   title: { absolute: "Online TRT by State (2026) | Top TRT" },
   description:
-    "Get TRT online in your state. Compare licensed telehealth clinics with at-home lab testing, a clinician's review and discreet, statewide delivery - pick your state to see options.",
+    "Get TRT online in your state. Compare licensed telehealth clinics with at-home lab testing, a clinician's review and discreet statewide delivery.",
   alternates: { canonical: `${SITE_URL}/online-trt` },
   openGraph: {
     title: "Online TRT by State (2026)",

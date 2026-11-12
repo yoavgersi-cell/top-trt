@@ -4,7 +4,7 @@ import { DEFAULT_OG_IMAGE } from "@/lib/config";
 export const metadata: Metadata = {
   title: "Find Your Best TRT Provider Match - Free Quiz",
   description:
-    "Answer a few quick questions and get a personalized TRT clinic recommendation. Compare online testosterone replacement therapy providers based on your needs, budget, and location.",
+    "Answer a few quick questions and get a personalized online TRT clinic recommendation matched to your needs, budget and location.",
   alternates: {
     canonical: "https://www.toptrt.io/find-your-match",
   },

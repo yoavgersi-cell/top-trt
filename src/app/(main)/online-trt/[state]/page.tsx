@@ -30,7 +30,7 @@ export async function generateMetadata({
   const url = `${SITE_URL}/online-trt/${s.slug}`;
   const title = `Online TRT in ${s.name} (2026)`;
   const description =
-    `Compare licensed online TRT clinics serving ${s.name}. At-home lab testing, a clinician's review and ongoing monitoring - with discreet delivery to every ${s.abbr} ZIP code.`;
+    `Compare licensed online TRT clinics serving ${s.name} - at-home lab testing, clinician oversight and discreet delivery to your door.`;
   return {
     title: { absolute: `${title} | Top TRT` },
     description,

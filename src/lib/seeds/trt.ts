@@ -2186,7 +2186,7 @@ export const trtConfig: SiteConfig = {
       slug: "best-trt-for-beginners",
       seoTitle: "Best TRT for Beginners: How to Start Safely (2026)",
       seoDescription:
-        "The best online TRT clinics for beginners in 2026, ranked. Start with real lab testing, a licensed clinician's review and ongoing monitoring - here's how to begin safely.",
+        "The best online TRT clinics for beginners in 2026, ranked - start with real lab testing, a clinician's review and monitoring. How to begin safely.",
       h1: "Best TRT for Beginners",
       h2: "Where to start with testosterone therapy - safely, and without the guesswork",
       heroDescription:
@@ -2239,9 +2239,9 @@ export const trtConfig: SiteConfig = {
     },
     {
       slug: "cheapest-online-trt",
-      seoTitle: "Cheapest Online TRT Clinics: Compare All-In Cost (2026)",
+      seoTitle: "Cheapest Online TRT Clinics (2026): Compare Cost",
       seoDescription:
-        "Looking for the cheapest online TRT clinic? Compare the most affordable online testosterone therapy clinics of 2026 by all-in cost - without cutting the lab testing and clinician review that keep it safe.",
+        "Compare the cheapest online TRT clinics of 2026 by all-in cost - without cutting the lab testing and clinician review that keep treatment safe.",
       h1: "Cheapest Online TRT Clinics",
       h2: "The most affordable online TRT clinics, ranked by all-in cost - without skipping the safeguards",
       heroDescription:
@@ -2302,7 +2302,7 @@ export const trtConfig: SiteConfig = {
       slug: "best-trt-for-fertility",
       seoTitle: "Best TRT Options if You Want to Protect Fertility",
       seoDescription:
-        "TRT can lower fertility. Compare online clinics that take it seriously - discussing sperm production, monitoring and fertility-preserving alternatives like enclomiphene and hCG.",
+        "TRT can lower fertility. Compare online clinics that take it seriously - monitoring and fertility-preserving options like enclomiphene and hCG.",
       h1: "Best TRT Options for Men Concerned About Fertility",
       h2: "Testosterone therapy and fertility - the clinics that take the trade-off seriously",
       heroDescription:
@@ -2351,7 +2351,7 @@ export const trtConfig: SiteConfig = {
       slug: "best-at-home-trt",
       seoTitle: "Best At-Home TRT: Test & Treat From Home (2026)",
       seoDescription:
-        "Compare the best at-home online TRT clinics of 2026 - from at-home hormone testing to doctor-reviewed treatment and monitoring delivered to your door, no clinic visit needed.",
+        "Compare the best at-home online TRT clinics of 2026 - hormone testing, doctor-reviewed treatment and monitoring delivered to your door, no clinic visit.",
       h1: "Best At-Home TRT Clinics",
       h2: "Test, treat and monitor your testosterone from home - with a licensed clinician in the loop",
       heroDescription:
@@ -2399,9 +2399,9 @@ export const trtConfig: SiteConfig = {
     },
     {
       slug: "hone-health-alternatives",
-      seoTitle: "7 Best Hone Health Alternatives for Online TRT (2026)",
+      seoTitle: "7 Best Hone Health Alternatives for Online TRT",
       seoDescription:
-        "Looking for an alternative to Hone Health? Compare the best online TRT clinics of 2026 - ranked on testing, treatment options, price and support - so you can find the right fit for you.",
+        "The best Hone Health alternatives in 2026: online TRT clinics ranked on testing, treatment, price and support - find the right fit for you.",
       h1: "Best Hone Health Alternatives",
       h2: "The top online TRT clinics to consider if Hone Health isn't the right fit",
       heroDescription:

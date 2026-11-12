@@ -22,8 +22,8 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const { slug } = await params;
   const r = getReviewer(slug);
   if (!r) return {};
-  const title = `${reviewerDisplayName(r)} - ${r.jobTitle} | Top TRT`;
-  const description = r.shortBio;
+  const title = `${reviewerDisplayName(r)} | Top TRT`;
+  const description = `${reviewerDisplayName(r)} is a ${r.jobTitle.toLowerCase()} at Top TRT, reviewing our TRT and testosterone health content for medical accuracy.`;
   return {
     title: { absolute: title },
     description,

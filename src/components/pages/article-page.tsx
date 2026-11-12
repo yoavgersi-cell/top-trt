@@ -23,7 +23,68 @@ import { notFound, permanentRedirect } from "next/navigation";
 // "weight-loss"). This single-vertical ED build keeps the maps empty so the
 // article pages render purely from the ED config (src/lib/seeds/ed.ts); add an
 // ED entry here only with real, verified figures if CTR tuning is ever needed.
-const ARTICLE_SEO_OVERRIDES: Record<string, { title: string; description: string }> = {};
+// SEO <title>/meta-description overrides, applied by slug regardless of vertical.
+// They shorten the SERP title/description to Google's display limits (~60 chars
+// title, ~155 desc) WITHOUT changing the visible, longer H1 (article.title) or
+// subheading (article.description), which render from the article data directly.
+const ARTICLE_SEO_OVERRIDES: Record<string, { title?: string; description?: string }> = {
+  "what-is-trt": {
+    description: "TRT means testosterone replacement therapy. A plain-English guide to what it is, who it's for, how it's diagnosed and prescribed, and what to expect.",
+  },
+  "types-of-trt": {
+    title: "Types of TRT: Injections, Gels, Creams & Pellets",
+    description: "Compare the types of TRT - injections, gels, creams, patches and pellets - on effectiveness, cost, convenience and how to choose the right one.",
+  },
+  "testosterone-injections-vs-gel": {
+    title: "Testosterone Injections vs Gel: Which Is Better?",
+    description: "Testosterone injections vs gel compared on effectiveness, cost, steady levels, side effects and convenience - which TRT format is right for you.",
+  },
+  "natural-ways-to-boost-testosterone": {
+    title: "Natural Ways to Boost Low Testosterone",
+    description: "Evidence-based natural ways to support healthy testosterone: sleep, strength training, weight, diet and stress - what works, and when to see a doctor.",
+  },
+  "online-doctors-that-prescribe-testosterone": {
+    description: "Yes, licensed online doctors can prescribe testosterone in the US after bloodwork confirms low T. How it works, what's legitimate, and how to start.",
+  },
+  "easiest-way-to-get-trt-online": {
+    description: "The easiest way to get TRT online, step by step: at-home labs, a licensed clinician's review, and treatment delivered to your door.",
+  },
+  "trt-for-bodybuilding": {
+    description: "TRT is a medical treatment for low testosterone, not a bodybuilding shortcut. The honest difference between TRT, steroids and performance use.",
+  },
+  "trt-guide": {
+    title: "The Complete Guide to TRT (2026)",
+    description: "The complete 2026 guide to testosterone replacement therapy: what TRT is, who it's for, benefits, risks, delivery methods, cost and how to start.",
+  },
+  "trt-results-timeline": {
+    title: "TRT Results Timeline: Week by Week (2026)",
+    description: "A realistic week-by-week and month-by-month timeline of what to expect on TRT - when libido, energy, mood, muscle and fat loss typically change.",
+  },
+  "is-trt-safe": {
+    title: "Is TRT Safe? TRAVERSE Trial & FDA Label (2026)",
+    description: "An evidence-based look at whether TRT is safe: what the TRAVERSE trial found, the 2025 FDA label change, and the real risks monitoring catches.",
+  },
+  "testosterone-levels-by-age": {
+    title: "Testosterone Levels by Age: Normal Ranges (2026)",
+    description: "An evidence-based guide to testosterone levels by age: normal reference ranges for men, how levels change over time, and what counts as low.",
+  },
+  "enclomiphene": {
+    title: "Enclomiphene: The Complete Guide (2026)",
+    description: "An evidence-based guide to enclomiphene, the treatment that raises your own testosterone while preserving fertility - how it works, vs TRT, and who it's for.",
+  },
+  "glp1-and-testosterone": {
+    title: "GLP-1 Drugs & Testosterone: Can Ozempic Raise T?",
+    description: "Do GLP-1 weight-loss drugs like Ozempic, Wegovy and Mounjaro raise testosterone? What the 2025 research shows, who benefits, and how GLP-1s and TRT fit.",
+  },
+  "does-trt-cause-hair-loss": {
+    title: "Does TRT Cause Hair Loss? What the Evidence Says",
+    description: "Does TRT cause hair loss? How testosterone and DHT affect hair, what the evidence shows, whether finasteride and minoxidil help, and how to protect it.",
+  },
+  "how-to-choose-an-online-trt-clinic": {
+    title: "How to Choose an Online TRT Clinic (2026)",
+    description: "How to choose a safe, legitimate online TRT clinic: the green flags and red flags that matter, what it costs, insurance, and the questions to ask.",
+  },
+};
 
 const ARTICLE_QUICK_ANSWERS: Record<string, string> = {};
 
@@ -35,7 +96,7 @@ export async function articleMetadata(slug: string, ctx: SiteContext): Promise<M
   const url = canonicalUrl(ctx, `/articles/${slug}`);
 
   // CTR override (code-controlled) wins over stored meta for target articles.
-  const override = ctx.vertical === "weight-loss" ? ARTICLE_SEO_OVERRIDES[slug] : undefined;
+  const override = ARTICLE_SEO_OVERRIDES[slug];
 
   return {
     title: override?.title ?? article.title,

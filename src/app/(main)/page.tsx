@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     absolute: "Best Online TRT Clinics of 2026 - Compare & Save",
   },
   description:
-    "Compare the best online TRT clinics of 2026. Top testosterone replacement therapy clinics ranked by testing, treatment options, pricing, support and value - find your best fit.",
+    "Compare the best online TRT clinics of 2026, ranked by testing, treatment options, pricing, support and value - find your best fit.",
   alternates: { canonical: SITE_URL },
   openGraph: {
     title: "Best Online TRT Clinics of 2026 - Compare & Save",
