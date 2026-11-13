@@ -1,7 +1,6 @@
 import { Check, Truck, Star } from "lucide-react";
 import { RatingBadge } from "./rating-badge";
 import { ProviderCta } from "./provider-cta";
-import { SocialProofBubble, providerVisitStat } from "./social-proof-bubble";
 
 interface ComparisonCardProduct {
   id: string;
@@ -29,8 +28,13 @@ interface ComparisonCardProps {
 
 const arrowSvg = <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>;
 
-export function ComparisonCard({ product, hideRank, pageType = "listing", sourceFlow = "main_comparison", socialProof, linkPrefix = "" }: ComparisonCardProps) {
-  const showBubble = product.rank === 1 && !!socialProof;
+export function ComparisonCard({ product, hideRank, pageType = "listing", sourceFlow = "main_comparison", linkPrefix = "" }: ComparisonCardProps) {
+  // The #1 pick's CTA uses the brand amber (matching its "Our Top Pick" ribbon)
+  // so the recommended action dominates; ranks 2+ stay neutral near-black.
+  const isTop = product.rank === 1;
+  const ctaClass = isTop
+    ? "bg-[#EBA51E] text-[#191919] hover:bg-[#d8961a]"
+    : "bg-[#262626] text-white hover:bg-[#333333]";
   return (
     <article className="relative rounded-md border border-gray-200 bg-white shadow-sm transition-shadow hover:shadow-md overflow-hidden">
       {/* Rank badge - top-left, only bottom-right rounded */}
@@ -89,7 +93,6 @@ export function ComparisonCard({ product, hideRank, pageType = "listing", source
         <div className="relative flex flex-col items-center justify-center gap-4 px-6 py-5 sm:w-[200px] sm:shrink-0">
           <RatingBadge rating={product.rating} label={product.ratingLabel} starRating={product.starRating} />
           <div className="relative w-full">
-            {showBubble && <SocialProofBubble number={providerVisitStat(product.id)} text={`visited ${product.name} this month`} />}
             <ProviderCta
               href={product.affiliateUrl}
               providerName={product.name}
@@ -97,9 +100,9 @@ export function ComparisonCard({ product, hideRank, pageType = "listing", source
               position={product.rank}
               pageType={pageType}
               sourceFlow={sourceFlow}
-              className="flex h-[42px] w-full items-center justify-center gap-2 rounded-lg bg-[#262626] text-[15px] font-bold text-white transition-colors hover:bg-[#333333]"
+              className={`flex h-[42px] w-full items-center justify-center gap-2 rounded-lg text-[15px] font-bold transition-colors ${ctaClass}`}
             >
-              Visit Site
+              {isTop ? "Get Started" : "Visit Site"}
               {arrowSvg}
             </ProviderCta>
           </div>
@@ -157,9 +160,9 @@ export function ComparisonCard({ product, hideRank, pageType = "listing", source
           position={product.rank}
           pageType={pageType}
           sourceFlow={sourceFlow}
-          className="mt-5 flex h-[48px] w-full items-center justify-center gap-2 rounded-lg bg-[#262626] text-[16px] font-bold text-white transition-colors hover:bg-[#333333]"
+          className={`mt-5 flex h-[48px] w-full items-center justify-center gap-2 rounded-lg text-[16px] font-bold transition-colors ${ctaClass}`}
         >
-          Visit Site
+          {isTop ? "Get Started" : "Visit Site"}
           {arrowSvg}
         </ProviderCta>
       </div>

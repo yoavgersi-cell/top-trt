@@ -48,7 +48,7 @@ export const trtConfig: SiteConfig = {
     featuredImageUrl: "/sidebar-featured.webp",
     featuredImageAlt: "Hone Health - at-home testosterone testing and TRT",
     featuredImageLink: "#",
-    blockOrder: ["socialProof", "secureBadge", "editorialReviews", "rankingMethodology", "disclosure"],
+    blockOrder: ["secureBadge", "editorialReviews", "rankingMethodology", "disclosure"],
   },
 
   cardSocialProof: {

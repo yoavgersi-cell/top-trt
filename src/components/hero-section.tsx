@@ -12,6 +12,8 @@ interface HeroSectionProps {
   overlayOpacity?: number;
   textAlign?: "left" | "center";
   maxTextWidth?: string;
+  ctaLabel?: string;
+  ctaHref?: string;
 }
 
 export function HeroSection({
@@ -23,6 +25,8 @@ export function HeroSection({
   description,
   textAlign = "left",
   maxTextWidth = "640px",
+  ctaLabel,
+  ctaHref,
 }: HeroSectionProps) {
   return (
     <section className="relative w-full py-5 sm:py-0 sm:h-[260px] lg:h-[290px] overflow-hidden bg-[#f5f5f7]">
@@ -68,6 +72,16 @@ export function HeroSection({
             <p className="mt-3 sm:mt-4 text-[13px] sm:text-[16px] leading-[1.5] sm:leading-[1.6] text-gray-600 max-w-[520px]">
               {description}
             </p>
+          )}
+
+          {ctaLabel && ctaHref && (
+            <a
+              href={ctaHref}
+              className="mt-4 inline-flex w-fit items-center gap-2 rounded-lg bg-[#EBA51E] px-5 py-3 text-[14px] sm:text-[15px] font-bold text-[#191919] shadow-sm transition-colors hover:bg-[#d8961a]"
+            >
+              {ctaLabel}
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+            </a>
           )}
 
           <div className="mt-4 sm:mt-3 flex items-center gap-3 sm:gap-5">

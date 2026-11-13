@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { HeroSection } from "@/components/hero-section";
 import { ComparisonCard } from "@/components/comparison-card";
-import { SocialProofBand, providerVisitStat } from "@/components/social-proof-bubble";
+import { ProviderCta } from "@/components/provider-cta";
 import { Sidebar } from "@/components/sidebar";
 import { EditorialContent } from "@/components/editorial-content";
 import { PopularGuides } from "@/components/popular-guides";
@@ -73,6 +73,8 @@ export default async function HomePage() {
       badge?: string;
     }>;
 
+  const topPick = displayList[0];
+
   const sidebarProviders = providerOrder
     .map((id) => config.providers.find((p) => p.id === id))
     .filter(Boolean) as typeof config.providers;
@@ -141,6 +143,8 @@ export default async function HomePage() {
         h1={config.hero.h1}
         h2={config.hero.h2}
         description={config.hero.description}
+        ctaLabel="See our #1 pick"
+        ctaHref="#compare"
       />
 
       {(author || reviewer) && (
@@ -157,15 +161,12 @@ export default async function HomePage() {
         <MedicalReviewBar path="/" className="max-w-[760px]" />
       </section>
 
-      <section className="mx-auto max-w-[1200px] px-4 pt-4 pb-6">
+      <section id="compare" className="mx-auto max-w-[1200px] px-4 pt-4 pb-6 scroll-mt-4">
         <div className="flex gap-6 items-start">
           <div className="min-w-0 flex-1 space-y-4">
-            {displayList.map((product, idx) => (
+            {displayList.map((product) => (
               <div key={product.id}>
-                <ComparisonCard product={product} socialProof={config.cardSocialProof} />
-                {idx === 0 && config.cardSocialProof && (
-                  <SocialProofBand number={providerVisitStat(product.id)} text={`visited ${product.name} this month`} />
-                )}
+                <ComparisonCard product={product} />
               </div>
             ))}
           </div>
@@ -176,6 +177,27 @@ export default async function HomePage() {
       <EditorialContent />
       <PopularGuides />
       <FaqAccordion items={config.faqs} />
+
+      {/* Sticky mobile CTA: on a Persuade surface the primary action should stay
+          reachable in the thumb zone as the long page scrolls. Mobile only. */}
+      {topPick && (
+        <div className="fixed inset-x-0 bottom-0 z-40 border-t border-[#E5E5E5] bg-white/95 px-4 py-2.5 backdrop-blur sm:hidden">
+          <ProviderCta
+            href={topPick.affiliateUrl}
+            providerName={topPick.name}
+            providerSlug={topPick.id}
+            position={1}
+            pageType="listing"
+            sourceFlow="main_comparison"
+            className="flex h-[46px] w-full items-center justify-center gap-2 rounded-lg bg-[#EBA51E] text-[15px] font-bold text-[#191919] transition-colors hover:bg-[#d8961a]"
+          >
+            Our #1 pick: {topPick.name}
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+          </ProviderCta>
+        </div>
+      )}
+      {/* Spacer so the fixed bar never covers the footer's last line on mobile */}
+      <div className="h-16 sm:hidden" aria-hidden="true" />
     </>
   );
 }
