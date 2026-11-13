@@ -2406,7 +2406,7 @@ export const trtConfig: SiteConfig = {
       h2: "The top online TRT clinics to consider if Hone Health isn't the right fit",
       heroDescription:
         "Hone Health is one of our top-rated TRT clinics - but it isn't the only strong option. If the price, plan or state availability doesn't fit, these are the best alternatives, each with real lab testing and a licensed clinician.",
-      providerOrder: ["tmates", "maleexcel", "taurus", "dudemeds", "fridays"],
+      providerOrder: ["brightmeds", "tmates", "maleexcel", "taurus", "dudemeds", "fridays"],
       editorialSections: [
         {
           heading: "What is the best alternative to Hone Health?",
