@@ -93,6 +93,10 @@ export function ComparisonCard({ product, hideRank, pageType = "listing", source
         <div className="relative flex flex-col items-center justify-center gap-4 px-6 py-5 sm:w-[200px] sm:shrink-0">
           <RatingBadge rating={product.rating} label={product.ratingLabel} starRating={product.starRating} />
           <div className="relative w-full">
+            {/* Honest price signal: TRT pricing is membership-based and
+                promotional, so we name the dimension and route to the live
+                price rather than publish a number we can't keep accurate. */}
+            <p className="mb-1.5 text-center text-[11px] font-medium text-gray-400">Pricing varies - see current price</p>
             <ProviderCta
               href={product.affiliateUrl}
               providerName={product.name}
@@ -153,6 +157,7 @@ export function ComparisonCard({ product, hideRank, pageType = "listing", source
         )}
 
         {/* CTA */}
+        <p className="mt-4 mb-1.5 text-center text-[12px] font-medium text-gray-400">Pricing varies - see current price</p>
         <ProviderCta
           href={product.affiliateUrl}
           providerName={product.name}
@@ -160,7 +165,7 @@ export function ComparisonCard({ product, hideRank, pageType = "listing", source
           position={product.rank}
           pageType={pageType}
           sourceFlow={sourceFlow}
-          className={`mt-5 flex h-[48px] w-full items-center justify-center gap-2 rounded-lg text-[16px] font-bold transition-colors ${ctaClass}`}
+          className={`flex h-[48px] w-full items-center justify-center gap-2 rounded-lg text-[16px] font-bold transition-colors ${ctaClass}`}
         >
           {isTop ? "Get Started" : "Visit Site"}
           {arrowSvg}
