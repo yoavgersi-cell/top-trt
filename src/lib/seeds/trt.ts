@@ -57,7 +57,7 @@ export const trtConfig: SiteConfig = {
   },
 
   ranking: {
-    providerOrder: ["hone", "tmates", "maleexcel", "taurus", "dudemeds", "fridays", "brightmeds"],
+    providerOrder: ["hone", "brightmeds", "tmates", "maleexcel", "taurus", "dudemeds", "fridays"],
     positions: [
       { score: 9.6, starRating: 5, label: "Exceptional", badge: "Our Top Pick" },
       { score: 9.2, starRating: 5, label: "Excellent" },
