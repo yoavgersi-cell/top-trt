@@ -30,6 +30,10 @@ import { notFound, permanentRedirect } from "next/navigation";
 // (article.title) and subheading (article.description) render unchanged, so the
 // page keeps its full headline while the snippet earns the click.
 const ARTICLE_SEO_OVERRIDES: Record<string, { title?: string; description?: string }> = {
+  "trt-and-estrogen": {
+    title: "TRT & Estrogen: Do You Really Need an AI?",
+    description: "Most men on TRT fear estrogen - and most don't need an aromatase inhibitor. The evidence on estradiol in men, the cost of crashing it, and when an AI is needed.",
+  },
   "what-is-trt": {
     title: "What Is TRT? A No-Nonsense Plain-English Guide",
     description: "TRT, explained without the jargon. What testosterone replacement therapy really is, who it's actually for, how you get diagnosed, and what to expect.",
@@ -212,11 +216,30 @@ export async function ArticlePageView({ slug, ctx }: { slug: string; ctx: SiteCo
   const TOP_PROVIDERS_CRO_SLUGS = new Set(["best-tirzepatide-online"]);
   const isWeightLoss = ctx.vertical === "weight-loss";
   const showTopProvidersCro = isWeightLoss && TOP_PROVIDERS_CRO_SLUGS.has(slug);
-  // TRT buyer guides that should surface the rich ranked cards (CTAs, Trustpilot,
+  // TRT guides that should surface the rich ranked cards (CTAs, Trustpilot,
   // pricing) high on the page via TopProvidersBlock, instead of the lighter
-  // inline top-3 block further down. Gated per slug so it stays on buyer guides.
-  const TRT_TOP_PROVIDERS_SLUGS = new Set(["how-to-choose-an-online-trt-clinic"]);
-  const showTrtTopProviders = !isWeightLoss && TRT_TOP_PROVIDERS_SLUGS.has(slug);
+  // inline top-3 block further down. Gated per slug, each with its own limit
+  // and copy, so buyer guides show the top 3 while a deep clinical pillar can
+  // surface a tighter top-2 recommendation.
+  const TRT_TOP_PROVIDERS_CONFIG: Record<
+    string,
+    { limit: number; title: string; subtitle: string }
+  > = {
+    "how-to-choose-an-online-trt-clinic": {
+      limit: 3,
+      title: "Our top 3 online TRT clinics",
+      subtitle:
+        "Ranked on testing, clinician oversight, monitoring, price and transparency - the same cards from our full comparison.",
+    },
+    "trt-and-estrogen": {
+      limit: 2,
+      title: "Where to get evidence-based TRT care",
+      subtitle:
+        "Estrogen done right starts with a clinic that tests properly and treats symptoms, not numbers. These are our two top-rated online TRT providers.",
+    },
+  };
+  const trtTopProvidersConfig = TRT_TOP_PROVIDERS_CONFIG[slug];
+  const showTrtTopProviders = !isWeightLoss && !!trtTopProvidersConfig;
   // Every provider-"alternatives" guide (altrx-alternatives, best-ozempic-
   // alternatives, etc.) gets a CRO block featuring our three GLP-1 partners
   // (embody, altRx, trimrx) with the same comparison-page cards.
@@ -545,13 +568,13 @@ export async function ArticlePageView({ slug, ctx }: { slug: string; ctx: SiteCo
 
                 {/* TRT buyer-guide CRO block: the ranked comparison-page cards +
                     CTAs right after the intro (gated via showTrtTopProviders). */}
-                {i === 0 && showTrtTopProviders && (
+                {i === 0 && showTrtTopProviders && trtTopProvidersConfig && (
                   <TopProvidersBlock
                     config={config}
                     linkPrefix={ctx.prefix}
-                    limit={3}
-                    title="Our top 3 online TRT clinics"
-                    subtitle="Ranked on testing, clinician oversight, monitoring, price and transparency - the same cards from our full comparison."
+                    limit={trtTopProvidersConfig.limit}
+                    title={trtTopProvidersConfig.title}
+                    subtitle={trtTopProvidersConfig.subtitle}
                   />
                 )}
 

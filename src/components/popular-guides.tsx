@@ -15,6 +15,7 @@ const GROUPS: { title: string; links: { label: string; href: string; blurb: stri
       { label: "Enclomiphene: the TRT alternative", href: "/articles/enclomiphene", blurb: "The treatment that raises your own testosterone while preserving fertility." },
       { label: "GLP-1 Drugs & Testosterone", href: "/articles/glp1-and-testosterone", blurb: "Can Ozempic, Wegovy and Mounjaro raise your T? What the 2025 research really shows." },
       { label: "Does TRT Cause Hair Loss?", href: "/articles/does-trt-cause-hair-loss", blurb: "Testosterone, DHT and baldness - the real risk, and how to protect your hair." },
+      { label: "TRT & Estrogen: Do You Need an AI?", href: "/articles/trt-and-estrogen", blurb: "Why most men don't need an aromatase inhibitor - and the real cost of crashing estrogen." },
     ],
   },
   {
