@@ -29,13 +29,33 @@ const SEEDS = path.join(ROOT, "src", "lib", "seeds", "trt-articles.ts");
 
 function parseArgs() {
   const a = process.argv.slice(2);
-  const o = { count: 0, slug: null, dry: false };
+  const o = { count: 0, slug: null, dry: false, wire: false };
   for (let i = 0; i < a.length; i++) {
     if (a[i] === "--count") o.count = parseInt(a[++i], 10);
     else if (a[i] === "--slug") o.slug = a[++i];
     else if (a[i] === "--dry") o.dry = true;
+    else if (a[i] === "--wire") o.wire = true;
   }
   return o;
+}
+
+// Insert image + imageAlt into an article object in the seeds file, right after
+// its heroColor line. Idempotent: skips if the article already has an image.
+async function wireSeeds(slug, alt) {
+  let src = await readFile(SEEDS, "utf8");
+  const sm = src.match(new RegExp(`\\n(\\s*)slug:\\s*"${slug.replace(/[-/\\^$*+?.()|[\]{}]/g, "\\$&")}",`));
+  if (!sm) return `slug not found: ${slug}`;
+  const start = sm.index + sm[0].length;
+  const hm = src.slice(start).match(/\n(\s*)heroColor:\s*"[^"]*",/);
+  if (!hm) return `heroColor not found: ${slug}`;
+  const insertAt = start + hm.index + hm[0].length;
+  if (/^\s*\n\s*image:/.test(src.slice(insertAt, insertAt + 40))) return `already wired: ${slug}`;
+  const indent = hm[1];
+  const esc = (s) => s.replace(/"/g, '\\"');
+  const ins = `\n${indent}image: "/article-images/${slug}.webp",\n${indent}imageAlt: "${esc(alt)}",`;
+  src = src.slice(0, insertAt) + ins + src.slice(insertAt);
+  await writeFile(SEEDS, src);
+  return `wired: ${slug}`;
 }
 
 async function fileExists(p) {
@@ -114,7 +134,9 @@ async function main() {
     process.stdout.write(`Generating ${slug} ... `);
     try {
       const r = await generateOne(slug);
-      console.log(`ok (${(r.bytes / 1024).toFixed(0)}KB q${r.quality})`);
+      let note = `ok (${(r.bytes / 1024).toFixed(0)}KB q${r.quality})`;
+      if (o.wire) note += ` [${await wireSeeds(slug, r.alt)}]`;
+      console.log(note);
       results.push(r);
     } catch (e) {
       console.log(`FAILED: ${e.message}`);

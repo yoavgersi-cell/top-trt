@@ -29,3 +29,30 @@ Naming convention: use the article `slug` as the filename so it's easy to match.
 `imageAlt` is important for SEO (Google Images + page context) and accessibility.
 It falls back to the article title if omitted, but a short, descriptive,
 keyword-relevant alt is strongly preferred.
+
+## Generating images (automated)
+
+Every article should ship with a hero image. Images are generated on-brand via
+OpenAI (`gpt-image-2`) and auto-wired into the seeds:
+
+```
+# one article
+NODE_EXTRA_CA_CERTS=/root/.ccr/ca-bundle.crt \
+  node scripts/gen-article-images.mjs --slug <slug> --wire
+
+# next N articles missing an image (also wires them in)
+NODE_EXTRA_CA_CERTS=/root/.ccr/ca-bundle.crt \
+  node scripts/gen-article-images.mjs --count 5 --wire
+
+# preview what's missing, generate nothing
+node scripts/gen-article-images.mjs --dry --count 5
+```
+
+- House style + per-slug scene/alt live in `scripts/article-image-specs.mjs`.
+  **When you add a new article, add its slug there** (scene + alt), then run the
+  generator so it goes live with an image.
+- `scripts/daily-article-images.sh` runs the batch + a build check; a daily
+  scheduled task runs it to clear the backlog (5/day), then no-ops once every
+  article has an image.
+- Requires a valid OpenAI secret key (`sk-...`) saved for `api.openai.com` on
+  the environment.
