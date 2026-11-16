@@ -307,7 +307,9 @@ export async function ArticlePageView({ slug, ctx }: { slug: string; ctx: SiteCo
     "@type": "Article",
     headline: article.title,
     description: article.description,
-    image: canonicalUrl(ctx, `/articles/${slug}/opengraph-image`),
+    image: article.image
+      ? [canonicalUrl(ctx, article.image), canonicalUrl(ctx, `/articles/${slug}/opengraph-image`)]
+      : canonicalUrl(ctx, `/articles/${slug}/opengraph-image`),
     datePublished: article.publishedAt,
     dateModified: latestUpdate(article.updatedAt),
     ...pageReviewSchema(`/articles/${slug}`),
@@ -464,6 +466,26 @@ export async function ArticlePageView({ slug, ctx }: { slug: string; ctx: SiteCo
             <MedicalReviewBar path={`/articles/${slug}`} className="mt-4 max-w-[760px]" />
           </div>
         </div>
+
+        {/* Hero image - 16:9, indexable for Google/Bing Images via descriptive
+            alt. Rendered only when the article has one (purely additive). It's
+            the LCP element, so it loads eagerly at high priority. */}
+        {article.image && (
+          <div className="mx-auto max-w-[1100px] px-4 pt-6 sm:px-6 sm:pt-8">
+            <div className="overflow-hidden rounded-2xl border border-gray-200 bg-gray-100">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src={article.image}
+                alt={article.imageAlt || article.title}
+                width={1600}
+                height={900}
+                loading="eager"
+                fetchPriority="high"
+                className="aspect-[16/9] w-full object-cover"
+              />
+            </div>
+          </div>
+        )}
 
         {/* Article body */}
         <div className="mx-auto max-w-[1100px] px-4 py-10 sm:px-6">

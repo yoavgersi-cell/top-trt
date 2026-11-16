@@ -12,6 +12,8 @@ export const trtArticles: ArticleData[] = [
     publishedAt: "2026-09-14",
     updatedAt: "2026-09-14",
     heroColor: "#0f2a43",
+    image: "/article-images/what-is-trt.webp",
+    imageAlt: "Testosterone vial, syringe and stethoscope illustrating what TRT is",
     author: "Top TRT Editorial Team",
     keyTakeaways: [
       "TRT is a prescription medical treatment for men with clinically diagnosed low testosterone (hypogonadism), not an over-the-counter supplement.",
@@ -51,6 +53,8 @@ export const trtArticles: ArticleData[] = [
     publishedAt: "2026-09-14",
     updatedAt: "2026-09-14",
     heroColor: "#1a1a1a",
+    image: "/article-images/signs-of-low-testosterone.webp",
+    imageAlt: "Tired man by a window conveying the signs and symptoms of low testosterone",
     author: "Top TRT Editorial Team",
     keyTakeaways: [
       "Low testosterone symptoms are broad and overlap with many other conditions, so they cannot confirm a diagnosis on their own.",
@@ -90,6 +94,8 @@ export const trtArticles: ArticleData[] = [
     publishedAt: "2026-09-14",
     updatedAt: "2026-09-14",
     heroColor: "#14532d",
+    image: "/article-images/what-causes-low-testosterone.webp",
+    imageAlt: "Lifestyle items suggesting the causes of low testosterone in men",
     author: "Top TRT Editorial Team",
     keyTakeaways: [
       "Low testosterone can come from a problem in the testes (primary) or in the brain's signaling to them (secondary).",
@@ -129,6 +135,8 @@ export const trtArticles: ArticleData[] = [
     publishedAt: "2026-09-14",
     updatedAt: "2026-09-14",
     heroColor: "#3b0d0d",
+    image: "/article-images/trt-benefits.webp",
+    imageAlt: "Energetic active man at sunrise illustrating the benefits of TRT",
     author: "Top TRT Editorial Team",
     keyTakeaways: [
       "For men with genuinely low testosterone, TRT can improve libido, energy, mood and body composition over weeks to months.",
@@ -168,6 +176,8 @@ export const trtArticles: ArticleData[] = [
     publishedAt: "2026-09-14",
     updatedAt: "2026-09-14",
     heroColor: "#4a2500",
+    image: "/article-images/trt-side-effects.webp",
+    imageAlt: "Clinician monitoring equipment representing TRT side effects and safety checks",
     author: "Top TRT Editorial Team",
     keyTakeaways: [
       "TRT can raise red blood cell counts, cause acne or oily skin, shrink the testicles and reduce fertility.",
@@ -2177,6 +2187,8 @@ export const trtArticles: ArticleData[] = [
     publishedAt: "2026-11-15",
     updatedAt: "2026-11-15",
     heroColor: "#241a2b",
+    image: "/article-images/trt-and-estrogen.webp",
+    imageAlt: "Blood-sample vial in a lab representing estradiol testing for men on TRT",
     author: "Top TRT Editorial Team",
     keyTakeaways: [
       "Estrogen is not the enemy. In men, estradiol is essential for bone density, libido, erectile function, and healthy body fat - and most men on well-managed TRT never need an aromatase inhibitor (AI) at all. The reflex to 'crash' estrogen does more harm than high estrogen usually does.",
