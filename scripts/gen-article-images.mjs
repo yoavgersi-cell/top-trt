@@ -13,7 +13,15 @@ import { readFile, writeFile, stat } from "node:fs/promises";
 import { fileURLToPath } from "node:url";
 import path from "node:path";
 import sharp from "sharp";
+import { setGlobalDispatcher, ProxyAgent } from "undici";
 import { IMAGE_SPECS, HOUSE_STYLE } from "./article-image-specs.mjs";
+
+// Route Node's fetch through the session's HTTPS proxy (undici ignores
+// HTTPS_PROXY by default). The proxy injects the real OpenAI key and does TLS
+// interception, so Node must also trust its CA via NODE_EXTRA_CA_CERTS
+// (set on the command line: NODE_EXTRA_CA_CERTS=/root/.ccr/ca-bundle.crt).
+const PROXY = process.env.HTTPS_PROXY || process.env.https_proxy;
+if (PROXY) setGlobalDispatcher(new ProxyAgent(PROXY));
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const OUT_DIR = path.join(ROOT, "public", "article-images");
@@ -52,7 +60,7 @@ async function generateOne(slug) {
       Authorization: "Bearer proxy-injected",
     },
     body: JSON.stringify({
-      model: "gpt-image-1",
+      model: process.env.IMAGE_MODEL || "gpt-image-2",
       prompt,
       size: "1536x1024",
       quality: "medium",
