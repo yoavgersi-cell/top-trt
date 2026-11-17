@@ -31,8 +31,8 @@ import { notFound, permanentRedirect } from "next/navigation";
 // page keeps its full headline while the snippet earns the click.
 const ARTICLE_SEO_OVERRIDES: Record<string, { title?: string; description?: string }> = {
   "trt-and-estrogen": {
-    title: "TRT & Estrogen: Do You Really Need an AI?",
-    description: "Most men on TRT fear estrogen - and most don't need an aromatase inhibitor. The evidence on estradiol in men, the cost of crashing it, and when an AI is needed.",
+    title: "TRT & Estrogen: Do You Need an Estrogen Blocker?",
+    description: "Most men on TRT don't need an estrogen blocker (aromatase inhibitor). The evidence on estradiol in men, the real cost of crashing it, and when a blocker helps.",
   },
   "what-is-trt": {
     title: "What Is TRT? A No-Nonsense Plain-English Guide",
